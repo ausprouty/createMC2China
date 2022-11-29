@@ -1,0 +1,3 @@
+function revealVideo() {
+  alert("revealVideo");
+}
