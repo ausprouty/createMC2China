@@ -3,10 +3,7 @@
   <div id="nav">
     <div class="nav full">
       <a class="card-link" href="#" onclick="pageGoBack('index.html');">
-        <img
-          src="/sites/mc2/images/ribbons/back-ribbon-mc2.png?v=1663257228"
-          class="nav full"
-        />
+        <img src="@/assets/images/back-ribbon-mc2.png" class="nav full" />
       </a>
     </div>
   </div>
@@ -23,10 +20,7 @@
 
     <!-- Lesson 1: Assurance of Salvation -->
     <div class="lesson">
-      <img
-        class="lesson-icon"
-        src="/sites/mc2/images/standard/look-back.png?v=1663257228"
-      />
+      <img class="lesson-icon" src="@/assets/images/look-back.png" />
       <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
     </div>
 
@@ -98,10 +92,7 @@
       </div>
 
       <div class="lesson">
-        <img
-          class="lesson-icon"
-          src="/sites/mc2/images/standard/look-up.png?v=1663257228"
-        />
+        <img class="lesson-icon" src="@/assets/images/look-up.png" />
         <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
       </div>
 
@@ -214,10 +205,7 @@
       </div>
 
       <div class="lesson">
-        <img
-          class="lesson-icon"
-          src="/sites/mc2/images/standard/look-forward.png?v=1663257228"
-        />
+        <img class="lesson-icon" src="@/assets/images/look-forward.png" />
         <div class="lesson-subtitle">
           <span class="forward">LOOKING FORWARD</span>
         </div>

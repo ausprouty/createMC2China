@@ -4,7 +4,7 @@ export default [
     name: "multiply101",
     component: function () {
       return import(
-        /* webpackChunkName: "prototype" */ "../views/multiply1/multiplyVue101.vue"
+        /* webpackChunkName: "prototype" */ "../views/multiply1/MultiplySession101.vue"
       );
     },
   },

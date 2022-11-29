@@ -1,3 +1,0 @@
-function revealVideo() {
-  alert("revealVideo");
-}
