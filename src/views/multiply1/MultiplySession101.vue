@@ -3,6 +3,7 @@ import { showNotes, addNote} from "@/assets/javascript/notes.js";
 import { revealVideo } from "@/assets/javascript/revealVideo.js";
 import { findSummaries, findCollapsible } from "@/assets/javascript/app.js";
 import Footer from '@/components/FooterGlobal.vue';
+import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
 export default {
   components: {
     Footer
@@ -15,6 +16,18 @@ export default {
   methods:{
     addNotes(){
       addNote(this.page)
+    },
+    async showAccess () {
+      await Diagnostic.isExternalStorageAuthorized().then(async (data2) => {
+        console.log('is authorized?')
+        alert (data2)
+        console.log(data2)
+        console.log('end of is authorized?')
+      }).catch(error => {
+        console.log("error authorized")
+        console.log(error);
+      });
+
     }
   },
   mounted () {
@@ -33,6 +46,7 @@ export default {
       </a>
     </div>
   </div>
+<div  @click="this.showAccess()"> What is the status of External Storage?</div>
   <div class="page_content ltr">
     <div class="block ltr">
       <div class="chapter_number ltr">

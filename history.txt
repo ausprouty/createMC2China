@@ -11,11 +11,13 @@ npm install @awesome-cordova-plugins/file --save
 npm install cordova.plugins.diagnostic
 npm install cordova-plugin-filepath
 npm install cordova-plugin-file
-
 npm install @capacitor/android
-
 npx cap init
 npx cap add android
+// now modify AndroidManifest.xml
+ android:requestLegacyExternalStorage="true"
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 
 npm run build
@@ -23,4 +25,3 @@ npx cap sync
 npx cap open android
 
 
-http://localhost/assets/index.231d43ee.js - Line 11 - Msg: Install the Diagnostic plugin: 'ionic cordova plugin add cordova.plugins.diagnostic'

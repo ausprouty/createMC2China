@@ -4,6 +4,7 @@ import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
 
 export async function revealVideo() {
   console.log ('before await');
+  /*
   await Diagnostic.getExternalSdCardDetails().then(async (data2)=>{
       console.log ('here is the video data')
       console.log (data2)
@@ -13,10 +14,11 @@ export async function revealVideo() {
       console.log("error getExternalSdCardDetails")
       console.log(error);
   });
+  */
   await Diagnostic.isExternalStorageAuthorized().then(async (data2)=>{
-      console.log ('is authorized')
+      console.log ('is authorized?')
       console.log (data2)
-      console.log ('end of is authorized')
+      console.log ('end of is authorized?')
   }).catch(error=>{
       console.log("error authorized")
       console.log(error);
@@ -35,7 +37,6 @@ export async function revealVideo() {
       var id= this.id
       var content = this.nextElementSibling
       if (this.classList.contains('active') ){
-
         var video = template.replace('ZZZ', id)
         content.innerHTML = video
         content.classList.remove('collapsed')
