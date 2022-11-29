@@ -1,14 +1,27 @@
-
+ import { File } from '@awesome-cordova-plugins/file';
+ import { FilePath } from '@awesome-cordova-plugins/file-path';
 import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
 
 export async function revealVideo() {
-  console.log ('videoReveal');
+  console.log ('before await');
   await Diagnostic.getExternalSdCardDetails().then(async (data2)=>{
+      console.log ('here is the video data')
       console.log (data2)
+      console.log (data2[0].path)
+      console.log ('end of the video data')
   }).catch(error=>{
-      console.log("error time show ")
+      console.log("error getExternalSdCardDetails")
       console.log(error);
   });
+  await Diagnostic.isExternalStorageAuthorized().then(async (data2)=>{
+      console.log ('is authorized')
+      console.log (data2)
+      console.log ('end of is authorized')
+  }).catch(error=>{
+      console.log("error authorized")
+      console.log(error);
+  });
+  console.log ('after awaits');
 
   var template =`  <video id="video" width="100%" controls="controls" preload="metadata" autoplay="autoplay"
         webkit-playsinline="webkit-playsinline" class="videoPlayer">
@@ -22,7 +35,7 @@ export async function revealVideo() {
       var id= this.id
       var content = this.nextElementSibling
       if (this.classList.contains('active') ){
-        //plyr.setup('#video')
+
         var video = template.replace('ZZZ', id)
         content.innerHTML = video
         content.classList.remove('collapsed')
@@ -33,9 +46,3 @@ export async function revealVideo() {
     })
   }
 }
-
-/* consider
- <a href="javascript:void(0);" onclick="shareVideo([video])">
-                <img class="social" src="/content/M2/images/standard/share_video.png" />
-            </a>
-*/
