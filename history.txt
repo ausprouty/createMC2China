@@ -5,6 +5,13 @@ npm install @awesome-cordova-plugins/diagnostic --save
 npm install @awesome-cordova-plugins/file-path --save
 npm install @awesome-cordova-plugins/file --save
 
+/// see https://ionicframework.com/docs/native/community
+
+// https://ionicframework.com/docs/native/file-path
+npm install cordova.plugins.diagnostic
+npm install cordova-plugin-filepath
+npm install cordova-plugin-file
+
 npm install @capacitor/android
 
 npx cap init
