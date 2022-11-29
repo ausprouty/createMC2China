@@ -1,0 +1,13 @@
+npm install @capacitor/core
+npm install @capacitor/cli
+npm install @awesome-cordova-plugins/core --save
+npm install @awesome-cordova-plugins/diagnostic --save
+npm install @awesome-cordova-plugins/file-path --save
+npm install @awesome-cordova-plugins/file --save
+
+
+
+
+
+npx cap sync
+npx cap open android
