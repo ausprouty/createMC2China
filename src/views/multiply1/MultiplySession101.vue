@@ -1,6 +1,6 @@
 <script>
 import { showNotes, addNote} from "@/assets/javascript/notes.js";
-//import { revealVideo } from "@/assets/javascript/revealVideo.js";
+import { revealVideo } from "@/assets/javascript/revealVideo.js";
 import { findSummaries, findCollapsible } from "@/assets/javascript/app.js";
 import Footer from '@/components/FooterGlobal.vue';
 export default {
@@ -21,6 +21,7 @@ export default {
     showNotes(this.page)
     findSummaries()
     findCollapsible()
+    revealVideo()
   }
 }
 </script>
@@ -183,11 +184,10 @@ export default {
         </p>
       </div>
 
-      <button id="revealButton0" type="button" class="external-movie">
+      <button id="101" type="button" class="external-movie">
         Watch <i>John 10:22-30</i>&nbsp; online
       </button>
-      <div class="collapsed">[lumo]-GOJohn2211&start=170&end=229</div>
-      <div id="ShowOptionsFor[lumo]-GOJohn2211&start=170&end=229"></div>
+        <div class="collapsed"></div>
 
       <h2 class="up">Discovery Discussion</h2>
 
