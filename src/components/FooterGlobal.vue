@@ -1,6 +1,6 @@
 <template>
   <div class="languages" id="languages">
-    <img class="languages" src="/OtherLanguagesTop.png" />
+    <img class="languages" src="@/assets/images/OtherLanguagesTop.png" />
   </div>
   <table class="social">
     <tbody>
@@ -11,7 +11,7 @@
             href="#"
             onclick="goToPageAndSetReturn('..//index.html', '#Return2');"
           >
-            <img class="social" src="languages.png" />
+            <img class="social" src="@/assets/images/languages.png" />
           </a>
         </td>
         <td class="social">
@@ -20,7 +20,7 @@
             href="#"
             onclick="goToPageAndSetReturn('../pages/apk.html', '#Return3');"
           >
-            <img class="social" src="android.png" />
+            <img class="social" src="@/assets/images/android.png" />
           </a>
         </td>
         <td class="social">
@@ -28,7 +28,7 @@
             href="javascript:void(0);"
             onclick="shareLesson('Assurance of Salvation: ')"
           >
-            <img class="social" src="Share.png" />
+            <img class="social" src="@/assets/images/Share.png" />
           </a>
         </td>
       </tr>

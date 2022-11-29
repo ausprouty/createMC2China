@@ -1,5 +1,30 @@
+<script>
+import { showNotes, addNote} from "@/assets/javascript/notes.js";
+//import { revealVideo } from "@/assets/javascript/revealVideo.js";
+import { findSummaries, findCollapsible } from "@/assets/javascript/app.js";
+import Footer from '@/components/FooterGlobal.vue';
+export default {
+  components: {
+    Footer
+  },
+  data () {
+    return {
+      page: 'multiply101'
+    };
+  },
+  methods:{
+    addNotes(){
+      addNote(this.page)
+    }
+  },
+  mounted () {
+    showNotes(this.page)
+    findSummaries()
+    findCollapsible()
+  }
+}
+</script>
 <template>
-  <h2>Header</h2>
   <div id="nav">
     <div class="nav full">
       <a class="card-link" href="#" onclick="pageGoBack('index.html');">
@@ -177,7 +202,7 @@
         <form class="auto_submit_item">
           <textarea
             class="textarea resize-ta"
-            onkeyup="addNote('note1Text')"
+            @keyup="this.addNotes()"
             id="note1Text"
           ></textarea>
         </form>
@@ -243,7 +268,7 @@
         <form class="auto_submit_item">
           <textarea
             class="textarea resize-ta"
-            onkeyup="addNote('note2Text')"
+             @keyup="this.addNotes()"
             id="note2Text"
           ></textarea>
         </form>
@@ -270,6 +295,6 @@
         </p>
       </div>
     </div>
-    <h3>Footer</h3>
+    <Footer/>
   </div>
 </template>

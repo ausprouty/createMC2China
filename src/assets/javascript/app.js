@@ -1,13 +1,8 @@
 // check to see if this is an index file for a series and get value index.json
-window.onload = function () {
-  var notes_page = document.getElementById("notes_page");
-  if (notes_page !== null) {
-    var notes = notes_page.value;
-    console.log(notes);
-    showNotes(notes);
-  }
+function listenerSetup() {
+
   findCollapsible();
-  //mc2DecideWhichVideosToShow();
+
   findSummaries();
   if (localStorage.getItem("mc2Trainer")) {
     // unhide all trainer notes
@@ -29,9 +24,9 @@ window.onload = function () {
     console.log("I am offline");
     hideWhenOffline();
   }
-};
+}
 
-function findSummaries() {
+export function findSummaries() {
   var coll = document.getElementsByClassName("summary");
   var i;
   for (i = 0; i < coll.length; i++) {
@@ -61,7 +56,7 @@ function findSummaries() {
   }
 }
 
-function findCollapsible() {
+export function findCollapsible() {
   var coll = document.getElementsByClassName("collapsible");
   var i;
   for (i = 0; i < coll.length; i++) {
@@ -92,7 +87,7 @@ function pageGoBack(page) {
   window.location.replace(page);
 }
 // to show verses
-function popUp(field) {
+export function popUp(field) {
   var content = document.getElementById(field);
   if (content.style.display === "block") {
     content.style.display = "none";
