@@ -1,6 +1,15 @@
 
-export function revealVideo() {
+import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
+
+export async function revealVideo() {
   console.log ('videoReveal');
+  await Diagnostic.getExternalSdCardDetails().then(async (data2)=>{
+      console.log (data2)
+  }).catch(error=>{
+      console.log("error time show ")
+      console.log(error);
+  });
+
   var template =`  <video id="video" width="100%" controls="controls" preload="metadata" autoplay="autoplay"
         webkit-playsinline="webkit-playsinline" class="videoPlayer">
         <source src="video/ZZZ.mp4" type="video/mp4">`;

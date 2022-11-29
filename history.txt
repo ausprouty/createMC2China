@@ -5,9 +5,15 @@ npm install @awesome-cordova-plugins/diagnostic --save
 npm install @awesome-cordova-plugins/file-path --save
 npm install @awesome-cordova-plugins/file --save
 
+npm install @capacitor/android
+
+npx cap init
+npx cap add android
 
 
-
-
+npm run build
 npx cap sync
 npx cap open android
+
+
+http://localhost/assets/index.231d43ee.js - Line 11 - Msg: Install the Diagnostic plugin: 'ionic cordova plugin add cordova.plugins.diagnostic'
