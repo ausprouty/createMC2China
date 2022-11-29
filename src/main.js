@@ -4,7 +4,9 @@ import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
 
-import "./assets/main.css";
+import "./assets/styles/appGlobal.css";
+import "./assets/styles/cardGlobal.css";
+import "./assets/styles/mc2Global.css";
 
 const app = createApp(App);
 
