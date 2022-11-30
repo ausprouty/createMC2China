@@ -19,10 +19,10 @@ export default {
     },
     async showAccess () {
       await Diagnostic.isExternalStorageAuthorized().then(async (data2) => {
-        console.log('is authorized?')
+        console.log('This is show access result')
         alert (data2)
         console.log(data2)
-        console.log('end of is authorized?')
+        console.log('end of show access result')
       }).catch(error => {
         console.log("error authorized")
         console.log(error);
