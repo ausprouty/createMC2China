@@ -18,7 +18,7 @@ npx cap add android
  android:requestLegacyExternalStorage="true"
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+npm install @capacitor/filesystem
 
 npm run build
 npx cap sync
