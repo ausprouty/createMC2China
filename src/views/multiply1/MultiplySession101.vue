@@ -1,40 +1,27 @@
 <script>
-import { showNotes, addNote} from "@/assets/javascript/notes.js";
-import { revealVideo } from "@/assets/javascript/revealVideo.js";
-import { findSummaries, findCollapsible } from "@/assets/javascript/app.js";
+import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
+import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
+import { useRevealVideo } from "@/assets/javascript/revealVideo.js";
 import Footer from '@/components/FooterGlobal.vue';
-import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
+
 export default {
   components: {
     Footer
   },
-  data () {
-    return {
-      page: 'multiply101'
-    };
-  },
-  methods:{
-    addNotes(){
-      addNote(this.page)
-    },
-    async showAccess () {
-      await Diagnostic.isExternalStorageAuthorized().then(async (data2) => {
-        console.log('This is show access result')
-        alert (data2)
-        console.log(data2)
-        console.log('end of show access result')
-      }).catch(error => {
-        console.log("error authorized")
-        console.log(error);
-      });
 
+  methods:{
+    addNote(){
+      useAddNote(this.$route.name)
+    },
+    popUp(verse){
+      usePopUp(verse)
     }
   },
   mounted () {
-    showNotes(this.page)
-    findSummaries()
-    findCollapsible()
-    revealVideo()
+    useShowNotes(this.$route.name)
+    useFindSummaries()
+    useFindCollapsible()
+    useRevealVideo()
   }
 }
 </script>
@@ -46,7 +33,6 @@ export default {
       </a>
     </div>
   </div>
-<div  @click="this.showAccess()"> What is the status of External Storage?</div>
   <div class="page_content ltr">
     <div class="block ltr">
       <div class="chapter_number ltr">
@@ -105,10 +91,9 @@ export default {
         <ul>
           <li class="nobreak-final-final">
             God loves people! The Bible tells us God&rsquo;s desire is that all
-            people are saved and come to understand the truth (<a
-              href="javascript:popUp('pop1')"
-              >1 Timothy 2:4</a
-            >).&nbsp;
+            people are saved and come to understand the truth (<span style="color:green"/>*  @click = "popUp('pop1')">
+
+              1 Timothy 2:4</span>).&nbsp;
 
             <div class="popup invisible" id="pop1">
               <!-- begin bible -->

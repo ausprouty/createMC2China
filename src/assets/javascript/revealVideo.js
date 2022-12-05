@@ -1,8 +1,8 @@
- import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
+import { Filesystem } from '@capacitor/filesystem';
 import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
 import { Capacitor } from '@capacitor/core';
 
-export async function revealVideo() {
+export async function useRevealVideo() {
   await Diagnostic.isExternalStorageAuthorized().then(async (response)=>{
     console.log ('revealVideo says external storage is Authorized')
      if (response == true){
@@ -16,7 +16,6 @@ export async function revealVideo() {
       console.log("error authorized")
       console.log(error);
   });
-  console.log ('after awaits');
 
    function setupListeners(){
     var template =`  <video id="video" width="100%" controls="controls" preload="metadata" autoplay="autoplay"
@@ -32,9 +31,10 @@ export async function revealVideo() {
         var filePath= localStorage.getItem('video_filepath')+ id + '.mp4'
         var readable = await canRead(filePath)
         console.log(readable)
+         var content = this.nextElementSibling
         if (readable){
           var video_url = localStorage.getItem('video_url')+ id
-          var content = this.nextElementSibling
+
           if (this.classList.contains('active') ){
             var video = template.replace('ZZZ', video_url)
             content.innerHTML = video
@@ -45,27 +45,32 @@ export async function revealVideo() {
             content.innerHTML =''
           }
         }
-        else{
-           content.innerHTML = 'Video files not found on SD Card'
-           content.classList.remove('collapsed')
+       if (!readable){
+          if (this.classList.contains('active') ){
+            content.innerHTML = 'Video files not found on SD Card'
+            content.classList.remove('collapsed')}
+          else{
+            content.classList.add('collapsed')
+            content.innerHTML =''
+          }
         }
-
       })
     }
   }
   async function canRead(file_name){
-    let readable = await Filesystem.stat({
+    await Filesystem.stat({
       path: file_name
-    });
+    }).then(async (response) =>{
     console.log ('can read')
-    console.log (JSON.stringify(readable) )
-    console.log (readable.size)
-    var can_read= false
-    if (typeof(readable.size) !== undefined){
-      can_read = true
-    }
-    return can_read
+    console.log (JSON.stringify(response) )
+    return true
+    }).catch(error=>{
+      console.log("error canRead")
+      console.log(error);
+      return false
+    });
   }
+
   function hideVideos(){
     console.log ('I am hiding videos')
     var coll = document.getElementsByClassName('external-movie')
@@ -83,10 +88,10 @@ export async function revealVideo() {
       var video_url= Capacitor.convertFileSrc(video_path)
       localStorage.setItem('video_url', video_url)
       return video_url
-  }).catch(error=>{
+    }).catch(error=>{
       console.log("error getExternalSdCardDetails")
       console.log(error);
-  });
+    });
   }
 
 

@@ -1,0 +1,212 @@
+<!--- publishFiles added onLoad -->
+<script>
+import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
+import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
+import { useRevealVideo } from "@/assets/javascript/revealVideo.js";
+import Footer from '@/components/FooterGlobal.vue';
+
+export default {
+  components: {
+    Footer
+  },
+
+  methods:{
+    addNote(){
+      useAddNote(this.$route.name)
+    },
+    popUp(verse){
+      usePopUp(verse)
+    },
+    vuePush(id){
+      this.$router.push({
+        name: id,
+      })
+    },
+  },
+  mounted () {
+    useShowNotes(this.$route.name)
+    useFindSummaries()
+    useFindCollapsible()
+    useRevealVideo()
+  }
+}
+</script>
+<template>
+  <div>
+<div class="page_content ltr">
+<div class="block ltr">
+                        <div class="chapter_number ltr"><h1>18.</h1></div>
+                        <div class="chapter_title ltr"><h1>Simple Church Service</h1></div>
+                    </div>
+<div id="showVideoOptions"></div>
+
+
+  <!-- Lesson 17: Simple Church Service -->
+<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
+</div>
+
+<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
+<div class="collapsed" id ="Text0">
+
+<ul>
+	<li class="back">Read a scripture and sing worship songs</li>
+	<li class="back">(Optional Creed) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;
+	<div class="popup invisible" id="pop1"><!-- begin bible -->
+	<div>
+	<div>
+	<div>
+	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
+	</div>
+	</div>
+	</div>
+	<!-- end bible --></div>
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a)
+
+	<div class="popup invisible" id="pop2"><!-- begin bible -->
+	<div>
+	<div>
+	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
+	</div>
+	</div>
+	</div>
+	</li>
+</ul>
+
+</div>
+
+<ul>
+</ul>
+
+<h2 class="back">Care</h2>
+
+<p class="back"><em>Minister to one another&rsquo;s needs in prayer, biblical counsel and encouragement</em>.</p>
+
+<ul class="back">
+	<li>Ask each person to tell one highlight and explain one challenge they experienced this week.</li>
+	<li>Ask, &ldquo;What do you want Jesus to do for you this week?&rdquo;&nbsp; Pray for each other&rsquo;s needs.</li>
+</ul>
+
+<h2 class="back">Celebrate Faithfulness</h2>
+
+<p class="back"><em>Encourage loving accountability to obey Jesus</em></p>
+
+<ul class="back">
+	<li>What happened as you trusted God with your goals and I will statements?</li>
+</ul>
+
+<div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
+<div class="collapsed" id ="Text1">
+
+<p class="back"><em>Cast vision for who each person can become in Christ or what God can do through each person by:</em></p>
+
+<ul class="back">
+	<li>A scripture that reminds everyone of the Father&rsquo;s Heart and of the end vision.</li>
+	<li>Reflecting on the changes in their life since they started following Christ</li>
+	<li>Reminding everyone of what God wants to do through them</li>
+</ul>
+
+<p class="back">Our vision <em>&ldquo;A church for every village and community, and the gospel for every person.</em>&rdquo;</p>
+
+</div>
+
+<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
+</div>
+
+<h2 class="up">Context</h2>
+
+<ul>
+	<li class="up">Ask the group to tell the story from last week.</li>
+</ul>
+
+<h2 class="up">Read</h2>
+
+<ul class="up">
+	<li>Read or watch the new story two times as others listen.</li>
+</ul>
+
+<h2 class="up">Discovery Discussion</h2>
+
+<ul class="up">
+	<li>Use the stories and questions found in the Life of Christ study &ndash; <em>Being Like Jesus: The Kingdom Model</em></li>
+	<li>Use the stories and questions found in the Acts study &ndash; <em>Sent Like Jesus: The Kingdom Expanding</em></li>
+</ul>
+
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text" ></textarea></div>
+
+<h2 class="up">Read, Tell and Correct</h2>
+
+<ul class="up">
+	<li>Read the story again.&nbsp; Have someone tell the story and ask the group to correct if necessary.</li>
+</ul>
+
+<div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
+<div class="collapsed" id ="Text2">
+
+<ul class="up">
+	<li>Summarize the main points of the discovery discussion.</li>
+	<li>Read the summary from the Facilitator&rsquo;s Guide.</li>
+	<li>Include a memory verse from the summary or from the story.</li>
+</ul>
+
+<p class="up">Practice giving and communion in this section or in the Preparing for Mission section.</p>
+
+</div>
+
+<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
+</div>
+
+<div id="Summary3" class="summary"><h2 class="forward">+ Preparing for the Mission</h2></div>
+<div class="collapsed" id ="Text3">
+
+<ul class="forward">
+	<li>Practice needed skills or previous topics to help prepare to minister to others:
+	<ul class="forward">
+		<li>Prayer, Care, Share</li>
+		<li>Gospel</li>
+		<li>Foundational Bible Studies.</li>
+	</ul>
+	</li>
+	<li>Practice giving as agreed upon.</li>
+	<li>Remember Jesus&rsquo; sacrifice through communion, if appropriate.</li>
+</ul>
+
+</div>
+
+<ul class="forward">
+</ul>
+
+<h2 class="forward">Going on the Mission</h2>
+
+<ul class="forward">
+	<li>Identify 5 people from your Network List with whom you will take the initiative to minister to this week.</li>
+	<li>Write &ldquo;I will by when&rdquo; statements and tell them to your small group.</li>
+</ul>
+
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text" ></textarea></div>
+
+<h2 class="forward">Praying for the Mission</h2>
+
+<p class="forward">Commit everyone&rsquo;s goals to the Lord. Ask the Lord to help us be faithful and use us to start a movement of disciple-makers.</p>
+
+<h2 class="forward">Benediction (optional)</h2>
+
+
+<!--- Language Specific Javascripts-->
+<script src="../javascript/mc2VideoOptions.js"></script>
+
+</div><form>
+<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply117.html">
+</form><!--- Created by publishPage-->
+</div>
+  <Footer/>
+</template>

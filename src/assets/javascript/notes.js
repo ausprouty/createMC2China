@@ -1,7 +1,7 @@
 import { onMounted, onUnmounted } from "vue";
 
 
-export function showNotes(page) {
+export function useShowNotes(page) {
     console.log("this will show notes for " + page);
     var response = localStorage.getItem(page);
     if (!response) {
@@ -23,7 +23,7 @@ export function showNotes(page) {
     return;
   }
 
-  export function addNote(notesPage) {
+  export function useAddNote(notesPage) {
     // find ids of all textareas
     var txtAreas = document.getElementsByTagName("textarea");
     var len = txtAreas.length;
@@ -40,6 +40,5 @@ export function showNotes(page) {
       console.log(entry);
       notes[i] = entry;
     }
-
     localStorage.setItem(notesPage, JSON.stringify(notes)); //put the object back
   }

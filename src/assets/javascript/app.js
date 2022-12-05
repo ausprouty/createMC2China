@@ -1,9 +1,5 @@
 // check to see if this is an index file for a series and get value index.json
-function listenerSetup() {
-
-  findCollapsible();
-
-  findSummaries();
+function useMc2Trainerp() {
   if (localStorage.getItem("mc2Trainer")) {
     // unhide all trainer notes
     var elements = document.getElementsByClassName("trainer-hide");
@@ -20,13 +16,10 @@ function listenerSetup() {
       elements[i].style.display = "block";
     }
   }
-  if (!navigator.onLine) {
-    console.log("I am offline");
-    hideWhenOffline();
-  }
+
 }
 
-export function findSummaries() {
+export function useFindSummaries() {
   var coll = document.getElementsByClassName("summary");
   var i;
   for (i = 0; i < coll.length; i++) {
@@ -56,7 +49,7 @@ export function findSummaries() {
   }
 }
 
-export function findCollapsible() {
+export function useFindCollapsible() {
   var coll = document.getElementsByClassName("collapsible");
   var i;
   for (i = 0; i < coll.length; i++) {
@@ -87,7 +80,7 @@ function pageGoBack(page) {
   window.location.replace(page);
 }
 // to show verses
-export function popUp(field) {
+export function usePopUp(field) {
   var content = document.getElementById(field);
   if (content.style.display === "block") {
     content.style.display = "none";
@@ -136,31 +129,4 @@ function hideWhenOffline() {
       links[i].style.display = "none";
     }
   }
-}
-
-// get value of variable in array
-// is id in key?
-function inLocalStorage(key, id) {
-  var deferred = $.Deferred();
-  var result = "";
-  console.log("looking offline for local storage");
-  var key_value = localStorage.getItem(key);
-  if (typeof key_value != "undefined" && key_value) {
-    key_value = JSON.parse(key_value);
-    console.log(key_value);
-    key_value.forEach(function (array_value) {
-      console.log(array_value + "  array value");
-      console.log(id + "  id");
-      if (array_value == id) {
-        console.log("stored locally");
-        result = id;
-      }
-    });
-    console.log(result);
-  } else {
-    result = "";
-    console.log("not stored locally");
-  }
-  deferred.resolve(result);
-  return deferred.promise();
 }
