@@ -29,7 +29,7 @@ export default {
   <div id="nav">
     <div class="nav full">
       <a class="card-link" href="#" onclick="pageGoBack('index.html');">
-        <img src="@/assets/images/back-ribbon-mc2.png" class="nav full" />
+        <img src="@/assets/images/standard/back-ribbon-mc2.png" class="nav full" />
       </a>
     </div>
   </div>
@@ -46,7 +46,7 @@ export default {
 
     <!-- Lesson 1: Assurance of Salvation -->
     <div class="lesson">
-      <img class="lesson-icon" src="@/assets/images/look-back.png" />
+      <img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
       <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
     </div>
 
@@ -117,7 +117,7 @@ export default {
       </div>
 
       <div class="lesson">
-        <img class="lesson-icon" src="@/assets/images/look-up.png" />
+        <img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
         <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
       </div>
 
@@ -229,7 +229,7 @@ export default {
       </div>
 
       <div class="lesson">
-        <img class="lesson-icon" src="@/assets/images/look-forward.png" />
+        <img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
         <div class="lesson-subtitle">
           <span class="forward">LOOKING FORWARD</span>
         </div>

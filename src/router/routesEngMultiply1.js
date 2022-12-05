@@ -1,7 +1,7 @@
 export default[
 
     {
-        path: "/M2/eng/multiply1/Index",
+        path: "/M2/eng/multiply1/index",
         name: "eng-multiply1-index",
         component: function () {
           return import(

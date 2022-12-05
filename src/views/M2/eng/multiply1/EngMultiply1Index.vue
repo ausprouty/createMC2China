@@ -14,7 +14,7 @@ export default {
 
   <div class="page_content" dir="ltr">
     <div class="app-series-header">
-      <img src="@assets/M2/images/standard/Multiply1.png" class="app-series-header" />
+      <img src="@assets/images/eng/standard/Multiply1.png" class="app-series-header" />
     </div>
     <div>
       Called by Jesus is designed to help you and your friends discover more about what Jesus has done for you and
