@@ -9,7 +9,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     ...routesMultiply1,
-    ...routesEngMultiply1.js,
+    ...routesEngMultiply1,
     {
       path: "/",
       name: "home",

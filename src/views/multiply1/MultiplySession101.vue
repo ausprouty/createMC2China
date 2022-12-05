@@ -91,7 +91,7 @@ export default {
         <ul>
           <li class="nobreak-final-final">
             God loves people! The Bible tells us God&rsquo;s desire is that all
-            people are saved and come to understand the truth (<span style="color:green"/>*  @click = "popUp('pop1')">
+            people are saved and come to understand the truth (<span style="color:green" @click = "popUp('pop1')">
 
               1 Timothy 2:4</span>).&nbsp;
 

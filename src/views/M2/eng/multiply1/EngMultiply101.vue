@@ -81,7 +81,7 @@ export default {
 <div class="collapsed" id ="Text1">
 
 <ul>
-	<li class="nobreak-final-final">God loves people! The Bible tells us God&rsquo;s desire is that all people are saved and come to understand the truth (<span class="popup-link" @click = "popUp('pop1')"> 1 Timothy 2:4</span>).&nbsp;
+	<li class="nobreak-final-final">God loves people! The Bible tells us God&rsquo;s desire is that all people are saved and come to understand the truth (<span class="popup-link" @click = "popUp('pop1')" 1 Timothy 2:4</span>).&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
@@ -110,7 +110,9 @@ export default {
 
 <p class="up">Read or watch<strong>&nbsp;John 10:22-30</strong> two times as everyone listens</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 10:22-30</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read
+
+John 10:22-30</button><div class="collapsed" id ="Text0">
 
 <p><sup>22&nbsp;</sup>Then came the Festival of Dedication at Jerusalem. It was winter,<sup class="versenum">23&nbsp;</sup>and Jesus was in the temple courts walking in Solomon&rsquo;s Colonnade.<sup class="versenum">24&nbsp;</sup>The Jews who were there gathered around him, saying, &ldquo;How long will you keep us in suspense? If you are the Messiah, tell us plainly.&rdquo;</p>
 
