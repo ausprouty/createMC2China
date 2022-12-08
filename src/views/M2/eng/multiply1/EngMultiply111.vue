@@ -1,8 +1,9 @@
 <script>
-import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
-import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
-import { useRevealVideo } from "@/assets/javascript/revealVideo.js";
-import Footer from '@/components/FooterGlobal.vue';
+import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
+import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
+import { useGoToPageAndSetReturn, usePageGoBack } from "@/assets/javascript/travel.js"
+import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
+import Footer from '@/components/FooterGlobal.vue'
 
 export default {
   components: {
@@ -13,6 +14,12 @@ export default {
     addNote(){
       useAddNote(this.$route.name)
     },
+    goToPageAndSetReturn(goto){
+      useGoToPageAndSetReturn(goto, this.$route.name)
+    },
+    pageGoBack(){
+      usePageGoBack()
+    },
     popUp(verse){
       usePopUp(verse)
     },
@@ -22,12 +29,16 @@ export default {
       })
     },
   },
-  mounted () {
-    useShowNotes(this.$route.name)
+  mounted() {
     useFindSummaries()
     useFindCollapsible()
-    useRevealVideo()
-  }
+    let route_path = this.$route.path
+    let last = route_path.lastIndexOf('/')
+    let series_path = route_path.substr(0, last)
+    console.log (series_path)
+    useRevealMedia(series_path)
+    useShowNotes(this.$route.name)
+  },
 }
 </script>
 <template>
@@ -247,7 +258,7 @@ export default {
 
 <div class="for-enrichment">
 <p>For further enrichment: Read <em><!-- begin linkInternal sdcard-->
-<span class="internal-link" @click="goToPageAndSetReturn('/M2/eng/tc/tc05.html', '#1')">
+<span id= "return1" class="internal-link" @click="this.goToPageAndSetReturn('/M2/eng/tc/tc05', '#1')">
     Transferable Concept #5: How you can be a fruitful witness 
 </span>
 <!-- end linkInternal sdcard-->
