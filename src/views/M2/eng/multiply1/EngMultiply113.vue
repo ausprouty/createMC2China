@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 13: Commiting to one another-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 100</span>
 
@@ -95,8 +96,10 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> Ephesians 2:1-10</span>.&nbsp;
 
@@ -114,12 +117,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 <p class="up">During a Jewish feast called Pentecost, Jews from all over the world were in Jerusalem. God sent the Holy Spirit on 120 of His followers who had gathered together. Through the Spirit&rsquo;s power, the 120 followers began speaking in the languages of the visitors from all over the world. Peter began preaching to a crowd about the death and resurrection of Jesus, proving He was the Messiah. As a result, 3,000 people believed and were baptized. But what came next after they believed?&nbsp;</p>
 
 </div>
@@ -135,7 +140,7 @@ export default {
 <p><sup class="versenum">42&nbsp;</sup>They devoted themselves to the apostles&rsquo; teaching and to fellowship, to the breaking of bread and to prayer.<sup class="versenum">43&nbsp;</sup>Everyone was filled with awe at the many wonders and signs performed by the apostles.<sup class="versenum">44&nbsp;</sup>All the believers were together and had everything in common.<sup class="versenum">45&nbsp;</sup>They sold property and possessions to give to anyone who had need.<sup class="versenum">46&nbsp;</sup>Every day they continued to meet together in the temple courts. They broke bread in their homes and ate together with glad and sincere hearts,<sup class="versenum">47&nbsp;</sup>praising God and enjoying the favor of all the people. And the Lord added to their number daily those who were being saved.</p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -152,10 +157,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text"></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -163,8 +176,10 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Matthew 16:18</span>.&nbsp;
 
@@ -180,12 +195,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text4">
+<!-- end default revealSummary -->
 <ul>
 	<li class="forward">Practice drawing the church health circle as an easy way to remember all the characteristics of church. Include: worship, fellowship, studying God&rsquo;s word, prayer, Lord&rsquo;s Supper, baptism, ministry, witness, giving and caring leaders.</li>
 	<li class="forward">Discuss the following: &ldquo;Does this group want to make that same commitment to one another? To be the Lord&rsquo;s church in this place?&rdquo;&nbsp;</li>
@@ -204,10 +221,18 @@ export default {
 	<li class="forward">Commit everyone&rsquo;s goals to the Lord. Ask the Lord to help us be faithful and use us to start a movement of people living the MyFriends Lifestyle.&nbsp;</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text"></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -216,16 +241,17 @@ export default {
 </ul>
 
 <div class="for-enrichment">
-<p>For further enrichment: Read <a id = "Return1" href="#" onclick="goToPageAndSetReturn('../tc/tc08.html', '#Return1');">Transferable Concept #8: How to Love By Faith</a> and discuss with another group member.</p>
+<p>For further enrichment: Read <!-- begin linkInternal sdcard-->
+<span class="internal-link" @click="goToPageAndSetReturn('/M2/eng/tc/tc08.html', '#1')">
+    Transferable Concept #8: How to Love By Faith 
+</span>
+<!-- end linkInternal sdcard-->
+ and discuss with another group member.</p>
 </div>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply113.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

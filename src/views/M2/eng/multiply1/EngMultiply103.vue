@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 3: Keeping in step with the Spirit-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <p class="back">Psalm 66:4 &ldquo;Everything on earth will worship you; they will sing your praises ... in glorious songs.&rdquo; Let&rsquo;s pause and praise God with a simple song</p>
 
 </div>
@@ -70,18 +71,22 @@ export default {
 <ul class="back">
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 <p class="back">One day a woman went to visit her neighbour. As they were talking, she shared the gospel with her neighbour and her neighbour placed her faith in Christ. But then the woman started crying. &ldquo;My husband just died two weeks ago. Why didn&rsquo;t you tell me this sooner?&rdquo; You see, we never know when people&rsquo;s last day will be. That&rsquo;s why we must share the gospel when we have the chance.</p>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 <p class="up">When we place our faith in Jesus, God&rsquo;s Spirit begins to live inside of us. He is called the Holy Spirit, the Spirit of Truth and our Helper. His ministry in our lives is so important that we will take time to study our relationship with Him.&nbsp;</p>
 
 </div>
@@ -100,7 +105,7 @@ export default {
 
 <p><sup class="versenum">3:1&nbsp;</sup>Brothers and sisters, I could not address you as people who live by the Spirit but as people who are still worldly&mdash;mere infants in Christ.<sup class="versenum">2&nbsp;</sup>I gave you milk, not solid food, for you were not yet ready for it. Indeed, you are still not ready.<sup class="versenum">3&nbsp;</sup>You are still worldly. For since there is jealousy and quarreling among you, are you not worldly? Are you not acting like mere humans?</p>
 
-<p>Read More</a></p>
+<p></p>
 <!-- end bible -->
 
 </div>
@@ -114,10 +119,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?&nbsp;</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text"></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -125,8 +138,10 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Though all Christians have the Spirit living in them, not all Christians are directed and empowered by the Spirit. When we trust in our own efforts or take control of our lives, the Bible calls us carnal and we don&rsquo;t experience an abundant or fruitful life. Read <span class="popup-link" @click = "popUp('pop1')"> Galatians 5:22-24</span>.&nbsp;
 
@@ -140,16 +155,18 @@ export default {
 	We can use 3 circles to help us remember the 3 types of people described in 1 Corinthians.</li>
 </ul>
 
-<h2 class="up"><img alt="3 circles" src="content/M2/eng/tc/transferable-concepts-image-20.png" /></h2>
+<h2 class="up"><img alt="3 circles" src="@/assets/eng/tc/transferable-concepts-image-20.png" /></h2>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><p>+ Preparing for Mission</p></div>
 <div class="collapsed" id ="Text4">
+<!-- end default revealSummary -->
 <p class="forward">Review Spiritual Breathing</p>
 
 <ul class="forward">
@@ -189,10 +206,18 @@ export default {
 	<li>Identify additional faith actions they will take with others (use &ldquo;I will __ by __&rdquo;).</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text"></textarea></div>
 
 <h2 class="forward">Praying for the Mission&nbsp;</h2>
 
@@ -201,16 +226,17 @@ export default {
 </ul>
 
 <div class="for-enrichment">
-<p>For further enrichment: Read <a id = "Return1" href="#" onclick="goToPageAndSetReturn('../tc/tc03.html', '#Return1');">Transferable Concept #3: How you can be filled with the Holy Spirit </a>and discuss with another group member.&nbsp;</p>
+<p>For further enrichment: Read <!-- begin linkInternal sdcard-->
+<span class="internal-link" @click="goToPageAndSetReturn('/M2/eng/tc/tc03.html', '#1')">
+    Transferable Concept #3: How you can be filled with the Holy Spirit  
+</span>
+<!-- end linkInternal sdcard-->
+and discuss with another group member.&nbsp;</p>
 </div>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply103.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

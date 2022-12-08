@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 16: Cost of Discipleship -->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <ul>
 	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Hebrews 13:14-15</span>
 
@@ -104,18 +105,22 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 <p class="back">God&rsquo;s heart is for all the lost. Yet, so many places around us do not have followers of Jesus to be a light for the community and show God&rsquo;s love to the people there. As followers of Jesus, we are called by God to align our hearts to His heart for ALL the lost. We need to pursue a big vision that will reach all lost communities around us. We are trusting God to use us to bring &ldquo;a church for every village and community and the gospel for every person!&rdquo;&nbsp;</p>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 <p class="up">Large crowds were beginning to follow Jesus. They heard of the miraculous healings and the feedings of the multitudes. They were attracted to Him because of the benefits they hoped to receive from Him. But Jesus knew their hearts. He knew they really were not willing to follow Him unconditionally. He wanted them to recognize that to follow Him meant to surrender everything to Him.&nbsp;</p>
 
 </div>
@@ -133,7 +138,7 @@ export default {
 <p><sup class="versenum">31&nbsp;</sup>&ldquo;Or suppose a king is about to go to war against another king. Won&rsquo;t he first sit down and consider whether he is able with ten thousand men to oppose the one coming against him with twenty thousand?<sup class="versenum">32&nbsp;</sup>If he is not able, he will send a delegation while the other is still a long way off and will ask for terms of peace.<sup class="versenum">33&nbsp;</sup>In the same way, those of you who do not give up everything you have cannot be my disciples.</p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -150,10 +155,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text" ></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -161,8 +174,10 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">When we follow Christ, the benefits are eternal and beyond compare: forgiveness of sins, salvation, and security in the King of Kings and Lord of Lords. But being a disciple of Jesus will not make you exempt from pain and trials. Because we live in an evil world, following Christ will also bring you persecution and challenges. Anyone who desires to live a godly life in Jesus will be persecuted by others. But let&rsquo;s be encouraged by Peter, one of Jesus&rsquo; closest friends, read <span class="popup-link" @click = "popUp('pop4')"> 1 Peter 4:12-16</span>&nbsp;and
 
@@ -187,10 +202,11 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary">
 <div class="page_content ltr">
 <div class="block ltr">
@@ -201,23 +217,27 @@ export default {
 
 
   <!-- Lesson 16: Cost of Discipleship -->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span>+ </div>
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>+ 
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <ul>
 	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Hebrews 13:14-15</span>
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
-	<p><sup class="versenum">14&nbsp;</sup>For here we do not have an enduring city, but we are looking for the city that is t</span></div>
+	<p><sup class="versenum">14&nbsp;</sup>For here we do not have an enduring city, but we are looking for the city that is to</div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <ul>
 	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Hebrews 13:14-15</span>
 
@@ -225,7 +245,8 @@ export default {
 	<div>
 	<div>
 	<p><sup class="versenum">14&nbsp;</sup>For here we do not have an enduring city, but we are looking for the city that is to come.</p></div>
-<div class="collapsed" id ="Text4"><div class="reveal">&nbsp;
+<div class="collapsed" id ="Text4">
+<!-- end default revealSummary --><div class="reveal">&nbsp;
 
 <h2 class="forward">Preparing for Mission</h2>
 
@@ -247,10 +268,18 @@ export default {
 	<li>Write &ldquo;I will by when&rdquo; statements and tell them to your small group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text" ></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -259,12 +288,8 @@ export default {
 </ul>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply116.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

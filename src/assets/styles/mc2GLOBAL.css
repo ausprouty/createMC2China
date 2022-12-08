@@ -33,7 +33,8 @@ div.login-note {
   padding-bottom: 50px;
 }
 
-.bible-link {
+.bible-link,
+.internal-link {
   color: var(--color-bible-link-mc2);
 }
 .dbs-instruction {

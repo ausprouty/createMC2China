@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 10: My Story-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</span>
 
@@ -88,8 +89,10 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">In<span class="popup-link" @click = "popUp('pop2')">  John 3:8</span>,&nbsp;
 
@@ -105,12 +108,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 <p class="up">Paul had been arrested because he was falsely accused by the Jewish leaders of breaking a temple law. During his defence before the Governor, Paul shared the story of how he came to know Christ.</p>
 
 </div>
@@ -148,7 +153,7 @@ export default {
 <p><sup class="versenum">21&nbsp;</sup>&ldquo;Then the Lord said to me, &lsquo;Go; I will send you far away to the Gentiles.&rsquo; &rdquo;</p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -165,10 +170,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text" ></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -176,8 +189,10 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 <p class="up">Paul&rsquo;s story (testimony) can be summarized in 3 parts:</p>
 
 <ul>
@@ -190,10 +205,11 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary">
 <div class="page_content ltr">
 <div class="block ltr">
@@ -204,13 +220,15 @@ export default {
 
 
   <!-- Lesson 10: My Story-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
-<ul>+ 
+<!-- end default revealSummary -->+ 
+<ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</span>
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
@@ -225,7 +243,8 @@ export default {
 	<sup class="versenum">35&nbsp;</sup>&ldquo;Who has ever given to God,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;that God should repay them?&rdquo;<br />
 	<sup class="versenum">36&nbsp;</sup>For from him and through him and for him are all things.<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;To him be the glory forever! A<ul>
+	&nbsp;&nbsp;&nbsp;&nbsp;<!-- end default revealSummary -->
+<ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</span>
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
@@ -241,7 +260,8 @@ export default {
 	&nbsp;&nbsp;&nbsp;&nbsp;that God should repay them?&rdquo;<br />
 	<sup class="versenum">36&nbsp;</sup>For from him and through him and for him are all things.<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;To him be the glory forever! Amen.</p></div>
-<div class="collapsed" id ="Text4"><div class="reveal">&nbsp;
+<div class="collapsed" id ="Text4">
+<!-- end default revealSummary --><div class="reveal">&nbsp;
 
 <h2 class="forward">Preparing for Mission</h2>
 
@@ -270,10 +290,18 @@ export default {
 	<li>Write &ldquo;I will by when&rdquo; statements and tell them to your small group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text" ></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -282,12 +310,8 @@ export default {
 </ul>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply110.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

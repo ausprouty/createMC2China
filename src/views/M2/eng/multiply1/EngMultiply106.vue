@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 6: Talking with God-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 
 <p class="back">Read Psalm 100:2 &ldquo;Worship the Lord with gladness. Come before Him, singing with joy.&rdquo; Let&rsquo;s learn a song we can use to worship the Lord.&nbsp;</p>
 
@@ -69,19 +70,23 @@ export default {
 	<li>Were you able to tell anyone about your decision to follow Christ?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 
 <p class="back">As Jesus went through all the towns and villages, he saw the needs of the people and had compassion on them. He said to his disciples, &quot;The harvest is plentiful, but the workers are few. Ask the Lord of the harvest, therefore, to send out workers into his harvest field.&quot; God wants all people to know him and his love. He wants to use us and He will also raise up more workers from the harvest we will reap. Let&rsquo;s keep asking God to send more workers to lead people to know Him.&nbsp;</p>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 
 <p class="up">Even though Jesus was busy in ministry, he spent a lot of time talking to the Father. As his followers watched him, they too wanted to learn how to talk to the Father. Today we will learn what he told them.&nbsp;</p>
 
@@ -114,7 +119,7 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 <p><sup class="versenum">11&nbsp;</sup>&ldquo;Which of you fathers, if your son asks for a fish, will give him a snake instead?<sup class="versenum">12&nbsp;</sup>Or if he asks for an egg, will give him a scorpion?<sup class="versenum">13&nbsp;</sup>If you then, though you are evil, know how to give good gifts to your children, how much more will your Father in heaven give the Holy Spirit to those who ask him!&rdquo;</p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -131,10 +136,18 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text"></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -142,8 +155,10 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 
 <p class="up">Prayer is simply talking to our heavenly Father. We can use these four points to summarize what Jesus taught:&nbsp;</p>
 
@@ -158,12 +173,14 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><h2 class="forward">+ Preparing for the Mission</h2></div>
 <div class="collapsed" id ="Text4">
+<!-- end default revealSummary -->
 
 <ul class="forward">
 	<li>Practice praying using the 4 points of the summary.</li>
@@ -182,10 +199,18 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 	<li>Write &ldquo;I will by when&rdquo; statements and tell them to your small group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text"></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -194,16 +219,17 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 </ul>
 
 <div class="for-enrichment">
-<p>For further enrichment: Read <a id = "Return1" href="#" onclick="goToPageAndSetReturn('../tc/tc01.html', '#Return1');"> Transferable Concept #1: How You Can Be Sure You Are A Christian </a> and discuss with another group member</p>
+<p>For further enrichment: Read <!-- begin linkInternal sdcard-->
+<span class="internal-link" @click="goToPageAndSetReturn('/M2/eng/tc/tc01.html', '#1')">
+     Transferable Concept #1: How You Can Be Sure You Are A Christian  
+</span>
+<!-- end linkInternal sdcard-->
+ and discuss with another group member</p>
 </div>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply106.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

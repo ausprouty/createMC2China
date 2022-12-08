@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 4: Boldly Identifying with Jesus-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 
 <p class="back">Psalm 29:2 &ldquo;Give honour to the Lord and worship Him in the glory of His holiness.&rdquo; Let&rsquo;s pause and give honour to the Lord by praising Him.</p>
 
@@ -68,8 +69,10 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 
 <ul>
 	<li class="nobreak-final-final">The Lord not only loves us, He has a vision for our lives. What is that vision? It is to be like Christ. <span class="popup-link" @click = "popUp('pop1')"> Romans 8:29</span>
@@ -95,12 +98,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 
 <p class="up">A follower of Jesus named Philip had been sharing the gospel with people in an area of Israel called Samaria. The Lord interrupted his ministry and told him to go south along the road leading toward Egypt. When he arrived, he found an African leader who was traveling back to his home country. This story tells us what happened.&nbsp;</p>
 
@@ -117,7 +122,7 @@ export default {
 <p><sup class="versenum">36&nbsp;</sup>As they traveled along the road, they came to some water and the eunuch said, &ldquo;Look, here is water. What can stand in the way of my being baptized?&rdquo;<sup class="versenum">[37]&nbsp;</sup><sup class="versenum">38&nbsp;</sup>And he gave orders to stop the chariot. Then both Philip and the eunuch went down into the water and Philip baptized him.<sup class="versenum">39&nbsp;</sup>When they came up out of the water, the Spirit of the Lord suddenly took Philip away, and the eunuch did not see him again, but went on his way rejoicing.<sup class="versenum">40&nbsp;</sup>Philip, however, appeared at Azotus and traveled about, preaching the gospel in all the towns until he reached Caesarea.</p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -134,10 +139,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text" ></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -145,8 +158,10 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Matthew 3:13-17</span>.&nbsp;
@@ -178,12 +193,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text4">
+<!-- end default revealSummary -->
 
 <ul class="forward">
 	<li class="forward">The Holy Spirit is working in the lives of people you know to draw them to Jesus. The Holy Spirit wants to express the love of the Father through you so they can experience Jesus and connect with Him personally. The daily act of pray, care, share is the first step in this process (<span class="popup-link" @click = "popUp('pop5')"> Acts 17:27</span>).&nbsp;
@@ -212,10 +229,18 @@ export default {
 	<li>Write &ldquo;I will by when&rdquo; statements and tell them to your group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text" ></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -224,12 +249,8 @@ export default {
 </ul>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply104.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

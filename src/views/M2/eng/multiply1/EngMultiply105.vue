@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 5: Growing through God's Word-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <p class="back">Read Rev 7:12 &ldquo;Let&rsquo;s honour and worship the Lord through a song.&rdquo;&nbsp;</p>
 
 </div>
@@ -67,8 +68,10 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">God has given us every spiritual blessing through Jesus. He has adopted us into His family and calls us His children. &ldquo;You were included in Christ when you heard the word of truth, the gospel of your salvation. Having believed, you were marked in Him with a seal, the promised Holy Spirit, who is a deposit guaranteeing our inheritance.&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Ephesians 3:13-14a</span>).
 
@@ -86,12 +89,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 <p class="up">After Jesus&rsquo; resurrection, He appeared to His disciples many times during a 40-day period. One of the times He appeared while they were meeting in a large room and He explained the importance of His Word.&nbsp;</p>
 
 </div>
@@ -113,7 +118,7 @@ export default {
 <p><sup class="versenum">45&nbsp;</sup>Then he opened their minds so they could understand the Scriptures.<sup class="versenum">46&nbsp;</sup>He told them, &ldquo;This is what is written: The Messiah will suffer and rise from the dead on the third day,<sup class="versenum">47&nbsp;</sup>and repentance for the forgiveness of sins will be preached in his name to all nations, beginning at Jerusalem.<sup class="versenum">48&nbsp;</sup>You are witnesses of these things.<sup class="versenum">49&nbsp;</sup>I am going to send you what my Father has promised; but stay in the city until you have been clothed with power from on high.&rdquo;</p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -130,10 +135,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text"></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -141,8 +154,10 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 <p class="up">Jesus wants us to understand God&rsquo;s Word and what it teaches us about Him. Jesus&rsquo; life fulfilled the promises in God&rsquo;s Word. He wants us to tell others about what we learn.&nbsp;</p>
 
 <ul>
@@ -180,12 +195,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text4">
+<!-- end default revealSummary -->
 <ul class="forward">
 	<li>Make a commitment to read at least one chapter from the Word of God each day, beginning with the Gospel of John.</li>
 	<li>Pray that the Holy Spirit will teach you through His Word, read the chapter, and then answer three questions: &nbsp;
@@ -210,10 +227,18 @@ export default {
 	<li class="forward">Write &ldquo;I will by when&rdquo; statements and tell them to your small group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text"></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -222,16 +247,17 @@ export default {
 </ul>
 
 <div class="for-enrichment">
-<p>For further enrichment: Read&nbsp;<a id = "Return1" href="#" onclick="goToPageAndSetReturn('../tc/tc01.html', '#Return1');">Transferable Concept #1: How You Can Be Sure You Are A Christian</a> and discuss with another group member.</p>
+<p>For further enrichment: Read&nbsp;<!-- begin linkInternal sdcard-->
+<span class="internal-link" @click="goToPageAndSetReturn('/M2/eng/tc/tc01.html', '#1')">
+    Transferable Concept #1: How You Can Be Sure You Are A Christian 
+</span>
+<!-- end linkInternal sdcard-->
+ and discuss with another group member.</p>
 </div>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply105.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

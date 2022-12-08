@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 11: Being a witness-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 95:1-7</span>
 
@@ -104,8 +105,10 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final"><span class="back">In the book of Acts, we see how believers trained others to be trainers of others. One of the first followers of Jesus was a man named Barnabas. He found a new believer named Paul and helped him. Paul found a young believer named Timothy and took Timothy with him to share the gospel in many places. Later, Paul wrote to Timothy that he should train faithful men in the churches to find other younger Christians to train. Read <span class="popup-link" @click = "popUp('pop2')"> 2 Timothy 2:2</span>.&nbsp;</span>
 
@@ -124,12 +127,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 <p><span class="up">After Jesus was raised from the dead, He continued teaching His disciples about God&rsquo;s Kingdom. During His last meeting with them, He reinforced the mission they were being called to and about the help that would be provided to them.</span></p>
 
 </div>
@@ -147,7 +152,7 @@ export default {
 <p><span class="up"><sup class="versenum">7 </sup>He said to them: &ldquo;It is not for you to know the times or dates the Father has set by his own authority.<sup class="versenum">8 </sup>But you will receive power when the Holy Spirit comes on you; and you will be my witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth.&rdquo;</span></p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -164,10 +169,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text"></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -175,18 +188,22 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 <p class="up">To follow Jesus means that we will obey His command to be His witnesses. But we can only do what is needed with the help of the power of the Holy Spirit in our lives. Only as He empowers us, can we be effective witnesses. God&rsquo;s desire is that we witness to everyone--those like us and those not like us; those near to us and those who live all over the world. Knowing how to share the gospel is a key skill in field 2 of the Kingdom Growth Process.</p>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text4">
+<!-- end default revealSummary -->
 <ul class="forward">
 	<li>Remind them: Success in witnessing is simply taking the initiative to share Christ in the power of the Holy Spirit and leaving the results to God.</li>
 	<li>Review the Spiritual Breathing principle and give personal opportunity to Exhale and Inhale</li>
@@ -209,10 +226,18 @@ export default {
 	<li>Write &ldquo;I will by when&rdquo; statements and share with your small group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text"></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -221,16 +246,17 @@ export default {
 </ul>
 
 <div class="for-enrichment">
-<p>For further enrichment: Read <em><a id = "Return1" href="#" onclick="goToPageAndSetReturn('../tc/tc05.html', '#Return1');">Transferable Concept #5: How you can be a fruitful witness</a></em> and discuss with another group member.</p>
+<p>For further enrichment: Read <em><!-- begin linkInternal sdcard-->
+<span class="internal-link" @click="goToPageAndSetReturn('/M2/eng/tc/tc05.html', '#1')">
+    Transferable Concept #5: How you can be a fruitful witness 
+</span>
+<!-- end linkInternal sdcard-->
+</em> and discuss with another group member.</p>
 </div>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply111.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

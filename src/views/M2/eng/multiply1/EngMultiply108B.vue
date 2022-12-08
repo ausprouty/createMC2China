@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 8: Kingdom Growth Process-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 
 <ul>
 	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 92:1-2</span>
@@ -89,19 +90,23 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 
 <p class="back">All of us face fears.&nbsp; Even Jesus&rsquo; best leaders found in the bible faced fears.&nbsp; One of the young leaders who struggled with fears was Timothy.&nbsp; His mentor, Paul, encouraged him by reminded him of the gift of the Holy Spirit in his life.&nbsp; Paul wrote to him in a letter, &ldquo;God did not give us a spirit of fear, but a spirit of power, of love and of self-discipline. (2 Timothy 1:7).&nbsp; Because this is true, we do not have to be ashamed or afraid to talk about Jesus and what he has done for us.&nbsp; Let&rsquo;s keep encouraging each other to live by what is true of us.</p>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 
 <p class="up">As Jesus trained his disciples for ministry, he taught them many spiritual principles about the Kingdom of God.&nbsp; These teachings were given in parables. On one occasion, Jesus shared a parable that described how the Kingdom of God grows.</p>
 
@@ -119,7 +124,7 @@ export default {
 </div>
 <!-- end bible -->
 
-<p class="bible"><a class="readmore" href="https://biblegateway.com/passage/?search=Mark%204:26-29&amp;version=NIV">Read More Online</a></p>
+<p class="bible"></p>
 
 </div>
 
@@ -136,10 +141,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text" ></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -147,12 +160,14 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 
 <p>[Use the 4 Fields diagram to explain]</p>
 
-<p style="text-align:center"><img alt="4 fields kingdom growth process" src="content/M2/eng/images/custom/4fields_complete.jpg" style="width:100%" /></p>
+<p style="text-align:center"><img alt="4 fields kingdom growth process" src="@/assets/images/eng/custom/4fields_complete.jpg" style="width:100%" /></p>
 
 <p>From this story we learn that there is a process of how the Kingdom Grows.&nbsp; It can be illustrated by 4 kinds of fields.&nbsp;</p>
 
@@ -169,18 +184,20 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text4">
+<!-- end default revealSummary -->
 
 <ul class="forward">
 	<li>Practice telling the story and drawing the 4 fields Kingdom Growth Process.</li>
 </ul>
 
-<p style="text-align:center"><img alt="" src="content/M2/eng/images/custom/4fields.png" style="height:155px; width:200px" /></p>
+<p style="text-align:center"><img alt="" src="@/assets/images/eng/custom/4fields.png" style="height:155px; width:200px" /></p>
 
 <ul class="forward">
 	<li>Update your Network List with names of additional people if needed.</li>
@@ -198,10 +215,18 @@ export default {
 	<li>Write &ldquo;I will by when&rdquo; statements and share with your small group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text" ></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -210,12 +235,8 @@ export default {
 </ul>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply108B.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

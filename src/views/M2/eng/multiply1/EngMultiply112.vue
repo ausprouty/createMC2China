@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 12: Opening Doors-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 9:1-2</span>
 
@@ -85,18 +86,22 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 <p class="back">Since everyone is called to follow Jesus and fish for men, we should realize there are only two kinds of people in the world-- lost and saved. Lost people need to follow Jesus. Saved people need to learn to fish for the lost. When you see the world as two types of people, then your daily interactions get much simpler. If you meet a lost person, witness to them. If you meet a saved person, offer to train them. It can&rsquo;t get much easier than that!&nbsp;</p>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> Acts 10:1-8</span>.&nbsp;
 
@@ -133,7 +138,7 @@ export default {
 <p><sup class="versenum">34&nbsp;</sup>Then Peter began to speak: &ldquo;I now realize how true it is that God does not show favoritism<sup class="versenum">35&nbsp;</sup>but accepts from every nation the one who fears him and does what is right.</p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -150,10 +155,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text"></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -161,8 +174,10 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Persons of Peace are people of relationship. We can share the gospel with individual people, but we need to also look for opportunities to follow open doors to share with the friends and family of Persons of Peace. Other examples of the gospel spreading through relationships are Lydia and her household (<span class="popup-link" @click = "popUp('pop3')"> Acts 16:14-15</span>),&nbsp;
 
@@ -200,12 +215,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text4">
+<!-- end default revealSummary -->
 <p>Practice setting up a missional event in the home of a Person of Peace.</p>
 
 <ul class="forward">
@@ -225,10 +242,18 @@ export default {
 	<li>Write &ldquo;I will by when&rdquo; statements and share with your small group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text"></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -237,16 +262,17 @@ export default {
 </ul>
 
 <div class="for-enrichment">
-<p>For further enrichment: Read <a id = "Return1" href="#" onclick="goToPageAndSetReturn('../tc/tc07.html', '#Return1');">Transferable Concept #7: How to Help Fulfill the Great Commission</a> and discuss with another group member.</p>
+<p>For further enrichment: Read <!-- begin linkInternal sdcard-->
+<span class="internal-link" @click="goToPageAndSetReturn('/M2/eng/tc/tc07.html', '#1')">
+    Transferable Concept #7: How to Help Fulfill the Great Commission 
+</span>
+<!-- end linkInternal sdcard-->
+ and discuss with another group member.</p>
 </div>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply112.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

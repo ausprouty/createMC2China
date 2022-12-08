@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 8: Amazing Question and Care-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <ul>
 	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 33:1-5</span>
 
@@ -95,18 +96,22 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 <p class="back">The first words of Jesus in Mark were telling people to &ldquo;repent.&rdquo; This means to change our whole way of thinking because God&rsquo;s ways are so different from ours. One area is how we view ourselves. We need a new understanding of life with God and what He can do in our lives. The next words of Jesus were &quot;Follow Me, and I will make you fishers of men.&quot; Every disciple of Jesus is called to live out this twin call to follow Him and fish for men. Our sacrificial commitment to Jesus transforms daily life and all our relationships. Let&rsquo;s encourage each other to continually repent, follow and fish!</p>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 <p class="up">A couple of weeks before Jesus&rsquo; death, He and His followers were in a town called Jericho. As they left to travel the 24 km up the mountain to Jerusalem, a blind man calls out to Jesus trying to get his attention. This story tells us what happened next.</p>
 
 </div>
@@ -130,7 +135,7 @@ export default {
 <p><sup class="versenum">42&nbsp;</sup>Jesus said to him, &ldquo;Receive your sight; your faith has healed you.&rdquo;<sup class="versenum">43&nbsp;</sup>Immediately he received his sight and followed Jesus, praising God. When all the people saw it, they also praised God.</p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -147,10 +152,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text" ></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -158,8 +171,10 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Jesus has great compassion for people! He asked the blind man an amazing question, &ldquo;What do you want me to do for you?&rdquo; Then He met the man&rsquo;s needs. In <span class="popup-link" @click = "popUp('pop2')"> John 14:12-13</span>
 
@@ -175,10 +190,11 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary">
 <div class="page_content ltr">
 <div class="block ltr">
@@ -189,13 +205,15 @@ export default {
 
 
   <!-- Lesson 8: Amazing Question and Care-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
-<ul>+ 
+<!-- end default revealSummary -->+ 
+<ul>
 	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 33:1-5</span>
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
@@ -208,7 +226,8 @@ export default {
 	<sup class="versenum">2&nbsp;</sup>Praise the <span class="small-caps">Lord with the harp;<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;make music to him on the ten-stringed lyre.<br />
 	<sup class="versenum">3&nbsp;</sup>Sing to him a new song;<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;play skillfully, and shout for joy.</span></s<ul>
+	&nbsp;&nbsp;&nbsp;&nbsp;play skillfully<!-- end default revealSummary -->
+<ul>
 	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 33:1-5</span>
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
@@ -222,7 +241,8 @@ export default {
 	&nbsp;&nbsp;&nbsp;&nbsp;make music to him on the ten-stringed lyre.<br />
 	<sup class="versenum">3&nbsp;</sup>Sing to him a new song;<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;play skillfully, and shout for joy.</span></span></p></div>
-<div class="collapsed" id ="Text4"><div class="reveal">&nbsp;
+<div class="collapsed" id ="Text4">
+<!-- end default revealSummary --><div class="reveal">&nbsp;
 
 <h2 class="forward">Preparing for Mission</h2>
 
@@ -244,10 +264,18 @@ export default {
 	<li>Write &ldquo;I will by when&rdquo; statements and share with your small group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text" ></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -256,12 +284,8 @@ export default {
 </ul>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply108.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>

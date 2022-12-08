@@ -1,4 +1,3 @@
-<!--- publishFiles added onLoad -->
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js";
 import { useFindSummaries, useFindCollapsible, usePopUp } from "@/assets/javascript/app.js";
@@ -42,12 +41,14 @@ export default {
 
 
   <!-- Lesson 7: Abiding in Jesus-->
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-back.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 
 <ul>
 	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 16:7-11</span>
@@ -88,8 +89,10 @@ export default {
 	<li>What happened as you trusted God with your goals and <em>I will</em> statements?</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
+<!-- end default revealSummary -->
 
 <ul>
 	<li class="back"><span class="popup-link" @click = "popUp('pop2')"> John 16 </span>
@@ -118,12 +121,14 @@ export default {
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-up.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-up.png" />
 <div class="lesson-subtitle"><span class="up">LOOKING UP</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
+<!-- end default revealSummary -->
 
 <p class="up">The night before Jesus was crucified, he had dinner with his 12 closest disciples. He told them He was going away but that He was going to send the Counsellor, the Holy Spirit, to be with them forever. He teaches them that through the presence of the Holy Spirit living in them, He himself will be with them. This story uses the image of a vine and its branches to describe what our relationship with Jesus should be like.&nbsp;</p>
 
@@ -142,7 +147,7 @@ export default {
 <p><sup class="versenum">9&nbsp;</sup>&ldquo;As the Father has loved me, so have I loved you. Now remain in my love.<sup class="versenum">10&nbsp;</sup>If you keep my commands, you will remain in my love, just as I have kept my Father&rsquo;s commands and remain in his love.<sup class="versenum">11&nbsp;</sup>I have told you this so that my joy may be in you and that your joy may be complete.</p>
 <!-- end bible -->
 
-<p>Read More </a></p>
+<p></p>
 
 </div>
 
@@ -159,10 +164,18 @@ export default {
 	<li>How will you obey Jesus now that you know this?</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note1Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note1Text')"  id ="note1Text"></textarea></div>
 
 <h2 class="up">Read, Tell and Correct</h2>
 
@@ -170,22 +183,31 @@ export default {
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
+<!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
+<!-- end default revealSummary -->
 
 <p class="up">Without Jesus, we cannot do anything. We can only have a fruitful life when we depend on and remain in Him. This happens as we submit in obedience to His ways, allowing his life to flow in and through us so that we can bear fruit for the glory of God. In other words, we need to let the Spirit of Christ, the Holy Spirit, direct and empower our lives by faith.&nbsp;</p>
 
 </div>
 
-<div class="lesson"><img class="lesson-icon" src="@assets/images/look-forward.png" />
+<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-forward.png" />
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
+<!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text4">
+<!-- end default revealSummary -->
 
 <ul class="forward">
-	<li>Review the principles of Spiritual Breathing from lesson 3, &ldquo;<a id = "Return1" href="#" onclick="goToPageAndSetReturn('../multiply1/multiply103.html', '#Return1');">Keeping in Step with the Spirit</a>&rdquo;</li>
+	<li>Review the principles of Spiritual Breathing from lesson 3, &ldquo;<!-- begin linkInternal sdcard-->
+<span class="internal-link" @click="goToPageAndSetReturn('/M2/eng/multiply1/multiply103.html', '#1')">
+    Keeping in Step with the Spirit 
+</span>
+<!-- end linkInternal sdcard-->
+&rdquo;</li>
 	<li>Practice any skill or topic from previous lessons as needed&nbsp;</li>
 </ul>
 
@@ -201,10 +223,18 @@ export default {
 	<li>Write &ldquo;I will by when&rdquo; statements and share with your small group.</li>
 </ul>
 
+<!-- begin note sdcard -->
+<div class="note-div">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNotes()"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
 
-    <div class="note-div">
-        <form class = "auto_submit_item">
-            <textarea class="textarea resize-ta" onkeyup= "addNote('note2Text')"  id ="note2Text"></textarea></div>
 
 <h2 class="forward">Praying for the Mission</h2>
 
@@ -213,16 +243,17 @@ export default {
 </ul>
 
 <div class="for-enrichment">
-<p>For further enrichment: Read <em><a id = "Return2" href="#" onclick="goToPageAndSetReturn('../tc/tc04.html', '#Return2');">Transferable Concept #4: How to Walk in the Spirit</a></em> and discuss with another group member.</p>
+<p>For further enrichment: Read <em><!-- begin linkInternal sdcard-->
+<span class="internal-link" @click="goToPageAndSetReturn('/M2/eng/tc/tc04.html', '#2')">
+    Transferable Concept #4: How to Walk in the Spirit 
+</span>
+<!-- end linkInternal sdcard-->
+</em> and discuss with another group member.</p>
 </div>
 
 
-<!--- Language Specific Javascripts-->
-<script src="../javascript/mc2VideoOptions.js"></script>
 
-</div><form>
-<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-multiply1-multiply107.html">
-</form><!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 </div>
   <Footer/>
 </template>
