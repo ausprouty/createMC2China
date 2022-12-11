@@ -15,10 +15,17 @@ export default {
       useAddNote(this.$route.name)
     },
     goToPageAndSetReturn(goto){
-      useGoToPageAndSetReturn(goto, this.$route.name)
+      localStorage.setItem("returnpage", this.$route.name);
+      this.$router.push({
+        path: goto,
+      })
     },
     pageGoBack(){
-      usePageGoBack()
+      if (localStorage.getItem("returnpage")) {
+        returnto = localStorage.getItem("returnpage");
+        localStorage.removeItem("returnpage");
+        vuePush(returnto)
+      }
     },
     popUp(verse){
       usePopUp(verse)
@@ -166,7 +173,7 @@ export default {
 	We can use 3 circles to help us remember the 3 types of people described in 1 Corinthians.</li>
 </ul>
 
-<h2 class="up"><img alt="3 circles" src="@/assets/eng/tc/transferable-concepts-image-20.png" /></h2>
+<h2 class="up"><img alt="3 circles" src="@/assets/images/eng/tc/transferable-concepts-image-20.png" /></h2>
 
 </div>
 

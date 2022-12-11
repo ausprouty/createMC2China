@@ -15,10 +15,17 @@ export default {
       useAddNote(this.$route.name)
     },
     goToPageAndSetReturn(goto){
-      useGoToPageAndSetReturn(goto, this.$route.name)
+      localStorage.setItem("returnpage", this.$route.name);
+      this.$router.push({
+        path: goto,
+      })
     },
     pageGoBack(){
-      usePageGoBack()
+      if (localStorage.getItem("returnpage")) {
+        returnto = localStorage.getItem("returnpage");
+        localStorage.removeItem("returnpage");
+        vuePush(returnto)
+      }
     },
     popUp(verse){
       usePopUp(verse)
@@ -93,7 +100,7 @@ export default {
 <p>The answer is yes. Throughout our walk with Christ, we repeatedly find rewarding benefits in practicing this concept.</p>
 
 <p>Paul deals with this very topic in 1 Corinthians 2 and 3. He explains why some believers lack joy and the power of the Holy Spirit in their lives when he writes about the natural person, the spiritual person and the worldly person.<br />
-<img alt="Three types of people" src="@/assets/eng/tc/transferable-concepts-image-22.png" /></p>
+<img alt="Three types of people" src="@/assets/images/eng/tc/transferable-concepts-image-22.png" /></p>
 
 </div>
 

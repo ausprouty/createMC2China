@@ -15,10 +15,17 @@ export default {
       useAddNote(this.$route.name)
     },
     goToPageAndSetReturn(goto){
-      useGoToPageAndSetReturn(goto, this.$route.name)
+      localStorage.setItem("returnpage", this.$route.name);
+      this.$router.push({
+        path: goto,
+      })
     },
     pageGoBack(){
-      usePageGoBack()
+      if (localStorage.getItem("returnpage")) {
+        returnto = localStorage.getItem("returnpage");
+        localStorage.removeItem("returnpage");
+        vuePush(returnto)
+      }
     },
     popUp(verse){
       usePopUp(verse)
@@ -57,11 +64,11 @@ export default {
                 <img class="close" src="sites/default/images/close.png" />
             </div>
             <div class="pinch-zoom">
-                <div><img  id="pinch-zoom-image"  src="@/assets/eng/multiply2/Period34.png" /></div>
+                <div><img  id="pinch-zoom-image"  src="@/assets/images/eng/multiply2/Period34.png" /></div>
             </div>
         </div>
-        <div id = "pinch-zoom0" onclick="zoomShow('0', '@/assets/eng/multiply2/Period34.png', )">
-             <img  alt="<img alt="Stage of Ministry" src="@/assets/eng/multiply2/Period34.png" />
+        <div id = "pinch-zoom0" onclick="zoomShow('0', '@/assets/images/eng/multiply2/Period34.png', )">
+             <img  alt="<img alt="Stage of Ministry" src="@/assets/images/eng/multiply2/Period34.png" />
         </div>
 <!-- end linkInternal sdcard-->
 </span></p>

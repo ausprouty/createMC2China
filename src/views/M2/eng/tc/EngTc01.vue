@@ -15,10 +15,17 @@ export default {
       useAddNote(this.$route.name)
     },
     goToPageAndSetReturn(goto){
-      useGoToPageAndSetReturn(goto, this.$route.name)
+      localStorage.setItem("returnpage", this.$route.name);
+      this.$router.push({
+        path: goto,
+      })
     },
     pageGoBack(){
-      usePageGoBack()
+      if (localStorage.getItem("returnpage")) {
+        returnto = localStorage.getItem("returnpage");
+        localStorage.removeItem("returnpage");
+        vuePush(returnto)
+      }
     },
     popUp(verse){
       usePopUp(verse)
@@ -93,7 +100,7 @@ export default {
 
 <p>&nbsp;</p>
 
-<p><img alt="Intellect, emotions and will" src="@/assets/eng/tc/transferable-concepts-image-11.png" /></p>
+<p><img alt="Intellect, emotions and will" src="@/assets/images/eng/tc/transferable-concepts-image-11.png" /></p>
 
 </div>
 
@@ -101,6 +108,7 @@ export default {
 <div id="Summary1" class="summary"><h2>+ Intellectual Understanding</h2></div>
 <div class="collapsed" id ="Text1">
 <!-- end default revealSummary -->
+
 <p>Being certain of your decision to become a Christian requires a clear grasp of what is involved in making the choice.&nbsp; It demands an <em>intellectual understanding</em> of God&rsquo;s promises and who He is.&nbsp; It is not a &ldquo;blind leap of faith,&rdquo; as some would label it.&nbsp; On the contrary, Christianity is built upon historical fact, documented by centuries of investigation by world-renowned scholars.&nbsp; As a result, we have more historical evidence to document the events of Jesus of Nazareth, than we have to prove the defeat of Napoleon at Waterloo.</p>
 
 <p>Historian and author, Kenneth Scott Latourette, director of the department of religion at the graduate school of Yale University, said, in reference to Jesus Christ, &ldquo;Measured by its fruits in the human race, that short life has been the most influential ever lived on this planet.&nbsp; As we have been at pains to point out, the impress of that life, far from fading with the passing centuries, has deepened.&nbsp; Through Him millions of individuals have been transformed and have begun to live the kind of life which He exemplified.&nbsp; Gauged by the consequences which have followed, the birth, life, death and resurrection of Jesus have been the most important events in the history of man.&nbsp; Measured by His influence, Jesus is central in the human story.&rdquo;</p>
@@ -119,6 +127,7 @@ export default {
 <div id="Summary2" class="summary"><h2>+ Emotional Involvement</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
+
 <p>Involvement of the <em>emotions</em> is a part of being a Christian.&nbsp; Emotions are nothing more than feelings or reactions to an act, event or experience which occurs in our lives.&nbsp; But we often misunderstand or misinterpret feelings and end up frustrated and confounded.&nbsp; For many people the emotional element of Christianity has caused great confusion concerning assurance of salvation.</p>
 
 <p>The emotional tenor of another Christian&rsquo;s life does not always match our own.&nbsp; Too often we are guilty of comparisons.&nbsp; They tend to leave us doubting the depth of our salvation and sincerity of our commitment.&nbsp; The truth is that no two people are alike and, therefore, cannot be expected to respond to the experiences of their faith in the same way.&nbsp; One may respond to his Christian experience in a highly emotional, visible manner, while another may respond just as deeply to the same experience, but deal with it within himself, quietly, privately.&nbsp; Is one response &ldquo;better&rdquo; than the other?&nbsp; Is it possible to judge?&nbsp; Is it even necessary?</p>
@@ -134,6 +143,7 @@ export default {
 	<li>the confirmation of the Holy Spirit; and</li>
 	<li>the evidence of a changed life.&nbsp;</li>
 </ul>
+
 <p>First, we must base our salvation on <em>the external witness of the Word of God</em>.&nbsp; It is the authority of the very Word of God that provides a solid foundation for our faith in Him.&nbsp; To those of us who believe, the promises are there (John 1:12).</p>
 
 <p>&ldquo;We believe men who witness in our courts, and so surely we can believe whatever God declares.&nbsp; And God declares that Jesus is the Son.&nbsp; All who believe this know in their hearts that it is true.&nbsp; If anyone doesn&rsquo;t believe this, he is actually calling God a liar, because he doesn&rsquo;t believe what God has said about his Son.&nbsp; And what is it that God has said?&nbsp; That he has given us eternal life, and that this life is in his Son.&nbsp; So whoever has God&rsquo;s Son has life; whoever does not have his Son does not have life.&nbsp; I have written this to you who believe in the Son of God so that you may know you have eternal life&rdquo; (I John 5: 9-13, TLB).&nbsp; <em>There is assurance in God&rsquo;s Word</em>.</p>
@@ -156,6 +166,7 @@ export default {
 <div id="Summary3" class="summary"><h2>+ Involvement of the Will</h2></div>
 <div class="collapsed" id ="Text3">
 <!-- end default revealSummary -->
+
 <p>Now we come to the matter of the will.&nbsp; It is often the will that keeps a person from a longed-for relationship with Christ.</p>
 
 <p>Some time ago I visited one of our nation&rsquo;s most prestigious seminaries where a friend of mine was completing his doctorate.&nbsp; We were on our way to meet one of his favorite professors, a widely known, respected theologian and scholar who had given years of his life to train thousands of young people for the ministry.&nbsp; &ldquo;He&rsquo;s a good man,&rdquo; my friend said.&nbsp; &ldquo;He&rsquo;s warm-hearted and I like him, but he doesn&rsquo;t believe in the deity of Christ or that the Bible is the Word of God.&rdquo;&nbsp; He looked at me and grinned. &ldquo;I&rsquo;m hoping you&rsquo;ll be able to say something to him to change his mind.&rdquo;</p>
@@ -208,7 +219,7 @@ export default {
 	<li>Jesus Christ is God&rsquo;s only provision for man&rsquo;s sin.&nbsp; Through Him you can know and experience God&rsquo;s love and plan for your life.</li>
 	<li>You must decide to receive Jesus Christ as Savior and Lord of your life; it is then you will know and experience God&rsquo;s love and plan for you.</li>
 </ol>
-<img alt="A great gap separates sinful man from holy God" src="@/assets/eng/tc//transferable-concepts-image-12.jpg" />&nbsp;&nbsp; <img alt="Jesus Christ is the bridge over the gap between God and man" src="@/assets/eng/tc//transferable-concepts-image-13.jpg" />
+<img alt="A great gap separates sinful man from holy God" src="@/assets/images/eng/tc/transferable-concepts-image-12.jpg" />&nbsp;&nbsp; <img alt="Jesus Christ is the bridge over the gap between God and man" src="@/assets/images/eng/tc/transferable-concepts-image-13.jpg" />
 <p>&nbsp;</p>
 
 <p>Christ promised, &ldquo;Behold, I stand at the door and knock; if anyone hears My voice and opens the door, I will come in to him, and will dine with him, and he with Me: (Revelations 3:20).&nbsp; In John&rsquo;s Gospel we read, &ldquo;But as many as received Him, to them He gave the right to become children of God, even to those who believe in His name&rdquo; (John 1:12).</p>

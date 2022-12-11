@@ -36,6 +36,7 @@ div.login-note {
 .bible-link,
 .internal-link {
   color: var(--color-bible-link-mc2);
+  text-decoration: underline ;
 }
 .dbs-instruction {
   color: var(--color-blue-mc2);

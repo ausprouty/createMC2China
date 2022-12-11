@@ -15,10 +15,17 @@ export default {
       useAddNote(this.$route.name)
     },
     goToPageAndSetReturn(goto){
-      useGoToPageAndSetReturn(goto, this.$route.name)
+      localStorage.setItem("returnpage", this.$route.name);
+      this.$router.push({
+        path: goto,
+      })
     },
     pageGoBack(){
-      usePageGoBack()
+      if (localStorage.getItem("returnpage")) {
+        returnto = localStorage.getItem("returnpage");
+        localStorage.removeItem("returnpage");
+        vuePush(returnto)
+      }
     },
     popUp(verse){
       usePopUp(verse)
@@ -50,7 +57,7 @@ export default {
 
   <h2>3rd Missionary Journey from Antioch</h2>
 
-<p><img alt="" src="@/assets/eng/multiply3/Trip3.png" /></p>
+<p><img alt="" src="@/assets/images/eng/multiply3/Trip3.png" /></p>
 
 <p>[52 -57 AD]</p>
 

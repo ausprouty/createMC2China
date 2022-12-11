@@ -5,7 +5,9 @@ export function usePageGoBack(returnto) {
     returnto = localStorage.getItem("returnpage");
     localStorage.removeItem("returnpage");
   }
- vuePush(returnto)
+  this.$router.push({
+    name: returnto,
+  })
 }
 
 // If you are in Lesson 1 and want a person to go to Lesson 7,
@@ -14,5 +16,7 @@ export function usePageGoBack(returnto) {
 // called from vue pages
 export function useGoToPageAndSetReturn(goto, returnto) {
   localStorage.setItem("returnpage", returnto);
-  vuePush(goto)
+  this.$router.push({
+    name: goto,
+  })
 }
