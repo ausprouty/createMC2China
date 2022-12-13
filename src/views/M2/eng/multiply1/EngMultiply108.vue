@@ -25,7 +25,9 @@ export default {
         returnto = localStorage.getItem("returnpage");
         localStorage.removeItem("returnpage")
       }
-      vuePush(returnto)
+      this.$router.push({
+        name: id,
+      })
     },
     popUp(verse){
       usePopUp(verse)
@@ -50,7 +52,7 @@ export default {
 </script>
 <template>
   <div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply1-index')">
         <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
     </div>
 </div>
@@ -216,7 +218,7 @@ export default {
 
 <!-- begin default revealSummary -->
 <div id="Summary4" class="summary"><div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply1-index')">
         <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
     </div>
 </div>
