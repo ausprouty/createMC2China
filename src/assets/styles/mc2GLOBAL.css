@@ -43,7 +43,7 @@ div.login-note {
   font-style: italic;
 }
 .badge {
-  display: inline-flex;
+  display: inline-flex;return
   height: 26px;
   width: auto;
   padding: 0 7px;

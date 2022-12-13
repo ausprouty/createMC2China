@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,12 +49,14 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <h1>Conclusion</h1>
 <div id="showVideoOptions"></div>
-
-
   <p>During his time in Rome, Paul continued coaching and mentoring believers in Philippi, Colossae and Ephesus through letter writing. Paul also wrote a personal letter to a church leader in Colossae named Philemon. This letter reveals that Paul anticipated being released (<span class="popup-link" @click = "popUp('pop1')"> Philemon 1:22</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
@@ -115,6 +117,6 @@ Paul and Peter are both killed around 67 AD after their second letters are writt
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

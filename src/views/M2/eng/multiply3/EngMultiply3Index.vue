@@ -11,8 +11,13 @@ export default {
 </script>
 <template>
   <!-- sdcard template from mc2 -->
-  
+
 <div class="page_content" dir="ltr">
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('../index.html')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
   <div  class="app-series-header">
     <img src="@/assets/images/eng/standard/Multiply3.png" class="app-series-header" />
   </div>

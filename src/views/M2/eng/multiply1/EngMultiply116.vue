@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,15 +49,17 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>17.</h1></div>
                         <div class="chapter_title ltr"><h1>Cost of Discipleship </h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <!-- Lesson 16: Cost of Discipleship -->
 <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
@@ -225,18 +227,20 @@ export default {
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary4" class="summary">
+<div id="Summary4" class="summary"><div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>17.</h1></div>
                         <div class="chapter_title ltr"><h1>Cost of Discipleship </h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <!-- Lesson 16: Cost of Discipleship -->
 <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>+ 
+<div class="lesson-subtitle"><span class="back">+ LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -249,7 +253,7 @@ export default {
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
-	<p><sup class="versenum">14&nbsp;</sup>For here we do not have an enduring city, but we are looking for the city that is to</div>
+	<p><sup class="versenum">14&nbsp;</sup>For here we do not have an enduring city, but we are looking for the ci<span class="back">LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -308,6 +312,6 @@ export default {
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

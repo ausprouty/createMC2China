@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,15 +49,17 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>1.</h1></div>
                         <div class="chapter_title ltr"><h1>How to be Sure You are a Christian</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   
         <button id="M2/eng/audio/tc/tc01.mp3" type="button" class="external-audio">
            Listen to &nbsp;"TC #1: How to be Sure You Are a Christian"&nbsp; </button>
@@ -256,6 +258,6 @@ Adapted from the <em>Transferable Concepts</em>, by Dr. Bill Bright, co-founder 
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

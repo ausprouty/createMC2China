@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,12 +49,14 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <h1>Period 3 -- Ministry Training and Period 4 -- Expanded Outreach</h1>
 <div id="showVideoOptions"></div>
-
-
   <p class="year">
         <script src="sites/default/javascript/pinch-zoom.js"></script>
         <script src="sites/default/javascript/myZoom.js"></script>
@@ -159,6 +161,6 @@ export default {
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,15 +49,17 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>43.</h1></div>
                         <div class="chapter_title ltr"><h1>Visits to Disciples on the Way to Jerusalem</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
@@ -327,17 +329,19 @@ Paul submitted to the Jerusalem leaders&rsquo; requests to fulfil the law so tha
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary3" class="summary">
+<div id="Summary3" class="summary"><div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>43.</h1></div>
                         <div class="chapter_title ltr"><h1>Visits to Disciples on the Way to Jerusalem</h1></div>
                     </div>
-<div id="showVideoOptions"></div>
-
-
+<div id="showVideoOptions"></div>+ 
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle">+ <span class="back">LOOKING BACK</span></div>
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -345,7 +349,9 @@ Paul submitted to the Jerusalem leaders&rsquo; requests to fulfil the law so tha
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
 
-<p class="back"><em>Read a scripture<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
+<p class="back"><em>Read a scripture and sing worship songs</div>
+  <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -399,6 +405,6 @@ Paul submitted to the Jerusalem leaders&rsquo; requests to fulfil the law so tha
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

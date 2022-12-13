@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,15 +49,17 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>Period 1.</h1></div>
                         <div class="chapter_title ltr"><h1>Consequences of Kingdom Explosion in Jerusalem </h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <p>Acts was written by Luke, as the continuation of the story of Jesus. Luke began in his gospel, &ldquo;It seemed good to me also, having followed all things closely for some time past, to write an orderly account for you, most excellent Theophilus&rdquo; (Luke 1:3). Acts begins with the statement, &ldquo;In the first book, O Theophilus, I have dealt with all that Jesus began to do and teach&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Acts 1:1</span>).</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
@@ -156,6 +158,6 @@ your will be done,<br />
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

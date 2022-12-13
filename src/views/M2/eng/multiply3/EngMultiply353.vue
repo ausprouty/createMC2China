@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,15 +49,17 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>53.</h1></div>
                         <div class="chapter_title ltr"><h1>Ministry while on Island of Malta</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
@@ -210,24 +212,28 @@ Even though in man&rsquo;s eyes this was an unplanned and unwanted stop, it was 
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary3" class="summary">
+<div id="Summary3" class="summary"><div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>53.</h1></div>
                         <div class="chapter_title ltr"><h1>Ministry while on Island of Malta</h1></div>
                     </div>
-<div id="showVideoOptions"></div>
-
-
+<div id="showVideoOptions"></div>+ 
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle">+ <span class="back">LOOKING BACK</span></div>
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
-<p class="back"><em>Read a scripture<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
+<p class="back"><em>Read a scripture and sing worship songs</div>
+  <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -280,6 +286,6 @@ Even though in man&rsquo;s eyes this was an unplanned and unwanted stop, it was 
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

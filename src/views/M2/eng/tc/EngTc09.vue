@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,15 +49,17 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>9.</h1></div>
                         <div class="chapter_title ltr"><h1>How to Pray</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   
         <button id="M2/eng/audio/tc/tc09.mp3" type="button" class="external-audio">
            Listen to &nbsp;"TC #9: How to Pray"&nbsp; </button>
@@ -240,6 +242,6 @@ export default {
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

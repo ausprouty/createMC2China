@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,16 +49,19 @@ export default {
 }
 </script>
 <template>
-  <div><button id="MC2/eng/video/multiply3/319-1.mp4" type="button" class="external-movie">
+  <button id="MC2/eng/video/multiply3/319-1.mp4" type="button" class="external-movie">
          Watch &nbsp;"
-
-                        19."&nbsp;</button>
+    
+        
+    "&nbsp;</button>
     <div class="collapsed"></div>
+</div>
+<div class="page_content ltr">
+<div class="block ltr">
+                        <div class="chapter_number ltr"><h1>19.</h1></div>
                         <div class="chapter_title ltr"><h1>Jesus Prepares Hearts</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
@@ -302,6 +305,6 @@ export default {
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,12 +49,14 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <h1>Period 6: Representing the Movement of Jesus</h1>
 <div id="showVideoOptions"></div>
-
-
   <p><img alt="" src="@/assets/images/eng/multiply3/Trip4.png" /></p>
 
 <p>[57- 62 AD]</p>
@@ -75,6 +77,6 @@ export default {
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

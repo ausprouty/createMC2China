@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,15 +49,17 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>11.</h1></div>
                         <div class="chapter_title ltr"><h1>My Story</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <!-- Lesson 10: My Story-->
 <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
@@ -228,24 +230,26 @@ export default {
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary4" class="summary">
+<div id="Summary4" class="summary"><div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>11.</h1></div>
                         <div class="chapter_title ltr"><h1>My Story</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <!-- Lesson 10: My Story-->
 <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
+<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2>+ </div>
 <div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->+ 
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</span>
 
@@ -261,7 +265,9 @@ export default {
 	<sup class="versenum">35&nbsp;</sup>&ldquo;Who has ever given to God,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;that God should repay them?&rdquo;<br />
 	<sup class="versenum">36&nbsp;</sup>For from him and through him and for him are all things.<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;<!-- end default revealSummary -->
+	&nbsp;&nbsp;&nbsp;&nbsp;To him be the glory forever! </h2></div>
+<div class="collapsed" id ="Text0">
+<!-- end default revealSummary -->
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</span>
 
@@ -330,6 +336,6 @@ export default {
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>

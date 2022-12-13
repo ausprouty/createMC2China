@@ -20,12 +20,12 @@ export default {
         path: goto,
       })
     },
-    pageGoBack(){
+    pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
-        localStorage.removeItem("returnpage");
-        vuePush(returnto)
+        localStorage.removeItem("returnpage")
       }
+      vuePush(returnto)
     },
     popUp(verse){
       usePopUp(verse)
@@ -49,15 +49,17 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>16.</h1></div>
                         <div class="chapter_title ltr"><h1>Giving with Purpose</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <!-- Lesson 15: Giving with Purpose -->
 <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
 <div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
@@ -256,21 +258,23 @@ export default {
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary4" class="summary">
+<div id="Summary4" class="summary"><div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>16.</h1></div>
                         <div class="chapter_title ltr"><h1>Giving with Purpose</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
-
   <!-- Lesson 15: Giving with Purpose -->
 <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>+ 
 </div>
 
-<!-- begin default revealSummary -->+ 
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
@@ -281,7 +285,10 @@ export default {
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
-	<p><sup class="versenum">14&nbsp;</sup>Therefore, since we have a great high priest who has ascended into heaven, Jesus the Son of God, let us hold firmly to the faith we profess.<sup class="versenum">15&nbsp;</sup>For we do not have a high priest who is unable to empathize with our weaknesses, but we have one who has been tempted in every way, just as we are&mdash;yet he did not sin.<sup class="versenum">16&nbsp;</sup>Let us then approach God&rsquo;s throne of grace with confidence, so that we may receive mercy and find g<!-- begin default revealSummary -->
+	<p><sup class="versenum">14&nbsp;</sup>Therefore, since we have a great high priest who has ascended into heaven, Jesus the Son of God, let us hold firmly to the faith we profess.<sup class="versenum">15&nbsp;</sup>For we do not have a high priest who is unable to empathize with our weaknesses, but we have one who has been tempted in every way, just as we are&mdash;yet he did not sin.<sup class="versenum">16&nbsp;</sup>Let us then approach God&rsquo;s throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of</div>
+</div>
+
+<!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
@@ -339,6 +346,6 @@ export default {
 
 
 </div><!--- Created by publishPage-->
-</div>
+
   <Footer/>
 </template>
