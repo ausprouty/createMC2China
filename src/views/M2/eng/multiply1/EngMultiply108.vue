@@ -26,7 +26,7 @@ export default {
         localStorage.removeItem("returnpage")
       }
       this.$router.push({
-        name: id,
+        name: returnto,
       })
     },
     popUp(verse){
