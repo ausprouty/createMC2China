@@ -17,10 +17,10 @@ const router = createRouter({
 
      {
       path: "/",
-        name: "home",
+        name: "eng-index",
         component: function () {
           return import(
-            /* webpackChunkName: "prototype" */ "../views/M2/eng/multiply1/EngMultiply1Index.vue"
+            /* webpackChunkName: "prototype" */ "../views/M2/eng/index.vue"
           );
         },
     },

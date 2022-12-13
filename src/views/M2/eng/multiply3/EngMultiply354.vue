@@ -25,7 +25,9 @@ export default {
         returnto = localStorage.getItem("returnpage");
         localStorage.removeItem("returnpage")
       }
-      vuePush(returnto)
+      this.$router.push({
+        name: returnto,
+      })
     },
     popUp(verse){
       usePopUp(verse)
@@ -50,7 +52,7 @@ export default {
 </script>
 <template>
   <div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply3-index')">
         <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
     </div>
 </div>
@@ -241,7 +243,7 @@ During his time in Rome, Paul continued coaching and mentoring believers in Phil
 
 <!-- begin default revealSummary -->
 <div id="Summary3" class="summary"><div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng--index')">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply3-index')">
         <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
     </div>
 </div>
