@@ -72,7 +72,7 @@ export default {
             </div>
         </div>
         <div id = "pinch-zoom0" onclick="zoomShow('0', '@/assets/images/eng/multiply2/Period2.png', )">
-             <img  alt="<img alt="Stage of Ministry" src="@/assets/images/eng/multiply2/Period2.png" />
+             <img  alt="Stage of Ministry" src="@/assets/images/eng/multiply2/Period2.png" />
         </div>
 <!-- end linkInternal sdcard-->
 </span></p>

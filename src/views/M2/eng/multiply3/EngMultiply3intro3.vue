@@ -72,7 +72,7 @@ export default {
             </div>
         </div>
         <div id = "pinch-zoom0" onclick="zoomShow('0', '@/assets/images/eng/multiply3/Trip1.png', )">
-             <img  alt="<img alt="" src="@/assets/images/eng/multiply3/Trip1.png" />
+             <img  alt="" src="@/assets/images/eng/multiply3/Trip1.png" />
         </div></p>
 
 <p>&nbsp;</p>
