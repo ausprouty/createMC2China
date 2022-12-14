@@ -27,7 +27,17 @@ const router = createRouter({
             /* webpackChunkName: "prototype" */ "../views/M2/eng/index.vue"
           );
         },
+
     },
+    {
+      path: "/M2/eng/seek",
+        name: "eng-seek-index",
+        component: function () {
+          return import(
+            /* webpackChunkName: "prototype" */ "../views/M2/eng/seek.vue"
+          );
+        },
+    }
 
 
   ],

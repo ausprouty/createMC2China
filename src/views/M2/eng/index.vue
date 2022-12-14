@@ -16,10 +16,12 @@ export default {
 </script>
 <template>
   <!-- sdcard template from mc2 -->
-  
+
   <div class="page_content" dir="ltr">
     <div>
-      
+
+     <img src="@/assets/images/standard/header-front.png" class="book-large" />
+
     </div>
     <div>
       <!-- begin mc2 sdcard bookImage -->
