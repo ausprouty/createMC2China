@@ -71,13 +71,11 @@ export default {
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
+
 <ul>
 	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</span>
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
-	<div>
-	<div>
-	<div>
 	<p><sup class="versenum">33&nbsp;</sup>Oh, the depth of the riches of the wisdom and knowledge of God!<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;How unsearchable his judgments,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;and his paths beyond tracing out!<br />
@@ -87,9 +85,6 @@ export default {
 	&nbsp;&nbsp;&nbsp;&nbsp;that God should repay them?&rdquo;<br />
 	<sup class="versenum">36&nbsp;</sup>For from him and through him and for him are all things.<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;To him be the glory forever! Amen.</p>
-	</div>
-	</div>
-	</div>
 	<!-- end bible --></div>
 	and sing 1-2 songs.</li>
 </ul>
@@ -115,15 +110,14 @@ export default {
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
 <!-- end default revealSummary -->
+
 <ul>
 	<li class="nobreak-final-final">In<span class="popup-link" @click = "popUp('pop2')">  John 3:8</span>,&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
-	<div>
-	<div>
+	
 	<p><sup class="versenum">8&nbsp;</sup>The wind blows wherever it pleases. You hear its sound, but you cannot tell where it comes from or where it is going. So it is with everyone born of the Spirit.&rdquo;</p>
-	</div>
-	</div>
+	
 	<!-- end bible --></div>
 	the Spirit of God is described as a wind. We cannot control Him or make Him move; He blows where He wills. We cannot create movements, only the Spirit of God can. But we can position ourselves so that when He does move, we are ready to move with Him. The simple skills you&rsquo;ve been learning help do just that. The good news is this: the Spirit of God is at work everywhere! Let&rsquo;s keep preparing ourselves and praying for the Spirit to move.</li>
 </ul>
@@ -138,6 +132,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Context</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
+
 <p class="up">Paul had been arrested because he was falsely accused by the Jewish leaders of breaking a temple law. During his defence before the Governor, Paul shared the story of how he came to know Christ.</p>
 
 </div>
@@ -146,7 +141,7 @@ export default {
 
 <p>Read or watch Acts 22:1-21 two times as everyone listens</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 22:1-21</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 22:1-21</button><div class="collapsed" id ="Text0">
 
 <p><sup>1&nbsp;</sup>&ldquo;Brothers and fathers, listen now to my defense.&rdquo;</p>
 
@@ -215,6 +210,7 @@ export default {
 <div id="Summary3" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text3">
 <!-- end default revealSummary -->
+
 <p class="up">Paul&rsquo;s story (testimony) can be summarized in 3 parts:</p>
 
 <ul>
@@ -232,64 +228,9 @@ export default {
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary4" class="summary"><div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply1-index')">
-        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
-    </div>
-</div>
-<div class="page_content ltr">
-<div class="block ltr">
-                        <div class="chapter_number ltr"><h1>11.</h1></div>
-                        <div class="chapter_title ltr"><h1>My Story</h1></div>
-                    </div>
-<div id="showVideoOptions"></div>
-  <!-- Lesson 10: My Story-->
-<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
-</div>
-
-<!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2>+ </div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-<ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</span>
-
-	<div class="popup invisible" id="pop1"><!-- begin bible -->
-	<div>
-	<div>
-	<div>
-	<p><sup class="versenum">33&nbsp;</sup>Oh, the depth of the riches of the wisdom and knowledge of God!<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;How unsearchable his judgments,<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;and his paths beyond tracing out!<br />
-	<sup class="versenum">34&nbsp;</sup>&ldquo;Who has known the mind of the Lord?<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;Or who has been his counselor?&rdquo;<br />
-	<sup class="versenum">35&nbsp;</sup>&ldquo;Who has ever given to God,<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;that God should repay them?&rdquo;<br />
-	<sup class="versenum">36&nbsp;</sup>For from him and through him and for him are all things.<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;To him be the glory forever! </h2></div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-<ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</span>
-
-	<div class="popup invisible" id="pop1"><!-- begin bible -->
-	<div>
-	<div>
-	<div>
-	<p><sup class="versenum">33&nbsp;</sup>Oh, the depth of the riches of the wisdom and knowledge of God!<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;How unsearchable his judgments,<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;and his paths beyond tracing out!<br />
-	<sup class="versenum">34&nbsp;</sup>&ldquo;Who has known the mind of the Lord?<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;Or who has been his counselor?&rdquo;<br />
-	<sup class="versenum">35&nbsp;</sup>&ldquo;Who has ever given to God,<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;that God should repay them?&rdquo;<br />
-	<sup class="versenum">36&nbsp;</sup>For from him and through him and for him are all things.<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;To him be the glory forever! Amen.</p></div>
+<div id="Summary4" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text4">
-<!-- end default revealSummary --><div class="reveal">&nbsp;
-
-<h2 class="forward">Preparing for Mission</h2>
+<!-- end default revealSummary -->
 
 <ul class="forward">
 	<li>Give a modern example by telling your own story and highlighting the 3 parts</li>

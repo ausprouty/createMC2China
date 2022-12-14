@@ -207,40 +207,9 @@ export default {
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary3" class="summary"><div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply3-index')">
-        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
-    </div>
-</div>
-<div class="page_content ltr">
-<div class="block ltr">
-                        <div class="chapter_number ltr"><h1>48.</h1></div>
-                        <div class="chapter_title ltr"><h1>Paul Gives Testimony to Roman Governor Felix</h1></div>
-                    </div>
-<div id="showVideoOptions"></div>+ 
-  <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
-</div>
-
-<!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-<p class="back"><em>Read a scripture and sing worship songs</div>
-  <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
-</div>
-
-<!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-<p class="back"><em>Read a scripture and sing worship songs.</em></p></div>
+<div id="Summary3" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text3">
-<!-- end default revealSummary --><div class="reveal">&nbsp;
-
-<h2 class="forward">Preparing for Mission</h2>
-
+<!-- end default revealSummary -->
 <ul class="forward">
 	<li>Practice needed skills or previous topics to help prepare to minister to others:<br />
 	o Prayer, Care, Share<br />

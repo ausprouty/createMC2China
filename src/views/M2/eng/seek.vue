@@ -26,7 +26,7 @@ export default {
 <div class="Xapp-link">
   <div class="card-link" @click="vuePush('eng-hope-index')">
     <div class="Xapp-card -Xshadow">
-      <img src="@/assets/images/standard/Stories-of-Hope.png" class="book-large" />
+      <img src="@/assets/images//standard/Stories-of-Hope.png" class="book-large" />
     </div>
   </div>
 </div>
@@ -35,7 +35,7 @@ export default {
 <div class="Xapp-link">
   <div class="card-link" @click="vuePush('eng-prophet-index')">
     <div class="Xapp-card -Xshadow">
-      <img src="@/assets/images/standard/Stories-of-the-Prophets.png" class="book-large" />
+      <img src="@/assets/images//standard/Stories-of-the-Prophets.png" class="book-large" />
     </div>
   </div>
 </div>

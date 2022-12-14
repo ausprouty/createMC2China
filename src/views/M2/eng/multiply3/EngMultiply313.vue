@@ -73,30 +73,19 @@ export default {
 
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
-<p class="back">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;</p>
+<ul>
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;
 
-<div class="popup invisible" id="pop1"><!-- begin bible -->
-<div>
-<div>
-<div>
-<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
-
-<p>&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6a)</span></p>
-</div>
-</div>
-</div>
-</div>
+	<div class="popup invisible" id="pop1"><!-- begin bible -->
+	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
+	</div>
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6a)</span></li>
+</ul>
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
-<div>
-<div>
 <p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people. This has now been witnessed to at the proper time.</p>
 </div>
-</div>
-</div>
-
-<p>&nbsp;</p>
 
 </div>
 
@@ -267,41 +256,9 @@ This story also introduces a young religious leader named Saul who approved of a
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary3" class="summary"><div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply3-index')">
-        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
-    </div>
-</div>
-<div class="page_content ltr">
-<div class="block ltr">
-                        <div class="chapter_number ltr"><h1>13.</h1></div>
-                        <div class="chapter_title ltr"><h1>Stephen Murdered and Believers Scattered</h1></div>
-                    </div>
-<div id="showVideoOptions"></div>+ 
-  <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
-</div>
-
-<!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-
-<p class="back"><em>Read a scripture and sing worship songs</div>
-  <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
-</div>
-
-<!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-
-<p class="back"><em>Read a scripture and sing worship songs.</em></p></div>
+<div id="Summary3" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text3">
-<!-- end default revealSummary --><div class="reveal">&nbsp;
-
-<h2 class="forward">Preparing for Mission</h2>
+<!-- end default revealSummary -->
 
 <ul class="forward">
 	<li>Practice needed skills or previous topics to help prepare to minister to others:<br />

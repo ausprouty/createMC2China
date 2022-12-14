@@ -229,51 +229,9 @@ export default {
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary4" class="summary"><div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply1-index')">
-        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
-    </div>
-</div>
-<div class="page_content ltr">
-<div class="block ltr">
-                        <div class="chapter_number ltr"><h1>17.</h1></div>
-                        <div class="chapter_title ltr"><h1>Cost of Discipleship </h1></div>
-                    </div>
-<div id="showVideoOptions"></div>
-  <!-- Lesson 16: Cost of Discipleship -->
-<div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">+ LOOKING BACK</span></div>
-</div>
-
-<!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-<ul>
-	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Hebrews 13:14-15</span>
-
-	<div class="popup invisible" id="pop1"><!-- begin bible -->
-	<div>
-	<div>
-	<p><sup class="versenum">14&nbsp;</sup>For here we do not have an enduring city, but we are looking for the ci<span class="back">LOOKING BACK</span></div>
-</div>
-
-<!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-<ul>
-	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Hebrews 13:14-15</span>
-
-	<div class="popup invisible" id="pop1"><!-- begin bible -->
-	<div>
-	<div>
-	<p><sup class="versenum">14&nbsp;</sup>For here we do not have an enduring city, but we are looking for the city that is to come.</p></div>
+<div id="Summary4" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text4">
-<!-- end default revealSummary --><div class="reveal">&nbsp;
-
-<h2 class="forward">Preparing for Mission</h2>
-
+<!-- end default revealSummary -->
 <ul class="forward">
 	<li>Practice any skill or topic from previous lessons to help prepare to minister to others.</li>
 	<li>Practice giving, as agreed upon.</li>

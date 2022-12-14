@@ -70,9 +70,22 @@ export default {
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
+
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
-<p class="back">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (Philippians 2:11b; 1 Timothy 2:4-6a)</p>
+<ul>
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;
+
+	<div class="popup invisible" id="pop1"><!-- begin bible -->
+	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
+	</div>
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6a)</span></li>
+</ul>
+
+<div class="popup invisible" id="pop2"><!-- begin bible -->
+<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people. This has now been witnessed to at the proper time.</p>
+</div>
 
 </div>
 
@@ -97,6 +110,7 @@ export default {
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
 <!-- end default revealSummary -->
+
 <p class="back"><em>Choose a way to cast vision for who they can become in Christ or what God can do through them by:</em></p>
 
 <ul>
@@ -125,7 +139,7 @@ export default {
 	<li class="up">Read or watch Acts 20:13-38 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 20:13-38</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 20:13-38</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Paul&rsquo;s Farewell to the Ephesian Elders</h3>
@@ -191,11 +205,10 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
+
 <p class="up">On his way to Jerusalem, Paul and the ministry team stopped in Miletus. Paul called the Ephesian elders to come so that he could speak to them one last time. From Paul&rsquo;s experiences we learn a lot about the perseverance it takes to plant churches in non-Christian cities. Paul faced many trials and hardships, but still told the Ephesians the truth. He did not change his message to please the people. Paul also modeled complete surrender to the Lord&rsquo;s will even in the midst of suffering. We also learn a lot about the important role that elders have. They are to guard their lives and be a model of how to walk with Jesus. They are also to guard God&rsquo;s people and feed them by teaching the Word. Jesus taught that the nature of the Kingdom of God would always include the presence of evil (<span class="popup-link" @click = "popUp('pop1')"> Matthew 13:24-30</span>).</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
-<div>
-<div>
 <p><sup class="versenum">24&nbsp;</sup>Jesus told them another parable: &ldquo;The kingdom of heaven is like a man who sowed good seed in his field.<sup class="versenum">25&nbsp;</sup>But while everyone was sleeping, his enemy came and sowed weeds among the wheat, and went away.<sup class="versenum">26&nbsp;</sup>When the wheat sprouted and formed heads, then the weeds also appeared.</p>
 
 <p><sup class="versenum">27&nbsp;</sup>&ldquo;The owner&rsquo;s servants came to him and said, &lsquo;Sir, didn&rsquo;t you sow good seed in your field? Where then did the weeds come from?&rsquo;</p>
@@ -205,19 +218,13 @@ export default {
 <p>&ldquo;The servants asked him, &lsquo;Do you want us to go and pull them up?&rsquo;</p>
 
 <p><sup class="versenum">29&nbsp;</sup>&ldquo;&lsquo;No,&rsquo; he answered, &lsquo;because while you are pulling the weeds, you may uproot the wheat with them.<sup class="versenum">30&nbsp;</sup>Let both grow together until the harvest. At that time I will tell the harvesters: First collect the weeds and tie them in bundles to be burned; then gather the wheat and bring it into my barn.&rsquo;&rdquo;</p>
-</div>
-</div>
 <!-- end bible --></div>
 Paul knew they would face the dangers of false teachers whose desire was to destroy believers. This period ends with Paul stating that his work was done in the Eastern part of the Roman Empire (<span class="popup-link" @click = "popUp('pop2')"> Romans 15:19</span>).&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
-<div>
-<div>
 <p><sup class="versenum">19&nbsp;</sup>by the power of signs and wonders, through the power of the Spirit of God. So from Jerusalem all the way around to Illyricum, I have fully proclaimed the gospel of Christ.</p>
 
 <p>&nbsp;</p>
-</div>
-</div>
 </div>
 
 </div>
@@ -229,39 +236,9 @@ Paul knew they would face the dangers of false teachers whose desire was to dest
 </div>
 
 <!-- begin default revealSummary -->
-<div id="Summary3" class="summary"><div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply3-index')">
-        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
-    </div>
-</div>
-<div class="page_content ltr">
-<div class="block ltr">
-                        <div class="chapter_number ltr"><h1>42.</h1></div>
-                        <div class="chapter_title ltr"><h1>Final Instructions for Ephesians Elders</h1></div>
-                    </div>
-<div id="showVideoOptions"></div>+ 
-  <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
-</div>
-
-<!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-<p class="back"><em>Read a scripture and sing worship songs</div>
-  <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
-</div>
-
-<!-- begin default revealSummary -->
-<div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
-<div class="collapsed" id ="Text0">
-<!-- end default revealSummary -->
-<p class="back"><em>Read a scripture and sing worship songs.</em></p></div>
+<div id="Summary3" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text3">
-<!-- end default revealSummary --><div class="reveal">&nbsp;
-
-<h2 class="forward">Preparing for Mission</h2>
+<!-- end default revealSummary -->
 
 <ul class="forward">
 	<li>Practice needed skills or previous topics to help prepare to minister to others:<br />

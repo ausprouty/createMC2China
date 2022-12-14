@@ -6,6 +6,15 @@ export default {
     Footer
   },
   methods:{
+    pageGoBack(returnto){
+      if (localStorage.getItem("returnpage")) {
+        returnto = localStorage.getItem("returnpage");
+        localStorage.removeItem("returnpage")
+      }
+      this.$router.push({
+        name: returnto,
+      })
+    },
     vuePush(id){
       this.$router.push({
         name: id,
@@ -19,7 +28,7 @@ export default {
 
 <div class="page_content" dir="ltr">
   <div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('../index.html')">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng-index')">
         <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
     </div>
 </div>
