@@ -190,7 +190,7 @@ export default {
 <p class="up">Hundreds of thousands of worshippers and tourist came to Ephesus every year to worship in the magnificent Temple of Artemis, considered one of the seven wonders of the ancient world. So many people were becoming followers of Jesus that those who made their living from selling idols to the worshippers were losing money. A silversmith named Demetrius stirred up the craftsmen, causing a riot against Paul and his message. The civil leaders Paul had befriended during his long stay in Ephesus, helped protect him from the angry crowd. The Lord used the mayor to calm the crowd and to warn them that they were in danger of causing problems for the city with the Emperor in Rome. From this story we learn an important leadership principal: Paul developed leaders by involving them in the ministry. Gaius and Aristarchus came from the harvest in Macedonia and were helping with the growing movement.</p>
 
 <p class="up"><br />
-The second letter to the church in Corinth can be read here. (<a href="https://www.biblegateway.com/passage/?search=2+Corinthians+1&amp;version=NIV">2 Corinthians)</p>
+The second letter to the church in Corinth can be read here. (2 Corinthians)</p>
 
 </div>
 

@@ -188,7 +188,7 @@ export default {
 <p class="up">The city of Ephesus was full of people practicing occult magic. The Lord was doing unusual miracles through Paul to provide healing to the sick and the possessed. Traveling Jewish exorcists tried to be like Paul but were unsuccessful in using the name of Jesus in their spells. They were powerless because they didn&rsquo;t have the gift of the Holy Spirit through a personal relationship with Jesus. We learn from this story that evil spirits know about Jesus and His servants. This event caused repentance and revival among the young Ephesian believers who had not yet completely given up unholy things from their past life. Because of Paul&rsquo;s development of other leaders, he was able to commission Timothy and Erasmus to further disciple the believers in Macedonia. Paul continued to do long-distance coaching and mentoring of the church in Corinth through the writing of letters. This story includes the fifth summary statement found in Acts: the word of the Lord continued to spread widely and have a powerful effect.</p>
 
 <p class="up"><br />
-The first letter to the church in Corinth can be read here (<a href="https://www.biblegateway.com/passage/?search=1%20Corinthians%201&amp;version=NIV">1 Corinthians).</p>
+The first letter to the church in Corinth can be read here (1 Corinthians).</p>
 
 </div>
 
