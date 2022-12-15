@@ -115,7 +115,7 @@ export default {
 </ul>
 </div>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 22:66-23:25</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 22:66-23:25</button><div class="collapsed" id ="Text0">
 
 <h3>Jesus Before Pilate and Herod</h3>
 

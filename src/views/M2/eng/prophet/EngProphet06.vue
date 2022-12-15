@@ -108,7 +108,7 @@ Read</h2>
 	<li class="indent">Read Luke 1:26-38, Luke 2:1-20 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 1:26-38</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 1:26-38</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Birth of Jesus Foretold</h3>
@@ -128,7 +128,7 @@ Read</h2>
 
 </div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Luke 2:1-20</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Luke 2:1-20</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <div>

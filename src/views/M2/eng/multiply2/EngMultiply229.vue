@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch Luke 7:1-10 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 7:1-10</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 7:1-10</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Faith of the Centurion</h3>

@@ -137,7 +137,7 @@ export default {
 
 <p class="up">Read or watch Acts 8:34-40<strong> </strong>two times as everyone listens</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 8:34-40</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 8:34-40</button><div class="collapsed" id ="Text0">
 
 <p><sup>34&nbsp;</sup>The eunuch asked Philip, &ldquo;Tell me, please, who is the prophet talking about, himself or someone else?&rdquo;<sup class="versenum">35&nbsp;</sup>Then Philip began with that very passage of Scripture and told him the good news about Jesus.</p>
 

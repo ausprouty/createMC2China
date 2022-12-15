@@ -156,7 +156,7 @@ export default {
 	<li class="up">Read or watch Mark 5:1-20 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Mark 5:1-20</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Mark 5:1-20</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Jesus Restores a Demon-Possessed Man</h3>

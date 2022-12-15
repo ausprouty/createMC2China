@@ -141,7 +141,7 @@ export default {
 
 <p>Read or watch Acts 22:1-21 two times as everyone listens</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 22:1-21</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 22:1-21</button><div class="collapsed" id ="Text0">
 
 <p><sup>1&nbsp;</sup>&ldquo;Brothers and fathers, listen now to my defense.&rdquo;</p>
 

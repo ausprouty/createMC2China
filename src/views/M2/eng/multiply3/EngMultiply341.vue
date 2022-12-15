@@ -127,7 +127,7 @@ export default {
 	<li class="up">Read or watch Acts 20:1-12 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 20:1-12</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 20:1-12</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Through Macedonia and Greece</h3>
@@ -170,10 +170,7 @@ export default {
 
 <!-- begin note sdcard -->
 <div class="note-div">
-    <form class="auto_submit_item">
-      <textarea
-        class="textarea resize-ta"
-        @keyup="this.addNotes()"
+    <form class="auto_submis()"
         id="note1Text"
       ></textarea>
     </form>
@@ -248,7 +245,7 @@ He linked leaders and churches together to help them see that they were part of 
 <!-- end bible --></div>
 
 <p><br />
-The letter to the Romans can be read here</a>.</p>
+The letter to the Romans can be <a href="https://www.biblegateway.com/passage/?search=Romans+1&amp;version=NIV">read here.</p>
 
 </div>
 

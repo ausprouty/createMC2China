@@ -156,7 +156,7 @@ export default {
 	<li class="up">Read or watchLuke 6:27-49 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 6:27-49</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 6:27-49</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Love for Enemies</h3>

@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch John 3:1-21 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 3:1-21</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 3:1-21</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Jesus Teaches Nicodemus</h3>

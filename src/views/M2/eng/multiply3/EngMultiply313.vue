@@ -139,7 +139,7 @@ export default {
 	<li class="up">Read or watch Acts 7:54-8:3 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 7:54-8:3</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 7:54-8:3</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <p><sup class="versenum">54&nbsp;</sup>When the members of the Sanhedrin heard this, they were furious and gnashed their teeth at him.<sup class="versenum">55&nbsp;</sup>But Stephen, full of the Holy Spirit, looked up to heaven and saw the glory of God, and Jesus standing at the right hand of God.<sup class="versenum">56&nbsp;</sup>&ldquo;Look,&rdquo; he said, &ldquo;I see heaven open and the Son of Man standing at the right hand of God.&rdquo;</p>
@@ -158,10 +158,12 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply3/313.mp4" type="button" class="external-movie">
-         Watch  Acts 7:54-8:3</button>
+         Watch  Acts 7:54-8:3</button>
     <div class="collapsed"></div>
 
-<div classsp;</p>
+
+
+<p>&nbsp;</p>
 
 <p class="up">Discovery Discussion (Everyone answers)</p>
 

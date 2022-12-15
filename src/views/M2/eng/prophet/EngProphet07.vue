@@ -108,7 +108,7 @@ Read</h2>
 	<li class="indent">Read Luke 5:17-26 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 5:17-26</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 5:17-26</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Jesus Forgives and Heals a Paralyzed Man</h3>

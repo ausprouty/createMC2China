@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch Matthew 28:16-20 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Matthew 28:16-20</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Matthew 28:16-20</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Great Commission</h3>

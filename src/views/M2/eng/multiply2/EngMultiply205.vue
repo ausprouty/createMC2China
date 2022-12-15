@@ -156,7 +156,7 @@ export default {
 
 <p class="up">Read or watch Matthew 13:55-56,&nbsp; Psalm 69:7-12 and Mark 6:3 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Matthew 13:55-56</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Matthew 13:55-56</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <p><sup class="versenum">55&nbsp;</sup>&ldquo;Isn&rsquo;t this the carpenter&rsquo;s son? Isn&rsquo;t his mother&rsquo;s name Mary, and aren&rsquo;t his brothers James, Joseph, Simon and Judas?<sup class="versenum">56&nbsp;</sup>Aren&rsquo;t all his sisters with us? Where then did this man get all these things?&rdquo;</p>
@@ -170,7 +170,7 @@ export default {
          Watch &nbsp;"Matthew 13:55-56"&nbsp;</button>
     <div class="collapsed"></div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Psalm 69:7-12</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Psalm 69:7-12</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <p><sup class="versenum">7&nbsp;</sup>For I endure scorn for your sake,<br />
@@ -191,7 +191,7 @@ export default {
 
 </div>
 
-<button id="Button2" type="button" class="collapsible bible">Read Mark 6:3</button><div class="collapsed" id ="Text2">
+<button id="Button2" type="button" class="collapsible bible">Read Mark 6:3</button><div class="collapsed" id ="Text2">
 <!-- begin bible -->
 
 <p><sup class="versenum">3&nbsp;</sup>Isn&rsquo;t this the carpenter? Isn&rsquo;t this Mary&rsquo;s son and the brother of James, Joseph, Judas and Simon? Aren&rsquo;t his sisters here with us?&rdquo; And they took offense at him.</p>

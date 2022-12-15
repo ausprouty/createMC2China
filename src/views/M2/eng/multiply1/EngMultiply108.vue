@@ -133,7 +133,7 @@ export default {
 
 <p>Read or watch Luke 18:35-43 two times as everyone listens</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 18:35-43</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 18:35-43</button><div class="collapsed" id ="Text0">
 
 <p><sup>35&nbsp;</sup>As Jesus approached Jericho, a blind man was sitting by the roadside begging.<sup class="versenum">36&nbsp;</sup>When he heard the crowd going by, he asked what was happening.<sup class="versenum">37&nbsp;</sup>They told him, &ldquo;Jesus of Nazareth is passing by.&rdquo;</p>
 

@@ -100,7 +100,7 @@ export default {
 	<li class="flush">Read Luke 7:36-50 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 7:36-50</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 7:36-50</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Jesus Anointed by a Sinful Woman</h3>

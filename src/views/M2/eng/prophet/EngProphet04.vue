@@ -108,7 +108,7 @@ Read</h2>
 	<li class="indent">Read Exodus 12:1-12, Exodus 12:28-30 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Exodus 12:1-12</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Exodus 12:1-12</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Passover and the Festival of Unleavened Bread</h3>
@@ -122,7 +122,7 @@ Read</h2>
 
 </div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Exodus 12:28-30</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Exodus 12:28-30</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <p><sup class="versenum">28&nbsp;</sup>The Israelites did just what the <span class="small-caps">Lord commanded Moses and Aaron.</span></p>

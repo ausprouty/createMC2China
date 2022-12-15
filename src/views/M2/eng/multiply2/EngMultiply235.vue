@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch Matthew 14:1-14 and Mark 6:30 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Matthew 14:1-14</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Matthew 14:1-14</button><div class="collapsed" id ="Text0">
 
 <h3>John the Baptist Beheaded</h3>
 
@@ -177,7 +177,7 @@ export default {
          Watch &nbsp;"Matthew 14:1-12"&nbsp;</button>
     <div class="collapsed"></div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Mark 6:30</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Mark 6:30</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <p><sup class="versenum">30&nbsp;</sup>The apostles gathered around Jesus and reported to him all they had done and taught.</p>

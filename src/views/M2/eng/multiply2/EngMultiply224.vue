@@ -158,7 +158,7 @@ export default {
 	<li class="up">Read or watch John 5:1-17 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 5:1-17</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 5:1-17</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <div>

@@ -108,7 +108,7 @@ Read</h2>
 	<li class="indent">Read Luke 23:26-24:7, 35-36 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 23:26-24:7, 35-36</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 23:26-24:7, 35-36</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <div>

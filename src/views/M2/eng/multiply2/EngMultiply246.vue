@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch Luke 19:28-48 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 19:28-48</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 19:28-48</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Jesus Comes to Jerusalem as King</h3>
@@ -191,10 +191,14 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply2/246.mp4" type="button" class="external-movie">
-         Watch  Luke 19:28-48</button>
+         Watch  Luke 19:28-48</button>
     <div class="collapsed"></div>
 
-<div class= class="up">Discovery Discussion (Everyone answers)</h2>
+
+
+
+
+<h2 class="up">Discovery Discussion (Everyone answers)</h2>
 
 <ul class="up">
 	<li><span><span>What caught your attention or what did you like best? Why?</span></span></li>

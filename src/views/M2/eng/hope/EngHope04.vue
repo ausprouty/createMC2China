@@ -116,7 +116,7 @@ export default {
 	</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Matthew 18:21-35</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Matthew 18:21-35</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Parable of the Unmerciful Servant</h3>

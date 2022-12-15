@@ -154,7 +154,7 @@ export default {
 
 <p class="up"><em>Read or watch John 1:14-18 two times as others listen.</em></p>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 1:14-18</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 1:14-18</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <p><sup class="versenum">14&nbsp;</sup>The Word became flesh and made his dwelling among us. We have seen his glory, the glory of the one and only Son, who came from the Father, full of grace and truth.</p>

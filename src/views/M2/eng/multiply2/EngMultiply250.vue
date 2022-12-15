@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch John 19:31-20:31 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 19:31- 20:31</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 19:31- 20:31</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <p><sup class="versenum">31&nbsp;</sup>Now it was the day of Preparation, and the next day was to be a special Sabbath. Because the Jewish leaders did not want the bodies left on the crosses during the Sabbath, they asked Pilate to have the legs broken and the bodies taken down.<sup class="versenum">32&nbsp;</sup>The soldiers therefore came and broke the legs of the first man who had been crucified with Jesus, and then those of the other.<sup class="versenum">33&nbsp;</sup>But when they came to Jesus and found that he was already dead, they did not break his legs.<sup class="versenum">34&nbsp;</sup>Instead, one of the soldiers pierced Jesus&rsquo; side with a spear, bringing a sudden flow of blood and water.<sup class="versenum">35&nbsp;</sup>The man who saw it has given testimony, and his testimony is true. He knows that he tells the truth, and he testifies so that you also may believe.<sup class="versenum">36&nbsp;</sup>These things happened so that the scripture would be fulfilled: &ldquo;Not one of his bones will be broken,&rdquo;<sup class="versenum">37&nbsp;</sup>and, as another scripture says, &ldquo;They will look on the one they have pierced.&rdquo;</p>
@@ -217,10 +217,12 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply2/250.mp4" type="button" class="external-movie">
-         Watch  John 19:31- 20:31</button>
+         Watch  John 19:31- 20:31</button>
     <div class="collapsed"></div>
 
-<div cl class="up">Discovery Discussion (Everyone answers)</h2>
+
+
+<h2 class="up">Discovery Discussion (Everyone answers)</h2>
 
 <ul class="up">
 	<li><span><span>What caught your attention or what did you like best? Why?</span></span></li>

@@ -194,7 +194,7 @@ export default {
 <!-- end bible --></div>
 This is an important principle to teach as we make disciples. Paul and Barnabas completed their work and went back to their home church to report about what the Lord had done. The entire trip lasted about one year. Not too long after this trip, Paul wrote a letter back to the new churches in the province of Galatia.
 
-<p class="up">The letter to the Galatian churches can be read here</a>.</p>
+<p class="up">The letter to the Galatian churches can be <a href="https://www.biblegateway.com/passage/?search=Galatians%201&amp;version=NIV">read here.</p>
 
 </div>
 

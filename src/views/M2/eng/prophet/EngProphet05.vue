@@ -108,7 +108,7 @@ Read</h2>
 	<li class="indent">Read Isaiah 53, Psalm 2 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Isaiah 53</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Isaiah 53</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <div>
@@ -177,7 +177,7 @@ For he bore the sin of many,<br />
 
 </div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Psalm 2</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Psalm 2</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <p><sup class="versenum">1&nbsp;</sup>Why do the nations conspire<br />

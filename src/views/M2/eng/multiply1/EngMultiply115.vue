@@ -165,7 +165,7 @@ export default {
 
 <p class="up">Read or watch Acts 4:32-37 two times as everyone listens</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 4:32-37</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 4:32-37</button><div class="collapsed" id ="Text0">
 
 <p><sup>32&nbsp;</sup>All the believers were one in heart and mind. No one claimed that any of their possessions was their own, but they shared everything they had.<sup class="versenum">33&nbsp;</sup>With great power the apostles continued to testify to the resurrection of the Lord Jesus. And God&rsquo;s grace was so powerfully at work in them all<sup class="versenum">34&nbsp;</sup>that there were no needy persons among them. For from time to time those who owned land or houses sold them, brought the money from the sales<sup class="versenum">35&nbsp;</sup>and put it at the apostles&rsquo; feet, and it was distributed to anyone who had need.</p>
 

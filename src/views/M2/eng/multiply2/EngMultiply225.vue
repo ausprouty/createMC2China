@@ -157,7 +157,7 @@ export default {
 
 <p class="up">Read or watch John 5:16-47 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 5:16-47</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 5:16-47</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Authority of the Son</h3>

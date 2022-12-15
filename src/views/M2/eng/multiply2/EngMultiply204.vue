@@ -151,7 +151,7 @@ export default {
 
 <p class="up">Read or watch Matthew 2:19-23 and Luke 2:39-52 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Matthew 2:19-23</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Matthew 2:19-23</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Return to Nazareth</h3>
@@ -169,7 +169,7 @@ export default {
          Watch &nbsp;"Matthew 2:19-23"&nbsp;</button>
     <div class="collapsed"></div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Luke 2:39-52</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Luke 2:39-52</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <p><sup class="versenum">39&nbsp;</sup>When Joseph and Mary had done everything required by the Law of the Lord, they returned to Galilee to their own town of Nazareth.<sup class="versenum">40&nbsp;</sup>And the child grew and became strong; he was filled with wisdom, and the grace of God was on him.</p>

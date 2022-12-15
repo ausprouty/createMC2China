@@ -127,7 +127,7 @@ export default {
 	<li class="up">Read or watch Acts 13:1-12 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 13:1-12</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 13:1-12</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <p><sup class="mid-paragraph versenum">1&nbsp;</sup>Now in the church at Antioch there were prophets and teachers: Barnabas, Simeon called Niger, Lucius of Cyrene, Manaen (who had been brought up with Herod the tetrarch) and Saul.<sup class="versenum">2&nbsp;</sup>While they were worshiping the Lord and fasting, the Holy Spirit said, &ldquo;Set apart for me Barnabas and Saul for the work to which I have called them.&rdquo;<sup class="versenum">3&nbsp;</sup>So after they had fasted and prayed, they placed their hands on them and sent them off.</p>
@@ -146,10 +146,12 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply3/324.mp4" type="button" class="external-movie">
-         Watch  Acts 13:1-12</button>
+         Watch  Acts 13:1-12</button>
     <div class="collapsed"></div>
 
-<div classass="up">Discovery Discussion (Everyone answers)</h2>
+
+
+<h2 class="up">Discovery Discussion (Everyone answers)</h2>
 
 <ul class="up">
 	<li>What caught your attention or what did you like best? Why?</li>

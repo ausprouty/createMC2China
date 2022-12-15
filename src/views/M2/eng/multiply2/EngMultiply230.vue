@@ -156,7 +156,7 @@ export default {
 	<li class="up">Read or watch Luke 7:18-35 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 7:18-35</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 7:18-35</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Jesus and John the Baptist</h3>

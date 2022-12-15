@@ -115,7 +115,7 @@ export default {
 	</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 19:1-10</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 19:1-10</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Zacchaeus the Tax Collector</h3>

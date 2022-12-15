@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch John 19:13-30 and Matthew 27:45-46 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 19:13-30</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 19:13-30</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <p><sup class="versenum">13&nbsp;</sup>When Pilate heard this, he brought Jesus out and sat down on the judge&rsquo;s seat at a place known as the Stone Pavement (which in Aramaic is Gabbatha).<sup class="versenum">14&nbsp;</sup>It was the day of Preparation of the Passover; it was about noon.</p>
@@ -203,7 +203,7 @@ export default {
          Watch &nbsp;"John 19:13-30"&nbsp;</button>
     <div class="collapsed"></div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Matthew 27:45-46</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Matthew 27:45-46</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <h3>The Death of Jesus</h3>

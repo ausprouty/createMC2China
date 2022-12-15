@@ -138,7 +138,7 @@ export default {
 
 <p>Read or watch Mark 4:26-29 two times as everyone listens.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Mark 4:26-29</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Mark 4:26-29</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <div>

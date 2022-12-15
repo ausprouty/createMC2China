@@ -156,7 +156,7 @@ export default {
 	<li class="up">Read or watch Luke 9:1-6&nbsp; and Matthew 10:5-23 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 9:1-6</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 9:1-6</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Jesus Sends Out the Twelve</h3>
@@ -173,7 +173,7 @@ export default {
          Watch &nbsp;"Luke 9:1-6"&nbsp;</button>
     <div class="collapsed"></div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Matthew 10:5-23</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Matthew 10:5-23</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <p><sup class="versenum">5&nbsp;</sup>These twelve Jesus sent out with the following instructions: &ldquo;Do not go among the Gentiles or enter any town of the Samaritans.<sup class="versenum">6&nbsp;</sup>Go rather to the lost sheep of Israel.<sup class="versenum">7&nbsp;</sup>As you go, proclaim this message: &lsquo;The kingdom of heaven has come near.&rsquo;<sup class="versenum">8&nbsp;</sup>Heal the sick, raise the dead, cleanse those who have leprosy, drive out demons. Freely you have received; freely give.</p>

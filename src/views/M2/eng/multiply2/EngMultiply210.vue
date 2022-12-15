@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch John 2:12-25 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 2:12-25</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 2:12-25</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <p><sup class="versenum">12&nbsp;</sup>After this he went down to Capernaum with his mother and brothers and his disciples. There they stayed for a few days.</p>

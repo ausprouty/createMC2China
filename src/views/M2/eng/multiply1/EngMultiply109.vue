@@ -151,7 +151,7 @@ export default {
 
 <p class="up">Read or watch Luke 5:27-32 two times as everyone listens</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 5:27-32</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 5:27-32</button><div class="collapsed" id ="Text0">
 
 <p><sup>27&nbsp;</sup>After this, Jesus went out and saw a tax collector by the name of Levi sitting at his tax booth. &ldquo;Follow me,&rdquo; Jesus said to him,<sup class="versenum">28&nbsp;</sup>and Levi got up, left everything and followed him.</p>
 

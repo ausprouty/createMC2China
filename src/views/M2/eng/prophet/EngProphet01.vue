@@ -107,7 +107,7 @@ export default {
 	<li class="indent">Read Genesis 2:15-3:21 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Genesis 2:15-3:21</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Genesis 2:15-3:21</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <p><sup class="versenum">15&nbsp;</sup>The <span class="small-caps">Lord God took the man and put him in the Garden of Eden to work it and take care of it.<sup class="versenum">16&nbsp;</sup>And the <span class="small-caps">Lord God commanded the man, &ldquo;You are free to eat from any tree in the garden;<sup class="versenum">17&nbsp;</sup>but you must not eat from the tree of the knowledge of good and evil, for when you eat from it you will certainly die.&rdquo;</span></span></p>

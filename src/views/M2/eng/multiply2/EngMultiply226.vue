@@ -156,7 +156,7 @@ export default {
 	<li class="up">Read or watch Luke 6:12-19 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 6:12-19</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 6:12-19</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Twelve Apostles</h3>

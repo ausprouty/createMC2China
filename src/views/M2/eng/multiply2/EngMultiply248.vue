@@ -156,7 +156,7 @@ export default {
 
 <p class="up">Read or watch John 14:1-31 and Matthew 26:36-46 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 14</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 14</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Jesus Comforts His Disciples</h3>
@@ -196,7 +196,7 @@ export default {
          Watch &nbsp;"John 14"&nbsp;</button>
     <div class="collapsed"></div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Matthew 26:36-46</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Matthew 26:36-46</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <h3>Gethsemane</h3>

@@ -127,7 +127,7 @@ export default {
 	<li class="up">Read or watch Acts 22:22-23:11 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 22:22-23:11</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 22:22-23:11</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Paul the Roman Citizen</h3>
@@ -170,10 +170,12 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply3/346.mp4" type="button" class="external-movie">
-         Watch  Acts 22:22-23:11</button>
+         Watch  Acts 22:22-23:11</button>
     <div class="collapsed"></div>
 
-<div clalass="up">Discovery Discussion (Everyone answers)</p>
+
+
+<p class="up">Discovery Discussion (Everyone answers)</p>
 
 <ul class="up">
 	<li>What caught your attention or what did you like best? Why?</li>

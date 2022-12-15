@@ -156,7 +156,7 @@ export default {
 	<li class="up">Read or watch Luke 4:16-30 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 4:16-30</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 4:16-30</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <p><sup class="versenum">16&nbsp;</sup>He went to Nazareth, where he had been brought up, and on the Sabbath day he went into the synagogue, as was his custom. He stood up to read,<sup class="versenum">17&nbsp;</sup>and the scroll of the prophet Isaiah was handed to him. Unrolling it, he found the place where it is written:</p>

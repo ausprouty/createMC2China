@@ -803,7 +803,7 @@ export default {
 
 <p>&nbsp;</p>
 
-<p><span class="for-enrichment">Podcast and Video series are available from Power to Change</a></span></p>
+<p><span class="for-enrichment">Podcast and Video series are available from Power to Change</span></p>
 
 
 

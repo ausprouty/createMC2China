@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch Luke 9:28-36 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 9:28-36</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 9:28-36</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Transfiguration</h3>

@@ -160,7 +160,7 @@ export default {
 
 <p class="up">Read or watch John 15:1-11 two times as everyone listens</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 15:1-11</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 15:1-11</button><div class="collapsed" id ="Text0">
 
 <p><sup class="versenum">1&nbsp;</sup>I am the true vine, and my Father is the gardener.<sup class="versenum">2&nbsp;</sup>He cuts off every branch in me that bears no fruit, while every branch that does bear fruit he prunes so that it will be even more fruitful.<sup class="versenum">3&nbsp;</sup>You are already clean because of the word I have spoken to you.<sup class="versenum">4&nbsp;</sup>Remain in me, as I also remain in you. No branch can bear fruit by itself; it must remain in the vine. Neither can you bear fruit unless you remain in me.</p>
 

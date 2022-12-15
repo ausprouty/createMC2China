@@ -108,7 +108,7 @@ Read</h2>
 	<li class="indent">Read Genesis 12:1-8, Genesis 15:1-6, Genesis 22:1-19 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Genesis 12:1-8</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Genesis 12:1-8</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Call of Abram</h3>
@@ -135,7 +135,7 @@ and all peoples on earth<br />
 
 </div>
 
-<button id="Button1" type="button" class="collapsible bible">Read Genesis 15:1-6</button><div class="collapsed" id ="Text1">
+<button id="Button1" type="button" class="collapsible bible">Read Genesis 15:1-6</button><div class="collapsed" id ="Text1">
 <!-- begin bible -->
 
 <h3>The <span class="small-caps">Lord&rsquo;s Covenant With Abram</span></h3>
@@ -157,7 +157,7 @@ and all peoples on earth<br />
 
 </div>
 
-<button id="Button2" type="button" class="collapsible bible">Read Genesis 22:1-19</button><div class="collapsed" id ="Text2">
+<button id="Button2" type="button" class="collapsible bible">Read Genesis 22:1-19</button><div class="collapsed" id ="Text2">
 <!-- begin bible -->
 
 <h3>Abraham Tested</h3>

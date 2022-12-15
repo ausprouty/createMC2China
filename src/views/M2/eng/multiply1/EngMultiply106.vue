@@ -118,7 +118,7 @@ export default {
 
 <p class="up">Read or watch Luke 11:1-13&nbsp;two times as everyone listens</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 11:1-13</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 11:1-13</button><div class="collapsed" id ="Text0">
 
 <p><sup class="versenum">1&nbsp;</sup>One day Jesus was praying in a certain place. When he finished, one of his disciples said to him, &ldquo;Lord, teach us to pray, just as John taught his disciples.&rdquo;</p>
 

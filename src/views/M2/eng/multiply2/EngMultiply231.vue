@@ -154,7 +154,7 @@ export default {
 
 <p class="up">Read or watch Luke 7:36 - 8:3 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 7:36-8:3</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 7:36-8:3</button><div class="collapsed" id ="Text0">
 <!-- begin bible --><!-- end bible --><!-- begin bible -->
 
 <h3>Jesus Anointed by a Sinful Woman</h3>
@@ -191,10 +191,12 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply2/231.mp4" type="button" class="external-movie">
-         Watch  Luke 7:36-8:3</button>
+         Watch  Luke 7:36-8:3</button>
     <div class="collapsed"></div>
 
-<div classass="up">Discovery Discussion (Everyone answers)</h2>
+
+
+<h2 class="up">Discovery Discussion (Everyone answers)</h2>
 
 <ul class="up">
 	<li><span><span>What caught your attention or what did you like best? Why?</span></span></li>

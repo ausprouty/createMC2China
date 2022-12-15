@@ -137,7 +137,7 @@ export default {
 	<li class="up">Read or watch Luke 15:11-24 two times as everyone listens</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 15:11-24</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 15:11-24</button><div class="collapsed" id ="Text0">
 
 <p><sup>11&nbsp;</sup>Jesus continued: &ldquo;There was a man who had two sons.<sup class="versenum">12&nbsp;</sup>The younger one said to his father, &lsquo;Father, give me my share of the estate.&rsquo; So he divided his property between them.</p>
 

@@ -151,7 +151,7 @@ export default {
 
 <p class="up">Read or watch Matthew 3:13-17 two times as others listen.</p>
 
-<button id="Button0" type="button" class="collapsible bible">Read Matthew 3:13-17</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Matthew 3:13-17</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Baptism of Jesus</h3>

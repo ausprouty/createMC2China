@@ -127,7 +127,7 @@ export default {
 	<li class="up">Read or watch Acts 1:12-26 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 1:12-26</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 1:12-26</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Matthias Chosen to Replace Judas</h3>

@@ -113,7 +113,7 @@ export default {
 	</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Luke 15:11-32</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Luke 15:11-32</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>The Parable of the Lost Son</h3>

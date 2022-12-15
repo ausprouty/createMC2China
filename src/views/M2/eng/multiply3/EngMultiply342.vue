@@ -139,7 +139,7 @@ export default {
 	<li class="up">Read or watch Acts 20:13-38 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 20:13-38</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 20:13-38</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Paul&rsquo;s Farewell to the Ephesian Elders</h3>

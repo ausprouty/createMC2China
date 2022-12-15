@@ -157,7 +157,7 @@ export default {
 	<li class="up">Read or watch John 7:1-8:11 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read John 7:1-8:11</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read John 7:1-8:11</button><div class="collapsed" id ="Text0">
 <!-- begin bible --><!-- end bible --><!-- begin bible -->
 
 <h3>Jesus Goes to the Festival of Tabernacles</h3>
@@ -234,10 +234,12 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply2/241.mp4" type="button" class="external-movie">
-         Watch  John 7:1-8:11</button>
+         Watch  John 7:1-8:11</button>
     <div class="collapsed"></div>
 
-<div claslass="up">Discovery Discussion (Everyone answers)</h2>
+
+
+<h2 class="up">Discovery Discussion (Everyone answers)</h2>
 
 <ul class="up">
 	<li><span><span>What caught your attention or what did you like best? Why?</span></span></li>

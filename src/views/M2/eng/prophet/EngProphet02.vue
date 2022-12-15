@@ -108,7 +108,7 @@ Read</h2>
 	<li class="indent">Read Genesis 6:9 &ndash; 8:22 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Genesis 6:9-8:22</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Genesis 6:9-8:22</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Noah and the Flood</h3>

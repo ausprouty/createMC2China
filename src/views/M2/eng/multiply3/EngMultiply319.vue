@@ -51,12 +51,10 @@ export default {
 }
 </script>
 <template>
-  <button id="MC2/eng/video/multiply3/319-1.mp4" type="button" class="external-movie">
-         Watch &nbsp;"
-    
-        
-    "&nbsp;</button>
-    <div class="collapsed"></div>
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply3-index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
 </div>
 <div class="page_content ltr">
 <div class="block ltr">
@@ -129,7 +127,7 @@ export default {
 	<li class="up">Read or watch Acts 10:1-33 two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 10:1-33</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 10:1-33</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>Cornelius Calls for Peter</h3>
@@ -174,38 +172,12 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply3/319.mp4" type="button" class="external-movie">
-         Watch  Acts 10:1-33</button>
+         Watch  Acts 10:1-33</button>
     <div class="collapsed"></div>
 
-<div classlass="reveal film">&nbsp;
 
-<table border="1" class="video">
-	<tbody class="video">
-		<tr class="video">
-			<td class="label video"><strong>Title:</strong></td>
-			<td class="video">Acts 10:24-33</td>
-		</tr>
-		<tr class="video">
-			<td class="label video"><strong>URL:</strong></td>
-			<td class="video">https://api.arclight.org/videoPlayerUrl?refId=2_529-Acts7328-0-0</td>
-		</tr>
-		<tr class="video">
-			<td class="instruction video" colspan="2" style="text-align:center">
-			<h2><strong>Set times if you do not want to play the entire video</strong></h2>
-			</td>
-		</tr>
-		<tr class="video">
-			<td class="label video">Start Time: (min:sec)</td>
-			<td class="video">start</td>
-		</tr>
-		<tr class="video">
-			<td class="label video">End Time: (min:sec)</td>
-			<td class="video">1:35</td>
-		</tr>
-	</tbody>
-</table>
 
-</div>
+
 
 <h2 class="up">Discovery Discussion (Everyone answers)</h2>
 

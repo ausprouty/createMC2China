@@ -127,7 +127,7 @@ export default {
 	<li class="up">Read or watch Acts 17:16-34&nbsp; two times as others listen.</li>
 </ul>
 
-<button id="Button0" type="button" class="collapsible bible">Read Acts 17:16-34</button><div class="collapsed" id ="Text0">
+<button id="Button0" type="button" class="collapsible bible">Read Acts 17:16-34</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
 <h3>In Athens</h3>
