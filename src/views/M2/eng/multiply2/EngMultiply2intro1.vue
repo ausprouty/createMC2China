@@ -59,23 +59,7 @@ export default {
 <div class="page_content ltr">
 <h1>Period 1 -- Preparation</h1>
 <div id="showVideoOptions"></div>
-  <p class="year">
-        <script src="sites/default/javascript/pinch-zoom.js"></script>
-        <script src="sites/default/javascript/myZoom.js"></script>
-        <div class="page pinch-zoom-parent offscreen" id="pinch-zoom-parent">
-            <div class="pinch-zoom-close" onclick="zoomClose()">
-                <input type="hidden" id="pinch-zoom-id" value="0">
-                <img class="close" src="sites/default/images/close.png" />
-            </div>
-            <div class="pinch-zoom">
-                <div><img  id="pinch-zoom-image"  src="@/assets/images/eng/multiply2/Period1.png" /></div>
-            </div>
-        </div>
-        <div id = "pinch-zoom0" onclick="zoomShow('0', '@/assets/images/eng/multiply2/Period1.png', )">
-             <img  alt="Stage of Ministry" src="@/assets/images/eng/multiply2/Period1.png" />
-        </div>
-<!-- end linkInternal sdcard-->
-</span><br />
+  <p class="year"><img alt="Stage of Ministry" class="lesson_image" src="@/assets/images/eng/multiply2/Period1.png" /><br />
 Period 1: Preparation: around 4 B.C. &ndash; 26 AD</p>
 
 <h2><br />

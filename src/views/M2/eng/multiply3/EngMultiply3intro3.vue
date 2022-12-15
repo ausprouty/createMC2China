@@ -59,21 +59,7 @@ export default {
 <div class="page_content ltr">
 <h1>Period 3: Expanding to New Territories</h1>
 <div id="showVideoOptions"></div>
-  <p>
-        <script src="sites/default/javascript/pinch-zoom.js"></script>
-        <script src="sites/default/javascript/myZoom.js"></script>
-        <div class="page pinch-zoom-parent offscreen" id="pinch-zoom-parent">
-            <div class="pinch-zoom-close" onclick="zoomClose()">
-                <input type="hidden" id="pinch-zoom-id" value="0">
-                <img class="close" src="sites/default/images/close.png" />
-            </div>
-            <div class="pinch-zoom">
-                <div><img  id="pinch-zoom-image"  src="@/assets/images/eng/multiply3/Trip1.png" /></div>
-            </div>
-        </div>
-        <div id = "pinch-zoom0" onclick="zoomShow('0', '@/assets/images/eng/multiply3/Trip1.png', )">
-             <img  alt="" src="@/assets/images/eng/multiply3/Trip1.png" />
-        </div></p>
+  <p><span class="zoom"><img alt="" src="@/assets/images/eng/multiply3/Trip1.png" /></span></p>
 
 <p>&nbsp;</p>
 
