@@ -4,7 +4,9 @@ import { Capacitor } from '@capacitor/core';
 
 export async function useRevealMedia(series_path) {
   await Diagnostic.isExternalStorageAuthorized().then(async (response)=>{
-    console.log ('revealMedia says external storage is Authorized')
+    console.log ('revealMedia says external storage is Authorized for someone')
+    console.log (response)
+    console.log ('bob is a genious')
      if (response == true){
       setupMediaListeners()
       console.log (findExternalStoragePath())
