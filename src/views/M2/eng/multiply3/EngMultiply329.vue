@@ -70,6 +70,7 @@ export default {
 <div id="Summary0" class="summary"><h2 class="back">+ Praise</h2></div>
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
+
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <p class="back">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (Philippians 2:11b; 1 Timothy 2:4-6a)</p>
@@ -97,6 +98,7 @@ export default {
 <div id="Summary1" class="summary"><h2 class="back">+ Motivation and Encouragement</h2></div>
 <div class="collapsed" id ="Text1">
 <!-- end default revealSummary -->
+
 <p class="back"><em>Choose a way to cast vision for who they can become in Christ or what God can do through them by:</em></p>
 
 <ul>
@@ -183,6 +185,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
+
 <p class="up">After planting another church in Derbe, Paul and Barnabas decide to revisit the new churches on their return journey to Syrian Antioch. Their purpose was to strengthen the faith of the new believers and stabilize the churches by identifying and appointing local elders in each new church. Even though these churches were only a few months old, they were led by new believers. Part of the foundational discipleship Paul taught the new believers was how to respond to persecution and the reality of hardships that come with boldly following Jesus (<span class="popup-link" @click = "popUp('pop1')"> Acts 14:22</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
@@ -210,6 +213,7 @@ This is an important principle to teach as we make disciples. Paul and Barnabas 
 <div id="Summary3" class="summary"><h2 class="forward">+ Preparing for Mission</h2></div>
 <div class="collapsed" id ="Text3">
 <!-- end default revealSummary -->
+
 <p>Practice needed skills or previous topics to help prepare to minister to others:</p>
 
 <ul>
