@@ -63,7 +63,7 @@ export async function useRevealMedia(series_path) {
         }
        if (!readable){
           if (this.classList.contains('active') ){
-            content.innerHTML = 'Media files not found on SD Card'
+            content.innerHTML = filePath + ' not found on SD Card'
             content.classList.remove('collapsed')}
           else{
             content.classList.add('collapsed')
