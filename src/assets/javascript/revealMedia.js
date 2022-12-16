@@ -49,7 +49,6 @@ export async function useRevealMedia(series_path) {
          var content = this.nextElementSibling
         if (readable){
           var url = localStorage.getItem('sd_url')+ id
-
           if (this.classList.contains('active') ){
             let temp = template.replace('[url]', url)
             let media = temp.replace('[i]', i)
@@ -63,7 +62,7 @@ export async function useRevealMedia(series_path) {
         }
        if (!readable){
           if (this.classList.contains('active') ){
-            content.innerHTML = filePath + ' not found on SD Card'
+            content.innerHTML = filePath + 'not found on SD Card'
             content.classList.remove('collapsed')}
           else{
             content.classList.add('collapsed')
@@ -103,8 +102,8 @@ export async function useRevealMedia(series_path) {
 
   async function findExternalStoragePath(){
     await Diagnostic.getExternalSdCardDetails().then(async (response)=>{
-      var sdpath =  response[0].filePath;
-      localStorage.setItem('sd_filepath', video_path)
+      var sd_path =  response[0].filePath;
+      localStorage.setItem('sd_filepath', sd_path)
       var sd_url= Capacitor.convertFileSrc(sd_path)
       localStorage.setItem('sd_url', sd_url)
       return sd_url
