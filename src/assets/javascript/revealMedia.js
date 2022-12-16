@@ -15,7 +15,7 @@ export async function useRevealMedia(series_path) {
         hideMedia();;
      }
   }).catch(error=>{
-      console.log("error authorized")
+      console.log("error - You can not check External Storage")
       console.log(error);
   });
 
