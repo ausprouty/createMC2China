@@ -8,7 +8,7 @@ export async function useRevealMedia(series_path) {
      if (response == true){
        console.log ('You are authorized to see this storage')
       setupMediaListeners()
-      console.log (findExternalStoragePath())
+      findExternalStoragePath()
      }
      else{
       console.log ('You are NOT authorized to see this storage')
@@ -45,12 +45,12 @@ export async function useRevealMedia(series_path) {
         console.log ('revealing Media');
         this.classList.toggle('active')
         var id= this.id
-        var filePath= localStorage.getItem('sd_filepath')+ id
+        var filePath= localStorage.getItem('sd_filepath') + '/'+ id
         var readable = await canRead(filePath)
         console.log(readable)
          var content = this.nextElementSibling
         if (readable){
-          var url = localStorage.getItem('sd_url')+ id
+          var url = localStorage.getItem('sd_url') + '/'+ id
           if (this.classList.contains('active') ){
             let temp = template.replace('[url]', url)
             let media = temp.replace('[i]', i)
