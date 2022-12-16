@@ -62,18 +62,18 @@ export default {
                         <div class="chapter_title ltr"><h1>How to Walk in the Spirit</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-  
+
         <button id="M2/eng/audio/tc/tc04.mp3" type="button" class="external-audio">
            Listen to &nbsp;"TC #4: How to Walk in the Spirit"&nbsp; </button>
           <div class="collapsed"></div>
-        
+
 
 <!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2>+ Introduction</h2></div>
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
 
-<p><blockquote>Chuck leaned on the horn one more time, a long, angry blast. He&rsquo;d already been waiting ten minutes.&nbsp; Where were they?</p>
+<blockquote><p>Chuck leaned on the horn one more time, a long, angry blast. He&rsquo;d already been waiting ten minutes.&nbsp; Where were they?</p>
 
 <p>Marianne knew how nervous he was about this morning, his first Sunday teaching the fifth-grade boys. He had asked her and the kids to be ready on time!&nbsp; Finally she arrived, opened the door and helped the three-&shy;‐year-&shy;‐old into the car.</p>
 
@@ -83,7 +83,7 @@ export default {
 
 <p>He glanced at his wife.&nbsp; Just seconds before he had been so angry he had seen her as the enemy.&nbsp; Now what he saw was the woman he loved, staring sadly out the window as the houses slipped past beside them. He had wounded her deeply with his outburst.</p>
 
-<p>&ldquo;Honey&rdquo;, he said, reaching for her hand.&nbsp; &ldquo;I owe you an apology.&rdquo; The rest of the trip they spoke quietly together, mending hurt feelings, righting wrongs, restoring their communication.&nbsp;&nbsp;</blockquote>
+<p>&ldquo;Honey&rdquo;, he said, reaching for her hand.&nbsp; &ldquo;I owe you an apology.&rdquo; The rest of the trip they spoke quietly together, mending hurt feelings, righting wrongs, restoring their communication.&nbsp;&nbsp;</p></blockquote>
 
 <p>Chuck had slipped back into the practices of the carnal man like all of us at times. He had been so involved in the problem of the moment that he forgot who should be on the throne of his life. It is almost reflex to return to our carnal I&rsquo;ll-&shy;‐do-&shy;‐it-&shy;‐myself ways when we forget to believe the promises of God&rsquo;s Word (John 1:9), and their provisions for our daily living. We forget I Corinthians 10:13, &ldquo;No temptation has overtaken you but such as is common to man; and God is faithful, who will not allow you to be tempted beyond what you are able, but with the temptation will provide the way of escape also, that you may be able to endure it.&rdquo;</p>
 
