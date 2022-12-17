@@ -33,9 +33,10 @@ export async function useRevealMedia(series_path) {
         var id= this.id
         var filePath= localStorage.getItem('sd_filepath') + '/'+ id
         var readable = await canRead(filePath)
+        console.log('readable')
         console.log(readable)
         var content = this.nextElementSibling
-        if (readable){
+        if (readable == true){
           console.log('this file is readable')
           var url = localStorage.getItem('sd_url') + '/'+ id
           if (this.classList.contains('active') ){
@@ -56,9 +57,9 @@ export async function useRevealMedia(series_path) {
             content.innerHTML =''
           }
         }
-       if (!readable){
+       if (readable !== true){
           if (this.classList.contains('active') ){
-            content.innerHTML = filePath + 'not found on SD Card'
+            content.innerHTML = filePath + 'was not found on SD Card'
             content.classList.remove('collapsed')}
           else{
             content.classList.add('collapsed')
