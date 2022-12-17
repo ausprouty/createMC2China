@@ -30,13 +30,13 @@ export async function useRevealMedia(series_path) {
       coll[i].addEventListener('click', async function () {
         console.log ('revealing Media');
         this.classList.toggle('active')
-        var id= this.id
-        var filePath= localStorage.getItem('sd_filepath') + '/'+ id
-        var readable = await canRead(filePath)
+        let id= this.id
+        let filePath= localStorage.getItem('sd_filepath') + '/'+ id
+        let readable = await canRead(filePath)
         console.log('readable')
         console.log(readable)
         var content = this.nextElementSibling
-        if (readable == true){
+        if (readable == 'yes'){
           console.log('this file is readable')
           var url = localStorage.getItem('sd_url') + '/'+ id
           if (this.classList.contains('active') ){
@@ -57,7 +57,7 @@ export async function useRevealMedia(series_path) {
             content.innerHTML =''
           }
         }
-       if (readable !== true){
+       if (readable == 'no'){
           if (this.classList.contains('active') ){
             content.innerHTML = filePath + 'was not found on SD Card'
             content.classList.remove('collapsed')}
@@ -93,13 +93,13 @@ export async function useRevealMedia(series_path) {
     }).then(async (response) =>{
     console.log ('can read')
     console.log (JSON.stringify(response) )
-    console.log ('returning true')
-    return true
+    console.log ('returning yes')
+    return 'yes'
     }).catch(error=>{
       console.log("error canRead")
       console.log(error);
-      console.log ('returning false')
-      return false
+      console.log ('returning no')
+      return 'no'
     });
   }
 
