@@ -1,7 +1,7 @@
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
-import { useShareLesson } from "@/assets/javascript/share.js"
+//import { useShareLesson } from "@/assets/javascript/share.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import Footer from '@/components/FooterGlobal.vue'
 
@@ -33,7 +33,10 @@ export default {
       usePopUp(verse)
     },
     shareLesson(title, url){
-      useShareLesson(title,url)
+      console.log ('hi George')
+      console.log (title)
+      console.log (url)
+      //useShareLesson(title,url)
     },
     vuePush(id){
       this.$router.push({
@@ -55,14 +58,14 @@ export default {
 </script>
 <template>
   <div id="nav">
-    <div class="nav full internal-link" @click="this.shareLesson('Lesson one','eng-multiply1-index')">
+    <div class="nav full internal-link" @click="this.shareLesson('Lesson one','engmultiply1index')">
         <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
     </div>
 </div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>1.</h1></div>
-                        <div class="chapter_title ltr"><h1>Assurance of Salvation</h1></div>
+                        <div class="chapter_title ltr"><h1>ThisShareLesson of Assurance of Salvation</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
   <!-- Lesson 1: Assurance of Salvation -->

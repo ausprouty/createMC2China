@@ -69,6 +69,10 @@ div.login-note {
 .preview {
   background-color: white;
 }
+.popup-link{
+  color: red;
+  text-decoration: underline;
+}
 
 h1,
 h3,
