@@ -6,12 +6,12 @@ export async function useRevealMedia(series_path) {
   await Diagnostic.isExternalStorageAuthorized().then(async (response)=>{
     console.log ('revealMedia is looking for external storage')
      if (response == true){
-       console.log ('You are authorized to see this storage')
+       console.log ('You are authorized to see External Storage')
       setupMediaListeners()
       findExternalStoragePath()
      }
      else{
-      console.log ('You are NOT authorized to see this storage')
+      console.log ('You are NOT authorized to see External Storage')
         hideMedia();;
      }
   }).catch(error=>{
@@ -32,76 +32,49 @@ export async function useRevealMedia(series_path) {
         this.classList.toggle('active')
         let id= this.id
         let filePath= localStorage.getItem('sd_filepath') + '/'+ id
-        let readable = await canRead(filePath)
-        console.log('readable')
-        console.log(readable)
-        var content = this.nextElementSibling
-        if (readable == 'yes'){
-          console.log('this file is readable')
-          var url = localStorage.getItem('sd_url') + '/'+ id
-          if (this.classList.contains('active') ){
-            let template = ''
-            if (id.includes("/audio/")){
-                template = audioTemplate();
+        await Filesystem.stat({path: filePath })
+          .then(async (response) =>{
+            var content = this.nextElementSibling
+            console.log('this file is readable')
+            var url = localStorage.getItem('sd_url') + '/'+ id
+            if (this.classList.contains('active') ){
+              let template =`
+                <video id="video[i]" width="100%" controls="controls" preload="metadata" autoplay="autoplay"
+                    webkit-playsinline="webkit-playsinline" class="videoPlayer">
+                    <source src="[url]" type="video/mp4">  `
+              if (id.includes("/audio/")){
+                template =`
+                  <audio id="audio[i]" width="100%" controls >
+                        <source src="[url]" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                  </audio>
+                  `
+              }
+              let temp = template.replace('[url]', url)
+              let media = temp.replace('[i]', i)
+              content.innerHTML = media
+              console.log (media)
+              content.classList.remove('collapsed')
+            } else {
+              content.classList.add('collapsed')
+              content.innerHTML =''
+            }
+        }).catch(error=>{
+            if (this.classList.contains('active') ){
+              content.innerHTML = filePath + 'was not found on SD Card'
+              content.classList.remove('collapsed')
             }
             else{
-                template = videoTemplate();
+              content.classList.add('collapsed')
+              content.innerHTML =''
             }
-            let temp = template.replace('[url]', url)
-            let media = temp.replace('[i]', i)
-            content.innerHTML = media
-            console.log (media)
-            content.classList.remove('collapsed')
-          } else {
-            content.classList.add('collapsed')
-            content.innerHTML =''
-          }
-        }
-       if (readable == 'no'){
-          if (this.classList.contains('active') ){
-            content.innerHTML = filePath + 'was not found on SD Card'
-            content.classList.remove('collapsed')}
-          else{
-            content.classList.add('collapsed')
-            content.innerHTML =''
-          }
-        }
-      })
+        });
+
+      });
     }
-  }
-  function audioTemplate(){
-    let template =`
-    <audio id="audio[i]" width="100%" controls >
-          <source src="[url]" type="audio/mpeg">
-          Your browser does not support the audio element.
-    </audio>
-    `
-    return template
 
   }
-  function videoTemplate(){
-    let template =`
-      <video id="video[i]" width="100%" controls="controls" preload="metadata" autoplay="autoplay"
-          webkit-playsinline="webkit-playsinline" class="videoPlayer">
-          <source src="[url]" type="video/mp4">
-      `
-      return template
-  }
-  async function canRead(file_name){
-    await Filesystem.stat({
-      path: file_name
-    }).then(async (response) =>{
-    console.log ('can read')
-    console.log (JSON.stringify(response) )
-    console.log ('returning yes')
-    return 'yes'
-    }).catch(error=>{
-      console.log("error canRead")
-      console.log(error);
-      console.log ('returning no')
-      return 'no'
-    });
-  }
+
 
   function hideMedia(){
     console.log ('I am hiding media')
