@@ -9,15 +9,16 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-
     "@awesome-cordova-plugins/core": "^6.2.0",
     "@awesome-cordova-plugins/diagnostic": "^6.2.0",
     "@awesome-cordova-plugins/file": "^6.2.0",
     "@awesome-cordova-plugins/file-path": "^6.2.0",
+
     "@capacitor/android": "^4.5.0",
     "@capacitor/cli": "^4.5.0",
     "@capacitor/core": "^4.5.0",
     "@capacitor/filesystem": "^4.1.4",
+    "@capacitor/share": "^4.1.0",
     "cordova-plugin-file": "^7.0.0",
     "cordova-plugin-filepath": "^1.6.0",
     "cordova.plugins.diagnostic": "^7.1.1",

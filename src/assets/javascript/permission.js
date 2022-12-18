@@ -1,7 +1,8 @@
-import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
-import { Capacitor } from '@capacitor/core';
+import { Diagnostic } from '@awesome-cordova-plugins/diagnostic'
 
-export async function useCheckPermisions() {
+
+export async function useCheckPermissions() {
+  console.log ('I am in useCheckPermissions')
   await Diagnostic.isExternalStorageAuthorized().then(async (response)=>{
     console.log ('revealMedia is looking for external storage')
      if (response == true){
@@ -15,6 +16,7 @@ export async function useCheckPermisions() {
       console.log("error - You can not check External Storage")
       console.log(error);
   });
+}
 
 async function indexAskExternalMediaAuthorization(){
     Diagnostic.requestExternalStorageAuthorization().then((data)=>{

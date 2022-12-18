@@ -1,5 +1,3 @@
-import { onMounted, onUnmounted } from "vue";
-
 
 export function useShowNotes(page) {
     console.log("this will show notes for " + page);

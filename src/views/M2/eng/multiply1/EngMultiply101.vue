@@ -1,7 +1,7 @@
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
-import { useGoToPageAndSetReturn, usePageGoBack } from "@/assets/javascript/travel.js"
+import { useShareLesson } from "@/assets/javascript/share.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import Footer from '@/components/FooterGlobal.vue'
 
@@ -32,6 +32,9 @@ export default {
     popUp(verse){
       usePopUp(verse)
     },
+    shareLesson (title, url){
+      useShareLesson(title,url)
+    },
     vuePush(id){
       this.$router.push({
         name: id,
@@ -52,7 +55,7 @@ export default {
 </script>
 <template>
   <div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply1-index')">
+    <div class="nav full internal-link" @click="this.shareLesson('Lesson one','eng-multiply1-index')">
         <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
     </div>
 </div>
@@ -236,7 +239,7 @@ export default {
 <div class="for-enrichment">
 <p>For further enrichment: Read&nbsp;<!-- begin linkInternal sdcard-->
 <span id= "return1" class="internal-link" @click="this.goToPageAndSetReturn('/M2/eng/tc/tc01', '#1')">
-    Transferable Concept #1: How You Can Be Sure You Are A Christian 
+    Transferable Concept #1: How You Can Be Sure You Are A Christian
 </span>
 <!-- end linkInternal sdcard-->
  and discuss with another group member.</p>

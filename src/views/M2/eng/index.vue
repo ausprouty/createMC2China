@@ -1,14 +1,13 @@
 <script>
 
-import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
-import { Capacitor } from '@capacitor/core';
+import { useCheckPermissions } from "@/assets/javascript/permission.js"
 import Footer from '@/components/FooterGlobal.vue'
+
 
 export default {
   components: {
     Footer,
-    Capacitor,
-    Diagnostic
+
   },
   methods:{
     vuePush(id){
@@ -16,34 +15,15 @@ export default {
         name: id,
       })
     },
-    indexAskExternalMediaAuthorization(){
-      this.Diagnostic.requestExternalStorageAuthorization().then((data) => {
-        console.log('I have requested authorization')
-        console.log(data);
-
-      }).catch(error => {
-        console.log(error);
-      });
-    },
-    async mounted () {
-      console.log('this is mounted');
-
-      await this.Diagnostic.isExternalStorageAuthorized().then(async (response) => {
-        console.log('revealMedia is looking for external storage')
-        if (response == true) {
-          console.log('You are authorized to see External Storage')
-        }
-        else {
-          console.log('You are NOT authorized to see External Storage')
-          this.indexAskExternalMediaAuthorization()
-          console.log('You are asked for  authorization to see External Storage')
-        }
-      }).catch(error => {
-        console.log("error - You can not check External Storage")
-        console.log(error);
-      });
+    checkPermissions(){
+      useCheckPermissions();
+    }
    },
-  }
+   mounted(){
+    console.log ('in mounted checking permissions')
+    this.checkPermissions()
+   }
+
 }
 </script>
 <template>
@@ -99,7 +79,7 @@ export default {
   </div>
 </div>
 <!-- end mc2 sdcard bookImage -->
-This is looking for something special
+This is looking for special
     </div>
     <Footer/>
 </div>
