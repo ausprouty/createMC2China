@@ -32,7 +32,7 @@ export default {
     popUp(verse){
       usePopUp(verse)
     },
-    shareLesson (title, url){
+    shareLesson(title, url){
       useShareLesson(title,url)
     },
     vuePush(id){

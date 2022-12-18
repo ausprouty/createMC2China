@@ -1,6 +1,7 @@
 import { Share } from '@capacitor/share';
 
 export async function useShareLesson(title, url) {
+    console.log ('I am tryin out useShareLesson')
     await Share.share({
     title: title,
     text: 'Really awesome thing you need to see right meow',
