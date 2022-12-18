@@ -62,11 +62,11 @@ export default {
                         <div class="chapter_title ltr"><h1>How to be Sure You are a Christian</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-  
-        <button id="M2/eng/audio/tc/tc01.mp3" type="button" class="external-audio">
+
+        <button id="MC2/eng/audio/tc/tc01.mp3" type="button" class="external-audio">
            Listen to &nbsp;"TC #1: How to be Sure You Are a Christian"&nbsp; </button>
           <div class="collapsed"></div>
-        
+
 
 <div>
 <!-- begin default revealSummary -->

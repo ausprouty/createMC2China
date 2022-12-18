@@ -31,10 +31,10 @@ export async function useRevealMedia(series_path) {
         console.log ('revealing Media');
         this.classList.toggle('active')
         let id= this.id
+        var content = this.nextElementSibling
         let filePath= localStorage.getItem('sd_filepath') + '/'+ id
         await Filesystem.stat({path: filePath })
           .then(async (response) =>{
-            var content = this.nextElementSibling
             console.log('this file is readable')
             var url = localStorage.getItem('sd_url') + '/'+ id
             if (this.classList.contains('active') ){

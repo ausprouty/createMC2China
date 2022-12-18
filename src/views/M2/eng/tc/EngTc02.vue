@@ -63,7 +63,7 @@ export default {
                     </div>
 <div id="showVideoOptions"></div>
   
-        <button id="M2/eng/audio/tc/tc02.mp3" type="button" class="external-audio">
+        <button id="MC2/eng/audio/tc/tc02.mp3" type="button" class="external-audio">
            Listen to &nbsp;"TC #2: How to Experience God&#39;s Love and Forgiveness"&nbsp; </button>
           <div class="collapsed"></div>
         
