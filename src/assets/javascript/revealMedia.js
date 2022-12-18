@@ -12,12 +12,23 @@ export async function useRevealMedia(series_path) {
      }
      else{
       console.log ('You are NOT authorized to see External Storage')
-        hideMedia();;
+      askExternalMediaAuthorization()
+      hideMedia();;
      }
   }).catch(error=>{
       console.log("error - You can not check External Storage")
       console.log(error);
   });
+
+  async function askExternalMediaAuthorization(){
+    Diagnostic.requestExternalStorageAuthorization().then((data)=>{
+      //your permission
+      console.log(data);
+
+      }).catch(error=>{
+      console.log(error);
+      });
+  }
 
   function setupMediaListeners(){
     setupMediaListener( 'external-movie')

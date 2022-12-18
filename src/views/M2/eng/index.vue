@@ -1,4 +1,7 @@
 <script>
+
+import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
+import { Capacitor } from '@capacitor/core';
 import Footer from '@/components/FooterGlobal.vue'
 
 export default {
@@ -11,15 +14,43 @@ export default {
         name: id,
       })
     },
-  },
+    checkPermissions () {
+      usecheckPermissions()
+    },
+    indexAskExternalMediaAuthorization(){
+      Diagnostic.requestExternalStorageAuthorization().then((data) => {
+        console.log('I have requested authorization')
+        console.log(data);
+
+      }).catch(error => {
+        console.log(error);
+      });
+    },
+    async mounted () {
+      await Diagnostic.isExternalStorageAuthorized().then(async (response) => {
+        console.log('revealMedia is looking for external storage')
+        if (response == true) {
+          console.log('You are authorized to see External Storage')
+        }
+        else {
+          console.log('You are NOT authorized to see External Storage')
+          this.indexAskExternalMediaAuthorization()
+          console.log('You are asked for  authorization to see External Storage')
+        }
+      }).catch(error => {
+        console.log("error - You can not check External Storage")
+        console.log(error);
+      });
+   },
+  }
 }
 </script>
 <template>
   <!-- sdcard template from mc2 -->
-  
+
   <div class="page_content" dir="ltr">
     <div>
-      
+
     </div>
     <div>
       <!-- begin mc2 sdcard bookImage -->
