@@ -6,7 +6,9 @@ import Footer from '@/components/FooterGlobal.vue'
 
 export default {
   components: {
-    Footer
+    Footer,
+    Capacitor,
+    Diagnostic
   },
   methods:{
     vuePush(id){
@@ -14,11 +16,8 @@ export default {
         name: id,
       })
     },
-    checkPermissions () {
-      usecheckPermissions()
-    },
     indexAskExternalMediaAuthorization(){
-      Diagnostic.requestExternalStorageAuthorization().then((data) => {
+      this.Diagnostic.requestExternalStorageAuthorization().then((data) => {
         console.log('I have requested authorization')
         console.log(data);
 
@@ -27,7 +26,9 @@ export default {
       });
     },
     async mounted () {
-      await Diagnostic.isExternalStorageAuthorized().then(async (response) => {
+      console.log('this is mounted');
+
+      await this.Diagnostic.isExternalStorageAuthorized().then(async (response) => {
         console.log('revealMedia is looking for external storage')
         if (response == true) {
           console.log('You are authorized to see External Storage')
@@ -98,7 +99,7 @@ export default {
   </div>
 </div>
 <!-- end mc2 sdcard bookImage -->
-
+This is looking for something special
     </div>
     <Footer/>
 </div>
