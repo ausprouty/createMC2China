@@ -1,10 +1,7 @@
 <script>
-import Footer from '@/components/FooterGlobal.vue'
+import { useShare} from "@/assets/javascript/share.js"
 
 export default {
-  components: {
-    Footer
-  },
   methods:{
     pageGoBack(returnto){
       if (localStorage.getItem("returnpage")) {
@@ -15,12 +12,18 @@ export default {
         name: returnto,
       })
     },
+    share(what, v1, v2){
+      useShare(what, v1, v2)
+    },
     vuePush(id){
       this.$router.push({
         name: id,
       })
-    },
+    }
   },
+  mounted() {
+    localStorage.setItem("returnpage", this.$route.path)
+  }
 }
 </script>
 <template>
@@ -198,8 +201,35 @@ export default {
 
    <!-- end chapters -->
   <div>
-    <Footer/>>
+    <!-- begin sdcard languageFooter -->
+
+<div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
+<table class="social">
+	<tbody>
+		<tr>
+			<td class="social" @click="share('languages', '', '')">
+				  <img class="social" src="@/assets/images/standard/languages.png" />
+			  </td>
+			  
+			<td class="social"  @click="share('android', 'eng', '')">
+				<img  class="social" src="@/assets/images/standard/android.png" />
+			</td>
+
+			<td class="social" @click="share('lesson', 'Library: ', '/content/M2/eng/tc/index.html')">
+				<img class="social" src="@/assets/images/standard/Share.png" />
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="footer">
+<p class="footer">MC2</p>
+<p class="footer"><a class="no_underline"  target="_blank" href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+</div>
+
+<!-- end sdcard languageFooter -->
   </div>
 </div>
 </template>
 <!--- Created by publishSeries-->
+<!-- begin sdcard Footer -->
+<!-- end sdcard Footer -->

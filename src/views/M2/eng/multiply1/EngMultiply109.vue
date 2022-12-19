@@ -1,16 +1,12 @@
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
-import { useGoToPageAndSetReturn, usePageGoBack } from "@/assets/javascript/travel.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
-import Footer from '@/components/FooterGlobal.vue'
+import { useShare} from "@/assets/javascript/share.js"
+
 
 export default {
-  components: {
-    Footer
-  },
-
-  methods:{
+   methods:{
     addNote(){
       useAddNote(this.$route.name)
     },
@@ -32,6 +28,9 @@ export default {
     popUp(verse){
       usePopUp(verse)
     },
+    share(what, v1, v2){
+      useShare(what, v1, v2)
+    },
     vuePush(id){
       this.$router.push({
         name: id,
@@ -42,9 +41,9 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     let route_path = this.$route.path
+    localStorage.setItem("returnpage", route_path)
     let last = route_path.lastIndexOf('/')
     let series_path = route_path.substr(0, last)
-    console.log (series_path)
     useRevealMedia(series_path)
     useShowNotes(this.$route.name)
   },
@@ -165,7 +164,7 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply1/109.mp4" type="button" class="external-movie">
-         Watch &nbsp;"Luke 5:27-32"&nbsp;</button>
+         Watch &nbsp;Luke 5:27-32&nbsp;</button>
     <div class="collapsed"></div>
 
 <h2 class="up">Discovery Discussion (Everyone answers)</h2>
@@ -367,8 +366,34 @@ export default {
 </div>
 
 
+<!-- begin sdcard languageFooter -->
 
+<div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
+<table class="social">
+	<tbody>
+		<tr>
+			<td class="social" @click="share('languages', '', '')">
+				  <img class="social" src="@/assets/images/standard/languages.png" />
+			  </td>
+			  
+			<td class="social"  @click="share('android', 'eng', '')">
+				<img  class="social" src="@/assets/images/standard/android.png" />
+			</td>
+
+			<td class="social" @click="share('lesson', 'God Prepared People : ', '/content/M2/eng/multiply1/multiply109.html')">
+				<img class="social" src="@/assets/images/standard/Share.png" />
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="footer">
+<p class="footer">MC2</p>
+<p class="footer"><a class="no_underline"   href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+</div>
+
+<!-- end sdcard languageFooter -->
 </div><!--- Created by publishPage-->
 
-  <Footer/>
 </template>
+<!-- begin sdcard Footer -->
+<!-- end sdcard Footer -->

@@ -1,16 +1,12 @@
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
-//import { useShareLesson } from "@/assets/javascript/share.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
-import Footer from '@/components/FooterGlobal.vue'
+import { useShare} from "@/assets/javascript/share.js"
+
 
 export default {
-  components: {
-    Footer
-  },
-
-  methods:{
+   methods:{
     addNote(){
       useAddNote(this.$route.name)
     },
@@ -32,11 +28,8 @@ export default {
     popUp(verse){
       usePopUp(verse)
     },
-    shareLesson(title, url){
-      console.log ('hi George')
-      console.log (title)
-      console.log (url)
-      //useShareLesson(title,url)
+    share(what, v1, v2){
+      useShare(what, v1, v2)
     },
     vuePush(id){
       this.$router.push({
@@ -48,9 +41,9 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     let route_path = this.$route.path
+    localStorage.setItem("returnpage", route_path)
     let last = route_path.lastIndexOf('/')
     let series_path = route_path.substr(0, last)
-    console.log (series_path)
     useRevealMedia(series_path)
     useShowNotes(this.$route.name)
   },
@@ -58,14 +51,14 @@ export default {
 </script>
 <template>
   <div id="nav">
-    <div class="nav full internal-link" @click="this.shareLesson('Lesson one','engmultiply1index')">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply1-index')">
         <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
     </div>
 </div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>1.</h1></div>
-                        <div class="chapter_title ltr"><h1>ThisShareLesson of Assurance of Salvation</h1></div>
+                        <div class="chapter_title ltr"><h1>Assurance of Salvation</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
   <!-- Lesson 1: Assurance of Salvation -->
@@ -154,7 +147,7 @@ export default {
 </div>
 
 <button id="MC2/eng/video/multiply1/101.mp4" type="button" class="external-movie">
-         Watch &nbsp;"John 10:22-30"&nbsp;</button>
+         Watch &nbsp;John 10:22-30&nbsp;</button>
     <div class="collapsed"></div>
 
 <h2 class="up">Discovery Discussion</h2>
@@ -242,7 +235,7 @@ export default {
 <div class="for-enrichment">
 <p>For further enrichment: Read&nbsp;<!-- begin linkInternal sdcard-->
 <span id= "return1" class="internal-link" @click="this.goToPageAndSetReturn('/M2/eng/tc/tc01', '#1')">
-    Transferable Concept #1: How You Can Be Sure You Are A Christian
+    Transferable Concept #1: How You Can Be Sure You Are A Christian 
 </span>
 <!-- end linkInternal sdcard-->
  and discuss with another group member.</p>
@@ -250,8 +243,34 @@ export default {
 </div>
 
 
+<!-- begin sdcard languageFooter -->
 
+<div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
+<table class="social">
+	<tbody>
+		<tr>
+			<td class="social" @click="share('languages', '', '')">
+				  <img class="social" src="@/assets/images/standard/languages.png" />
+			  </td>
+			  
+			<td class="social"  @click="share('android', 'eng', '')">
+				<img  class="social" src="@/assets/images/standard/android.png" />
+			</td>
+
+			<td class="social" @click="share('lesson', 'Assurance of Salvation: ', '/content/M2/eng/multiply1/multiply101.html')">
+				<img class="social" src="@/assets/images/standard/Share.png" />
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="footer">
+<p class="footer">MC2</p>
+<p class="footer">GlobalChurchMovements.org</p>
+</div>
+
+<!-- end sdcard languageFooter -->
 </div><!--- Created by publishPage-->
 
-  <Footer/>
 </template>
+<!-- begin sdcard Footer -->
+<!-- end sdcard Footer -->

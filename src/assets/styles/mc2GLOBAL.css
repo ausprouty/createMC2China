@@ -32,7 +32,7 @@ div.login-note {
   height: 100px;
   padding-bottom: 50px;
 }
-
+.popup-link,
 .bible-link,
 .internal-link {
   color: var(--color-bible-link-mc2);
@@ -69,10 +69,7 @@ div.login-note {
 .preview {
   background-color: white;
 }
-.popup-link{
-  color: red;
-  text-decoration: underline;
-}
+
 
 h1,
 h3,

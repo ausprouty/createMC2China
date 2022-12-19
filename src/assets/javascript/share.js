@@ -1,11 +1,28 @@
 import { Share } from '@capacitor/share';
 
-export async function useShareLesson(title, url) {
-    console.log ('I am tryin out useShareLesson')
+export async function useShare(what, v1, v2) {
+    console.log ('I am tryin out useShare')
+    if (what == 'lesson'){
+        shareLesson(v1, v2)
+    }
+    if (what == 'android'){
+        console.log ('android')
+        let url= 'https://app.mc2.online/content/M2/' + v1 + '/pages/apk.html'
+        window.open(url);
+    }
+      if (what == 'languages'){
+        console.log ('languages')
+       window.open("https://app.mc2.online/content/index.html");
+    }
+}
+
+async function shareLesson(lesson, url){
+    let site_url = 'https://app.mc2.online' + url
+    console.log(site_url)
     await Share.share({
-    title: title,
-    text: 'Really awesome thing you need to see right meow',
-    url: url,
-    dialogTitle: 'Share with buddies',
+    title: 'Here is the link to MC2',
+    text: lesson,
+    url: site_url,
+    dialogTitle: 'Share this page',
     });
 }

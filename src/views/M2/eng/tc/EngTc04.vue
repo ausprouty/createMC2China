@@ -1,16 +1,12 @@
 <script>
 import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
-import { useGoToPageAndSetReturn, usePageGoBack } from "@/assets/javascript/travel.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
-import Footer from '@/components/FooterGlobal.vue'
+import { useShare} from "@/assets/javascript/share.js"
+
 
 export default {
-  components: {
-    Footer
-  },
-
-  methods:{
+   methods:{
     addNote(){
       useAddNote(this.$route.name)
     },
@@ -32,6 +28,9 @@ export default {
     popUp(verse){
       usePopUp(verse)
     },
+    share(what, v1, v2){
+      useShare(what, v1, v2)
+    },
     vuePush(id){
       this.$router.push({
         name: id,
@@ -42,9 +41,9 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     let route_path = this.$route.path
+    localStorage.setItem("returnpage", route_path)
     let last = route_path.lastIndexOf('/')
     let series_path = route_path.substr(0, last)
-    console.log (series_path)
     useRevealMedia(series_path)
     useShowNotes(this.$route.name)
   },
@@ -62,18 +61,19 @@ export default {
                         <div class="chapter_title ltr"><h1>How to Walk in the Spirit</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
+  
         <button id="MC2/eng/audio/tc/tc04.mp3" type="button" class="external-audio">
            Listen to &nbsp;"TC #4: How to Walk in the Spirit"&nbsp; </button>
           <div class="collapsed"></div>
-
+        
 
 <!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2>+ Introduction</h2></div>
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
 
-<blockquote><p>Chuck leaned on the horn one more time, a long, angry blast. He&rsquo;d already been waiting ten minutes.&nbsp; Where were they?</p>
+<blockquote>
+<p>Chuck leaned on the horn one more time, a long, angry blast. He&rsquo;d already been waiting ten minutes.&nbsp; Where were they?</p>
 
 <p>Marianne knew how nervous he was about this morning, his first Sunday teaching the fifth-grade boys. He had asked her and the kids to be ready on time!&nbsp; Finally she arrived, opened the door and helped the three-&shy;‐year-&shy;‐old into the car.</p>
 
@@ -83,7 +83,8 @@ export default {
 
 <p>He glanced at his wife.&nbsp; Just seconds before he had been so angry he had seen her as the enemy.&nbsp; Now what he saw was the woman he loved, staring sadly out the window as the houses slipped past beside them. He had wounded her deeply with his outburst.</p>
 
-<p>&ldquo;Honey&rdquo;, he said, reaching for her hand.&nbsp; &ldquo;I owe you an apology.&rdquo; The rest of the trip they spoke quietly together, mending hurt feelings, righting wrongs, restoring their communication.&nbsp;&nbsp;</p></blockquote>
+<p>&ldquo;Honey&rdquo;, he said, reaching for her hand.&nbsp; &ldquo;I owe you an apology.&rdquo; The rest of the trip they spoke quietly together, mending hurt feelings, righting wrongs, restoring their communication.&nbsp;&nbsp;</p>
+</blockquote>
 
 <p>Chuck had slipped back into the practices of the carnal man like all of us at times. He had been so involved in the problem of the moment that he forgot who should be on the throne of his life. It is almost reflex to return to our carnal I&rsquo;ll-&shy;‐do-&shy;‐it-&shy;‐myself ways when we forget to believe the promises of God&rsquo;s Word (John 1:9), and their provisions for our daily living. We forget I Corinthians 10:13, &ldquo;No temptation has overtaken you but such as is common to man; and God is faithful, who will not allow you to be tempted beyond what you are able, but with the temptation will provide the way of escape also, that you may be able to endure it.&rdquo;</p>
 
@@ -121,12 +122,10 @@ export default {
 
 <p>What about emotions in the experience of the believer? Feelings add color and excitement and are a valuable part of life, but they are extremely fickle, changing with the weather. As Christians <em>we live by faith</em>, trusting in God&rsquo;s trustworthiness and the promises of His Word. If we depend on feelings for a confirmation of His working in our lives, we put ourselves in a dangerous position and will almost always be disappointed.</p>
 
-<p>
-<img alt="Airplane" src="@/assets/images/eng/custom/Web-satisfied-trust-facts-not-feelings.jpg" style="float:left; height:280px; width:278px" />To be transported by an airplane, we must place our faith in the trustworthiness of the aircraft and the pilot who flies it. Our feelings of confidence or fear do not affect the ability of the airplane to transport us, though they do affect how much we enjoy the trip.<br />
+<p><img alt="Airplane" src="@/assets/images/eng/custom/Web-satisfied-trust-facts-not-feelings.jpg" style="float:left; height:280px; width:278px" />To be transported by an airplane, we must place our faith in the trustworthiness of the aircraft and the pilot who flies it. Our feelings of confidence or fear do not affect the ability of the airplane to transport us, though they do affect how much we enjoy the trip.<br />
 In the same way, we as Christians do not depend on feelings or emotions, but we place our faith (trust) in the trustworthiness of God and the promises of His Word.</p>
 
-<p>
-Refuse to seek emotional experiences as proof of the Holy Spirit&rsquo;s indwelling. If you have a sincere hunger and thirst for God&rsquo;s righteousness, and you have confessed your sin, surrendered to His control, and asked Him to fill you, you can be assured that <em>you are filled with the Holy Spirit</em>! God is faithful to His promises.</p>
+<p>Refuse to seek emotional experiences as proof of the Holy Spirit&rsquo;s indwelling. If you have a sincere hunger and thirst for God&rsquo;s righteousness, and you have confessed your sin, surrendered to His control, and asked Him to fill you, you can be assured that <em>you are filled with the Holy Spirit</em>! God is faithful to His promises.</p>
 
 <p>John 14:21 reminds us, &ldquo;He who has My commandments and keeps them, he it is who loves Me; and he who loves Me shall be loved by My Father, and I will love him, and will disclose Myself to him.&rdquo; It does not say, &lsquo;He who feels love for me,&rdquo; but, &ldquo;He who <em>keeps my commandments</em>.&rdquo;</p>
 
@@ -219,8 +218,34 @@ Refuse to seek emotional experiences as proof of the Holy Spirit&rsquo;s indwell
 <p>Adapted from <em>The Transferable Concepts</em> by Bill Bright. All rights reserved.</p>
 
 
+<!-- begin sdcard languageFooter -->
 
+<div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
+<table class="social">
+	<tbody>
+		<tr>
+			<td class="social" @click="share('languages', '', '')">
+				  <img class="social" src="@/assets/images/standard/languages.png" />
+			  </td>
+			  
+			<td class="social"  @click="share('android', 'eng', '')">
+				<img  class="social" src="@/assets/images/standard/android.png" />
+			</td>
+
+			<td class="social" @click="share('lesson', 'How to Walk in the Spirit: ', '/content/M2/eng/tc/tc04.html')">
+				<img class="social" src="@/assets/images/standard/Share.png" />
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="footer">
+<p class="footer">MC2</p>
+<p class="footer"><a class="no_underline"   href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+</div>
+
+<!-- end sdcard languageFooter -->
 </div><!--- Created by publishPage-->
 
-  <Footer/>
 </template>
+<!-- begin sdcard Footer -->
+<!-- end sdcard Footer -->
