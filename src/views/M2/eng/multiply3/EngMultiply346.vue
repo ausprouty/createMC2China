@@ -196,7 +196,7 @@ export default {
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note1Text"
       ></textarea>
     </form>
@@ -271,7 +271,7 @@ Like Paul, the Lord has created each of us for good works and He sovereignly use
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note2Text"
       ></textarea>
     </form>

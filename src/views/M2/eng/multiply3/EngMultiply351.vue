@@ -176,7 +176,7 @@ export default {
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note1Text"
       ></textarea>
     </form>
@@ -242,7 +242,7 @@ We see the heart of compassion Jesus has for people as He promised to rescue Pau
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note2Text"
       ></textarea>
     </form>

@@ -1,29 +1,37 @@
 <script>
 import {useShare} from "@/assets/javascript/share.js"
-
+import { useCheckPermissions } from "@/assets/javascript/permission.js"
 export default {
-  
+
   methods:{
     vuePush(id){
       this.$router.push({
         name: id,
       })
     },
+    async checkPermissions () {
+      useCheckPermissions();
+    },
     share(what, v1, v2){
       useShare(what, v1, v2)
     }
   },
-  mounted() {
-    localStorage.setItem("returnpage", this.$route.path)
+  async mounted() {
+    await this.checkPermissions()
+    let last_page = localStorage.getItem("returnpage", null)
+    if(last_page != null){
+      localStorage.setItem("returnpage", null)
+      this.vuePush(last_page);
+    }
   }
 }
 </script>
 <template>
   <!-- sdcard template from mc2 -->
-  
+
   <div class="page_content" dir="ltr">
     <div>
-      
+
     </div>
     <div>
       <!-- begin mc2 sdcard bookImage -->
@@ -82,7 +90,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

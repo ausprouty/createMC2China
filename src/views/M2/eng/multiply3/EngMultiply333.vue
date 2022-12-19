@@ -178,7 +178,7 @@ export default {
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note1Text"
       ></textarea>
     </form>
@@ -252,7 +252,7 @@ The power of Jesus overcame the demonic spirit and set the girl free. Because he
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note2Text"
       ></textarea>
     </form>

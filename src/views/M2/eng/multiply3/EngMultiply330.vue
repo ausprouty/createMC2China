@@ -199,7 +199,7 @@ says the Lord, who does these things&rsquo;&mdash;<br />
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note1Text"
       ></textarea>
     </form>
@@ -269,7 +269,7 @@ they still believed God required circumcision and observing the Law as necessary
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note2Text"
       ></textarea>
     </form>

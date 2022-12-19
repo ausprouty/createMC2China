@@ -206,7 +206,7 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note1Text"
       ></textarea>
     </form>

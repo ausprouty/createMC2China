@@ -1,6 +1,6 @@
 {
-  "appId": "com.mc2.english",
-  "appName": "MC2 English Capacitor ",
+  "appId": "com.mc2.englishSD",
+  "appName": "MC2 English SD",
   "webDir": "dist",
   "bundledWebRuntime": false
 }

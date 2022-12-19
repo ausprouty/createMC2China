@@ -162,7 +162,7 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note1Text"
       ></textarea>
     </form>
@@ -225,7 +225,7 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note2Text"
       ></textarea>
     </form>

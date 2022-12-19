@@ -222,7 +222,7 @@ If you prayed this prayer or expressed your heart similarly to God in your own w
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNotes()"
+        @keyup="this.addNote()"
         id="note1Text"
       ></textarea>
     </form>
