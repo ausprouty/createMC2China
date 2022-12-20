@@ -110,7 +110,7 @@ Multiplication of the movement: prayerfully selecting and developing new leaders
 </ul>
 
 
-<!-- begin sdcard languageFooter -->
+<!-- begin mc2 sdcard languageFooter -->
 
 <div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
 <table class="social">
@@ -132,10 +132,10 @@ Multiplication of the movement: prayerfully selecting and developing new leaders
 </table>
 <div class="footer">
 <p class="footer">MC2</p>
-<p class="footer">GlobalChurchMovements.org</p>
+<p class="footer" @click="share('website', 'https://GlobalChurchMovements.org', '')"> GlobalChurchMovements.org</p>
 </div>
 
-<!-- end sdcard languageFooter -->
+<!-- end mc2 sdcard languageFooter -->
 </div><!--- Created by publishPage-->
 
 </template>

@@ -164,7 +164,7 @@ export default {
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNote()"
+        @keyup="this.addNote('note1Text')"
         id="note1Text"
       ></textarea>
     </form>
@@ -218,7 +218,7 @@ export default {
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNote()"
+        @keyup="this.addNote('note2Text')"
         id="note2Text"
       ></textarea>
     </form>
@@ -235,7 +235,7 @@ export default {
 <div class="for-enrichment">
 <p>For further enrichment: Read&nbsp;<!-- begin linkInternal sdcard-->
 <span id= "return1" class="internal-link" @click="this.goToPageAndSetReturn('/M2/eng/tc/tc01', '#1')">
-    Transferable Concept #1: How You Can Be Sure You Are A Christian
+    Transferable Concept #1: How You Can Be Sure You Are A Christian 
 </span>
 <!-- end linkInternal sdcard-->
  and discuss with another group member.</p>
@@ -243,7 +243,7 @@ export default {
 </div>
 
 
-<!-- begin sdcard languageFooter -->
+<!-- begin mc2 sdcard languageFooter -->
 
 <div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
 <table class="social">
@@ -252,7 +252,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-
+			  
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>
@@ -265,10 +265,10 @@ export default {
 </table>
 <div class="footer">
 <p class="footer">MC2</p>
-<p class="footer">GlobalChurchMovements.org</p>
+<p class="footer" @click="share('website', 'https://GlobalChurchMovements.org', '')"> GlobalChurchMovements.org</p>
 </div>
 
-<!-- end sdcard languageFooter -->
+<!-- end mc2 sdcard languageFooter -->
 </div><!--- Created by publishPage-->
 
 </template>

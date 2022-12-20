@@ -1,18 +1,18 @@
 import { Share } from '@capacitor/share';
 
 export async function useShare(what, v1, v2) {
-    console.log ('I am tryin out useShare')
     if (what == 'lesson'){
         shareLesson(v1, v2)
     }
     if (what == 'android'){
-        console.log ('android')
         let url= 'https://app.mc2.online/content/M2/' + v1 + '/pages/apk.html'
         window.open(url);
     }
-      if (what == 'languages'){
-        console.log ('languages')
+    if (what == 'languages'){
        window.open("https://app.mc2.online/content/index.html");
+    }
+    if (what == 'website'){
+       window.open(v1);
     }
 }
 

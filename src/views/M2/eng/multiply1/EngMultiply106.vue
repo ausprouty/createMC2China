@@ -162,7 +162,7 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNote()"
+        @keyup="this.addNote('note1Text')"
         id="note1Text"
       ></textarea>
     </form>
@@ -225,7 +225,7 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNote()"
+        @keyup="this.addNote('note2Text')"
         id="note2Text"
       ></textarea>
     </form>
@@ -249,7 +249,7 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 </div>
 
 
-<!-- begin sdcard languageFooter -->
+<!-- begin mc2 sdcard languageFooter -->
 
 <div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
 <table class="social">
@@ -271,10 +271,10 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 </table>
 <div class="footer">
 <p class="footer">MC2</p>
-<p class="footer">GlobalChurchMovements.org</p>
+<p class="footer" @click="share('website', 'https://GlobalChurchMovements.org', '')"> GlobalChurchMovements.org</p>
 </div>
 
-<!-- end sdcard languageFooter -->
+<!-- end mc2 sdcard languageFooter -->
 </div><!--- Created by publishPage-->
 
 </template>

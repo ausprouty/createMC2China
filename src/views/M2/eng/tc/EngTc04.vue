@@ -206,7 +206,7 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNote()"
+        @keyup="this.addNote('note1Text')"
         id="note1Text"
       ></textarea>
     </form>
@@ -218,7 +218,7 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
 <p>Adapted from <em>The Transferable Concepts</em> by Bill Bright. All rights reserved.</p>
 
 
-<!-- begin sdcard languageFooter -->
+<!-- begin mc2 sdcard languageFooter -->
 
 <div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
 <table class="social">
@@ -240,10 +240,10 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
 </table>
 <div class="footer">
 <p class="footer">MC2</p>
-<p class="footer"><a class="no_underline"   href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+<p class="footer" @click="share('website', 'https://GlobalChurchMovements.org', '')"> GlobalChurchMovements.org</p>
 </div>
 
-<!-- end sdcard languageFooter -->
+<!-- end mc2 sdcard languageFooter -->
 </div><!--- Created by publishPage-->
 
 </template>

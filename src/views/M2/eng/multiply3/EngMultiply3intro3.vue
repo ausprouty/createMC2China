@@ -76,7 +76,7 @@ Summary</h2>
 </ul>
 
 
-<!-- begin sdcard languageFooter -->
+<!-- begin mc2 sdcard languageFooter -->
 
 <div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
 <table class="social">
@@ -98,10 +98,10 @@ Summary</h2>
 </table>
 <div class="footer">
 <p class="footer">MC2</p>
-<p class="footer"><a class="no_underline"   href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+<p class="footer" @click="share('website', 'https://GlobalChurchMovements.org', '')"> GlobalChurchMovements.org</p>
 </div>
 
-<!-- end sdcard languageFooter -->
+<!-- end mc2 sdcard languageFooter -->
 </div><!--- Created by publishPage-->
 
 </template>

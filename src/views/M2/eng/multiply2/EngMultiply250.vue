@@ -126,7 +126,7 @@ export default {
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNote()"
+        @keyup="this.addNote('note1Text')"
         id="note1Text"
       ></textarea>
     </form>
@@ -242,7 +242,7 @@ export default {
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNote()"
+        @keyup="this.addNote('note2Text')"
         id="note2Text"
       ></textarea>
     </form>
@@ -407,7 +407,7 @@ export default {
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
-        @keyup="this.addNote()"
+        @keyup="this.addNote('note3Text')"
         id="note3Text"
       ></textarea>
     </form>
@@ -424,7 +424,7 @@ export default {
 <h2>Benediction (optional)</h2>
 
 
-<!-- begin sdcard languageFooter -->
+<!-- begin mc2 sdcard languageFooter -->
 
 <div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
 <table class="social">
@@ -446,10 +446,10 @@ export default {
 </table>
 <div class="footer">
 <p class="footer">MC2</p>
-<p class="footer"><a class="no_underline"   href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+<p class="footer" @click="share('website', 'https://GlobalChurchMovements.org', '')"> GlobalChurchMovements.org</p>
 </div>
 
-<!-- end sdcard languageFooter -->
+<!-- end mc2 sdcard languageFooter -->
 </div><!--- Created by publishPage-->
 
 </template>

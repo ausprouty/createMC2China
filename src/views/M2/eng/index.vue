@@ -19,6 +19,7 @@ export default {
   async mounted() {
     await this.checkPermissions()
     let last_page = localStorage.getItem("returnpage", null)
+    console.log('last_page :'+ last_page)
     if(last_page != null){
       localStorage.setItem("returnpage", null)
       this.vuePush(last_page);

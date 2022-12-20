@@ -53,26 +53,6 @@ export function useFindSummaries() {
   }
 }
 
-// check to see if this is an index file for a series and get value index.json
-function useMc2TrainerReveal() {
-  if (localStorage.getItem("mc2Trainer")) {
-    // unhide all trainer notes
-    var elements = document.getElementsByClassName("trainer-hide");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].className = "trainer";
-    }
-    // unhide all items which are collapsed for students
-    elements = document.getElementsByClassName("collapsible");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].className = "revealed";
-    }
-    elements = document.getElementsByClassName("collapsed");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.display = "block";
-    }
-  }
-
-}
 // to show verses
 export function usePopUp(field) {
   var content = document.getElementById(field);
